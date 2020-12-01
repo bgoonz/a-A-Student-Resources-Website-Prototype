@@ -1,0 +1,553 @@
+h1#week-9---responsive-design-review Week 9 - Responsive Design Review
+h2#monday
+  strong Monday
+ol(style='list-style-type: decimal')
+  li
+    | What is a CSS rule?
+    ul
+      li
+        | A CSS rule consists of a selector and curly braces around property-value combinations.
+  li
+    | How to import other CSS files into your CSS file How to link a stylesheet into an HTML page
+    ul
+      li
+        p
+          | css into css : with use of the
+          code @import
+          |  tag!
+      li
+        | css into html : by using the
+        code link
+        |  HTML element.
+        ul
+          li
+            p
+              | The link element has to have the
+              code rel
+              |  and
+              code href
+              |  attributes configured like so:
+            pre.sourceCode.html.
+
+  li
+    p
+      | Explain how CSS rules are applied based on their order and specificity, and be able to calculate the specificity of CSS rules and determine which rule override the properties of another.
+    ul
+      li
+        code IDs
+        |  are unique, thus are considered highly specific since they always target one element.
+      li
+        | Calculating the
+        code score specificity
+        |  of selectors, and the one with the highest score is the most specific.
+      li
+        code in-line styling &gt; id &gt; pseudo-class selectors &gt; class &gt; tag name
+  li
+    | Write &quot;combinators&quot; to create compound selector statements to target specific elements
+    ul
+      li
+        em Direct child selector
+        | : the carrot,
+        code &gt;
+        |  means a
+        strong direct
+        |  child.
+        br
+      li
+        em All descendants/children selector
+        | : denotes with a
+        code space
+        |  in between selectors
+      li
+        em Multiple items selection
+        | :
+        code comma
+        |  dileniated selectors (ex-&gt; body, div, html {})
+  li
+    | Explain and apply pseudo selectors for specific elements in specific states (i.e. :hover)
+    ul
+      li
+        p See example from Monday&apos;s code demo:
+        p html:
+        pre.sourceCode.html.
+
+        p css:
+        pre.sourceCode.css.
+
+      li
+        p
+          | The
+          strong not
+          |  pseudo-class selector: html:
+        pre.sourceCode.html.
+
+        pre.sourceCode.css.
+
+        p
+          | Only
+          code div
+          | s containing the text
+          code &quot;Hello&quot;
+          |  and
+          code &quot;Random&quot;
+          |  will have a
+          code background-color
+          |  of
+          code red
+          | .
+  li
+    | Explain and apply the
+    code ::before
+    |  and
+    code ::after
+    |  pseudo elements, &amp; Use the content CSS property to define the content of an element:
+    ul
+      li
+        p See exerpt from W9D1 demo:
+        p html:
+        pre.sourceCode.html.
+
+        p css:
+        pre.sourceCode.css.
+
+  li
+    | What are these ?!
+    ul
+      li
+        code font-size
+        |  : size of letters
+      li
+        code font-weight
+        |  : boldness of letters
+      li
+        code font-style
+        |  : italicization
+      li
+        code font-family
+        |  : actualy font
+        ul
+          li Some general font families: [ sans-serif, serif, cursive ]
+      li
+        code text-transform
+        |  : text casing
+      li
+        code text-decoration
+        |  : underlining
+      li
+        code text-align
+        |  : text justification (left, right, etc.)
+  li
+    | Colors expressed as names, hexadecimal RGB values, and decimal RGB values
+    ul
+      li
+        | The
+        code color
+        |  css property changes the color of the
+        em text
+        | .
+      li
+        | The
+        code background-color
+        |  css property does just what it says
+      li
+        code rgb()
+        |  - takes in 3 integer values denoting levels of
+        code red, green and blue
+      li
+        code rgba()
+        |  - Same as above but with additional argument (the &apos;a&apos;) called
+        strong alpha
+        |  which represents how
+        strong transparent
+        |  the color will be and is on a scale from 0 to 1 where 0 is transparent and 1 is opaque.
+  li
+    | Everything about borders, Shadows, &amp; Opacity
+    ul
+      li takes in three arguments: thickness, line style, line color
+      li Text and box shadows
+      li Opacity set to 0 can make an element completely transparent.
+    pre.sourceCode.css.
+
+  li
+    p
+      | Covering an element with a background image
+      code
+        | css         #picture-here {             background-image: url(https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png);              background-size: cover;             height: 100px;             width: 100px;         }
+  li
+    code
+      | Explain why using Web fonts helps with consistent experience across viewing devices: -
+    | Your explanation here.&grave;
+    ul
+      li
+        | Web fonts are good to use because every browser has different default font families, but there is a drawback. Google tracks when you use their fonts using google fonts
+      li Will be the same in any browser.
+  li
+    | Explain absolute and relative length units in CSS
+    ul
+      li
+        | Relative :
+        ul
+          li
+            code rem
+            |  - relative to root
+          li
+            code em
+            |  - relative to parent
+      li
+        | Absolute Measure :
+        ul
+          li
+            code pt
+          li
+            code px
+          li
+            code cm
+h2#wednesday
+  strong Wednesday
+ol(style='list-style-type: decimal')
+  li
+    code display
+    |  property:
+    ul
+      li
+        code inline
+      li
+        code inline-block
+      li
+        code block
+      li
+        code flex
+      li
+        code grid
+  li
+    | Identify the different types of media that a media query can target
+    ul
+      li
+        | all
+        br
+      li print
+      li screen
+      li speech
+  li Know the Box Model
+.figure
+  img(src='./box-sizing-comparison.png' alt='Box Model')
+  p.caption Box Model
+ol(style='list-style-type: decimal')
+  li
+    | Describe the following
+    ul
+      li padding
+      li margin
+      li
+        code position: fixed
+        |  -
+      li
+        code position: relative
+        |  - positioned relative to closest parent ancestor
+      li
+        code position: absolute
+        |  - removes from regular flow of the page.
+      li
+        code position: static
+        |  - the default positioning of all elements.
+      li The MC quiz from earlier in the week is good for positioning stuff.
+  li
+    p Identify elements rendered with specific padding and margin settings
+  li
+    p Apply padding and margins to HTML elements to achieve a desired layout
+  li
+    p
+      | Apply positioning settings to elements (fixed, relative, and absolute) to HTML elements to achieve a desired layout
+  li
+    | Identify which HTML elements have a default &quot;inline&quot; display value
+    ul
+      li
+        code fill in
+  li
+    | Identify which HTML elements have a default &quot;block&quot; display value
+    ul
+      li
+        code fill in
+  li
+    | Describe and use z-index positioning of elements
+    ul
+      li
+        code z-index
+        |  : refers to the &quot;third dimension&quot; i.e. stacking elements on top of each other. a higher z-index means bringing the element to the top.
+  li Explain how flexible box layout lays out elements
+ul
+  li displays items in flexible container so layout is responsive
+  li containers height/width adjust to fit viewport
+  li
+    code justify-content
+    ul
+      li alignment of items along main axis
+      li distributes extra space around/between items
+  li
+    code align-items
+    ul
+      li justify content for cross axis
+ol(style='list-style-type: decimal')
+  li
+    p
+      | For the following LOs please revisit your project work and project solutions (i.e. AA Times, Wednesday EOD demo, etc.) for how you&apos;ve done the following:
+    ul
+      li
+        | Use the flex property to specify
+        code grow
+        | ,
+        code shrink
+        | , and
+        code basis
+        |  values.
+      li
+        code grow
+        |  determines how much available space it will take up
+      li
+        code shrink
+        |  determines how much the element can shrink
+      li
+        code basis
+        |  is considered to be the default size of the element
+      li
+        | Use the
+        code flex-direction
+        |  property to direct the layout of the content.
+      li
+        | Use the
+        code flex-wrap
+        |  property to affect the wrap of content layout within an element using flexible box layout.
+      li
+        | Use
+        code align-self
+        | ,
+        code justify-content
+        | , and
+        code align-items
+        |  to change the way that children elements are laid out in a flexible box layout.
+      li
+        p
+          | Use the
+          code order
+          |  property to change the order in which elements will appear in a flexible box layout.
+      li
+        p
+          | Use the
+          code grid-template-columns
+          | ,
+          code grid-template-rows
+          | , and
+          code grid-template
+          |  properties to specify the layout of the grid using relative and absolute measures.
+      li
+        p
+          | Use
+          code grid-template-areas
+          |  to label areas of a grid and
+          code grid-area
+          |  to assign an element to the area.
+      li
+        p
+          | Use
+          code grid-column-gap
+          | ,
+          code grid-row-gap
+          | , and
+          code grid-gap
+          |  to set the &quot;gutter&quot; areas between elements in a grid layout.
+      li
+        p
+          | Use
+          code grid-column-start
+          | /
+          code grid-column-end
+          | and
+          code grid-row-start
+          | /
+          code grid-row-end
+          | to create spans across multiple columns and rows with positive integers, negative integers, and in conjunction with the &quot;span&quot; operator.
+      li
+        p
+          | Use
+          code justify-items
+          | ,
+          code align-items
+          | ,
+          code justify-content
+          |  and
+          code align-content
+          |  to layout items in each grid area.
+      li
+        p
+          | Use the
+          code order
+          |  property to change the default order in which items are laid out
+  li
+    | Explain how grid layout lays out elements
+    ul
+      li
+        | Sections off your document into smaller sections that can be organized and customised via the css grid layout properties.
+  li
+    | Explain and use the shorthand versions of
+    code grid-column
+    |  and
+    code grid-row
+    |  to define how an element will span a grid layout
+    ul
+      li
+        code grid-column: grid-column-start / grid-column-end
+      li
+        code grid-row: grid-row-start / grid-row-end
+      li can use grid-area with grid-template-areas to visualize grid layout
+      li grid-template-areas: each string represents one row
+      li use grid-areas name to define region element will take up
+      li
+        code grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end
+  li
+    | Explain and use the &quot;fr&quot; unit of measure
+    ul
+      li
+        code fr
+        |  : fraction unit of measure used for creating grid layout
+h2#thursday
+  strong Thursday
+ol(style='list-style-type: decimal')
+  li
+    | Describe what
+    code Block
+    | ,
+    code Element
+    | , and
+    code Modifier
+    |  means in BEM
+    ul
+      li
+        code block__element--modifier
+        code element
+        |  has
+        code n
+        |  for
+        code underscore
+        |  and
+        code modifier
+        |  has
+        code d
+        |  for
+        code dash
+      li
+        | Block: standalone entity that is meaningful on its own
+        ul
+          li header, container, menu, navbar, input
+          li name can contain latin letters, digits, dashes
+      li
+        | Element - part of a block, no meaning on its own
+        ul
+          li menu item, list-item, header title, input label
+          li name can contain latin letters, digits, dashes, underscore
+          li class formed by block name + two underscores + element name
+      li
+        | Modifier - flag on a block or element used to change appearance or behavior
+        ul
+          li disabled, color yellow, size big, fixed
+          li add modifier class to blocks/el they modify and keep original class
+          li css class formed as block or el name plus two dashes
+  li
+    | Identify CSS class names that follow the BEM principle.
+    ul
+      li
+        p Go to wednesday EOD code demo for more (W9D3)
+        pre.sourceCode.html.
+
+  li
+    | Describe and use the transition property show animated changes due to class and pseudo-class CSS rule application
+    ul
+      li
+        code transition-property
+      li name/names of css props to which transitions should apply
+      li transition effect starts when specified CSS prop changes
+      li
+        code transition-duration
+      li duration over which transition occurs
+      li
+        code transition-delay
+      li how long to wait between time prop is changed and transition begins
+      li
+        code transition
+      li shorthand: property, duration, delay
+  li
+    | Describe and use the overflow, overflow-x, and overflow-y properties to effect clipping and scrolling on elements
+    ul
+      li
+        code overflow: auto
+      li
+        code overflow: scroll
+      li
+        code overflow: hidden
+hr
+h2#tuesday---ajax Tuesday - AJAX
+ol(style='list-style-type: decimal')
+  li Explain what an AJAX request is
+  li
+    | Identifying the advantages of using an AJAX request.
+    ul
+      li We don&apos;t have to refresh the entire HTML page.
+      li It&apos;s a smaller amount of data that needs to be transferred.
+  li
+    | Identify what the acronym AJAX means and how it relates to modern Web programming
+    ul
+      li Asynchronous JavaScript and XML
+      li
+        | Asynchronous: We don&apos;t lock up the page when we are waiting on a response. We are still able to interact and the response&apos;s data will be handled whenever it returns.
+      li
+        | JavaScript: The engine behind AJAX. We use JavaScript to make the request to the server, then we also use it to process the response and make any updates to the DOM that are needed based on this new data.
+      li
+        | XML: The original format of the data that was sent back on the response. Nowadays we will almost always be using JSON as the format.
+  li
+    | Describe the different steps in an AJAX request/response cycle
+    ul
+      li
+        | An event listener is set up to wait for an specific action that will trigger a request to our server. Clicking on a button or submitting a form would be a popular example.
+      li
+        | When the event is triggered, we use JavaScript to formulate an appropriate request to a server. In our project we used
+        code fetch
+        |  in order to send a request to a specific route on our server, along with an options object to indicate the methods, headers, etc., that differ from the default values, a body with necessary data, etc..
+      li
+        | The request is sent asynchronously to the server. The user is still able to interact with our application since the request is not blocking the call stack.
+      li
+        | The server receives the request and does whatever it needs to do on its end to create/read/update/destroy data related to the request. After it performs the requested action, it creates a response and sends it back to the client. This is almost always going to be in a JSON format.
+      li
+        | The client receives the response and is able to parse the data and do any updates that it needs to do to the DOM. In our project, we used a
+        code .then
+        |  on our call to
+        code fetch
+        | , which allowed us to then convert the response&apos;s JSON into a usable POJO when the response came back. The data inside of this object is then accessible and used to manipulate the DOM.
+  li
+    | Fully use the fetch API to make dynamic Web pages without refreshing the page
+    ul
+      li
+        | Look over the AJAX project from Friday. Be comfortable with creating many different request types, such as
+        code GET
+        | ,
+        code PATCH
+        | ,
+        code POST
+        | , and
+        code DELETE
+        | .
+      li
+        | Be comfortable with using both the
+        code .then
+        |  promise chains that we used in the project as well as how we could convert them into an async/await format: &grave;&grave;&grave;javascript // Using Promise chains for .then and .catch document.querySelector(&apos;#downvote&apos;).addEventListener(&apos;click&apos;, () =&gt; { fetch(&apos;http://localhost:3000/kitten/downvote&apos;, { method: &apos;PATCH&apos; }) .then(handleResponse) // handleResponse defined below for reference .then(updateImageScore) // updateImageScore defined below for reference .catch(handleError); // handleError defined below for reference });
+p
+  | // Using async/await document.querySelector(&apos;#downvote&apos;).addEventListener(&apos;click&apos;, async () =&gt; { // Notice the async keyword on the callback definition! // We create a standard try/catch block try { // We await each asynchronous function call const resJSON = await fetch(&apos;http://localhost:3000/kitten/downvote&apos;, { method: &apos;PATCH&apos; }); const resObj = await handleResponse(resJSON); // updateImageScore is synchronous, so we do not have to await its response updateImageScore(resObj); } catch (e) { handleError(e) } });
+p
+  | // Functions used above, for reference const handleResponse = (response) =&gt; { stopLoader(); clearError();
+pre.
+
+p };
+p
+  | const handleError = (error) =&gt; { if (error.json) { error.json().then((errorJSON) =&gt; { document.querySelector(&apos;.error&apos;).innerHTML =
+  code Error occured: ${errorJSON.message}
+  | ; }); } else { console.error(error); alert(&apos;Something went wrong. Please try again!&apos;); } };
+p
+  | const updateImageScore = (data) =&gt; { const { score } = data; document.querySelector(&apos;.score&apos;).innerHTML = score; }; &grave;&grave;&grave;
