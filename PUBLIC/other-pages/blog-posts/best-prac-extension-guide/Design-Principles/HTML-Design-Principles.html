@@ -1,542 +1,428 @@
-<!DOCTYPE html><html><head>
-      <title>HTML Design Principles</title>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <link rel="stylesheet" href="file:///c:\Users\bryan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.13\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
-        <style>
-      /**
- * prism.js Github theme based on GitHub's theme.
- * @author Sam Clarke
- */
-code[class*="language-"],
-pre[class*="language-"] {
-  color: #333;
-  background: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.4;
-
-  -moz-tab-size: 8;
-  -o-tab-size: 8;
-  tab-size: 8;
-
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-  padding: .8em;
-  overflow: auto;
-  /* border: 1px solid #ddd; */
-  border-radius: 3px;
-  /* background: #fff; */
-  background: #f5f5f5;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
-  white-space: normal;
-  background: #f5f5f5;
-}
-
-.token.comment,
-.token.blockquote {
-  color: #969896;
-}
-
-.token.cdata {
-  color: #183691;
-}
-
-.token.doctype,
-.token.punctuation,
-.token.variable,
-.token.macro.property {
-  color: #333;
-}
-
-.token.operator,
-.token.important,
-.token.keyword,
-.token.rule,
-.token.builtin {
-  color: #a71d5d;
-}
-
-.token.string,
-.token.url,
-.token.regex,
-.token.attr-value {
-  color: #183691;
-}
-
-.token.property,
-.token.number,
-.token.boolean,
-.token.entity,
-.token.atrule,
-.token.constant,
-.token.symbol,
-.token.command,
-.token.code {
-  color: #0086b3;
-}
-
-.token.tag,
-.token.selector,
-.token.prolog {
-  color: #63a35c;
-}
-
-.token.function,
-.token.namespace,
-.token.pseudo-element,
-.token.class,
-.token.class-name,
-.token.pseudo-class,
-.token.id,
-.token.url-reference .token.variable,
-.token.attr-name {
-  color: #795da3;
-}
-
-.token.entity {
-  cursor: help;
-}
-
-.token.title,
-.token.title .token.punctuation {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.token.list {
-  color: #ed6a43;
-}
-
-.token.inserted {
-  background-color: #eaffea;
-  color: #55a532;
-}
-
-.token.deleted {
-  background-color: #ffecec;
-  color: #bd2c00;
-}
-
-.token.bold {
-  font-weight: bold;
-}
-
-.token.italic {
-  font-style: italic;
-}
-
-
-/* JSON */
-.language-json .token.property {
-  color: #183691;
-}
-
-.language-markup .token.tag .token.punctuation {
-  color: #333;
-}
-
-/* CSS */
-code.language-css,
-.language-css .token.function {
-  color: #0086b3;
-}
-
-/* YAML */
-.language-yaml .token.atrule {
-  color: #63a35c;
-}
-
-code.language-yaml {
-  color: #183691;
-}
-
-/* Ruby */
-.language-ruby .token.function {
-  color: #333;
-}
-
-/* Markdown */
-.language-markdown .token.url {
-  color: #795da3;
-}
-
-/* Makefile */
-.language-makefile .token.symbol {
-  color: #795da3;
-}
-
-.language-makefile .token.variable {
-  color: #183691;
-}
-
-.language-makefile .token.builtin {
-  color: #0086b3;
-}
-
-/* Bash */
-.language-bash .token.keyword {
-  color: #0086b3;
-}
-
-/* highlight */
-pre[data-line] {
-  position: relative;
-  padding: 1em 0 1em 3em;
-}
-pre[data-line] .line-highlight-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  display: block;
-  width: 100%;
-}
-
-pre[data-line] .line-highlight {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: inherit 0;
-  margin-top: 1em;
-  background: hsla(24, 20%, 50%,.08);
-  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
-  pointer-events: none;
-  line-height: inherit;
-  white-space: pre;
-}
-
-pre[data-line] .line-highlight:before,
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-start);
-  position: absolute;
-  top: .4em;
-  left: .6em;
-  min-width: 1em;
-  padding: 0 .5em;
-  background-color: hsla(24, 20%, 50%,.4);
-  color: hsl(24, 20%, 95%);
-  font: bold 65%/1.5 sans-serif;
-  text-align: center;
-  vertical-align: .3em;
-  border-radius: 999px;
-  text-shadow: none;
-  box-shadow: 0 1px white;
-}
-
-pre[data-line] .line-highlight[data-end]:after {
-  content: attr(data-end);
-  top: auto;
-  bottom: .4em;
-}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
-/* Please visit the URL below for more information: */
-/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
-
-      </style>
-    </head>
-    <body for="html-export">
-      <div class="mume markdown-preview  ">
-      <h1 class="mume-header" id="table-of-contents">Table OF Contents</h1>
-
-<ul>
-<li><a href="#table-of-contents">Table OF Contents</a>
-<ul>
-<li><a href="#1-compatibility">1. Compatibility</a>
-<ul>
-<li><a href="#support-existing-content">Support Existing Content</a>
-<ul>
-<li><a href="#examples">Examples</a></li>
-</ul>
-</li>
-<li><a href="#degrade-gracefully">Degrade Gracefully</a></li>
-</ul>
-</li>
-<li><a href="#this-rundown-isnt-comprehensive-at-times-somewhat-more-convoluted-methodologies-are-more-viable">This rundown isn&apos;t comprehensive; at times somewhat more convoluted methodologies are more viable.</a>
-<ul>
-<li><a href="#examples-1">Examples</a></li>
-<li><a href="#do-not-reinvent-the-wheel">Do not Reinvent the Wheel</a></li>
-<li><a href="#pave-the-cowpaths">Pave the Cowpaths</a></li>
-<li><a href="#evolution-not-revolution">Evolution Not Revolution</a></li>
-</ul>
-</li>
-<li><a href="#2-utility">2. Utility</a>
-<ul>
-<li><a href="#solve-real-problems">Solve Real Problems</a></li>
-<li><a href="#priority-of-constituencies">Priority of Constituencies</a></li>
-<li><a href="#secure-by-design">Secure By Design</a></li>
-<li><a href="#separation-of-concerns">Separation of Concerns</a></li>
-<li><a href="#dom-consistency">DOM Consistency</a></li>
-</ul>
-</li>
-<li><a href="#3-interoperability">3. Interoperability</a>
-<ul>
-<li><a href="#well-defined-behavior">Well-defined Behavior</a></li>
-<li><a href="#avoid-needless-complexity">Avoid Needless Complexity</a></li>
-<li><a href="#handle-errors">Handle Errors</a></li>
-</ul>
-</li>
-<li><a href="#4-universal-access">4. Universal Access</a>
-<ul>
-<li><a href="#media-independence">Media Independence</a></li>
-<li><a href="#support-world-languages">Support World Languages</a></li>
-<li><a href="#accessibility">Accessibility</a></li>
-<li><a href="#source">Source</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 class="mume-header" id="1-compatibility">1. Compatibility</h2>
-
-<p>There are many ways of interpreting compatibility. Sometimes the terms &quot;backwards compatibility&quot; and &quot;forwards compatibility&quot; are used, but sometimes the meaning of those terms can be unclear. The principles in this section address different facets of compatibility.</p>
-<hr>
-<h3 class="mume-header" id="support-existing-content">Support Existing Content</h3>
-
-<p>This principle applies primarily to the supported language.</p>
-<p>Existing content often relies upon expected user agent processing and behavior to function as intended. Processing requirements should be specified to ensure that user agents implementing this specification will be able to handle most existing content. In particular, it should be possible to process existing HTML documents as HTML&#xA0;5 and get results that are compatible with the existing expectations of users and authors, based on the behavior of existing browsers. It should be made possible, though not necessarily required, to do this without mode switching.</p>
-<p>Content relying on existing browser behavior can take many forms. It may rely on elements, attributes or APIs that are part of earlier HTML specifications, but not part of HTML&#xA0;5, or on features that are entirely proprietary. It may depend on specific error handling rules. In rare cases, it may depend on a feature from earlier HTML specifications <em>not</em> being implemented as specified.</p>
-<p>When considering changes to legacy features or behavior, relative to current implementations and author expectations, the following questions should be considered:</p>
-<ul>
-<li>Does a significant quantity of existing content depend on the feature or behavior?</li>
-<li>Does any of the dependent content occur on particularly popular websites?</li>
-<li>Is the dependent content genuinely intended for consumption, rather than occurring solely in test cases or examples?</li>
-<li>Is the dependent content on the public web, rather than found solely on internal sites with a controlled user environment?</li>
-<li>Does the dependent content currently work as intended in multiple popular user agents, rather than explicitly targeting only one particular user agent, or only very old or otherwise unpopular ones?</li>
-</ul>
-<p>The benefit of the proposed change should be weighed against the likely cost of breaking content, as measured by these criteria. In some cases, it may be desirable to make a nonstandard feature or behavior part of the conforming language, if it satisfies a valid use case. However, the fact that something is part of the supported language does not by itself mean that relying on it is condoned or encouraged.</p>
-<hr>
-<ul>
-<li><em><strong>Examples</strong></em></li>
-</ul>
-<p>Many sites use broken markup, such as badly nested elements (<strong><code>\&lt;b&gt;a\&lt;i&gt;b\&lt;/b&gt;c\&lt;/i&gt;</code></strong>), and both authors and users have expectations based on the error handling used by legacy user agents. We need to define processing requirements that remain compatible with the expected handling of such content.</p>
-<p>Some sites rely on the <strong><code>\&lt;u&gt;</code></strong> element giving the presentational effect of an underline.</p>
-<hr>
-<h3 class="mume-header" id="degrade-gracefully">Degrade Gracefully</h3>
-
-<hr>
-<p>This guideline applies fundamentally to the adjusting language.</p>
-<p>On the World Wide Web, creators are regularly hesitant to utilize new dialect includes that mess up more seasoned client specialists, or that don&apos;t give a type of elegant fallback. HTML&#xA0;5 report conformance prerequisites should be planned so that Web substance can debase nimbly in more established or less fit client specialists, in any event, when utilizing new components, traits, APIs and substance models.</p>
-<p>It isn&apos;t really suitable to consider each Web client specialist ever constructed, including even old variants of programs or apparatuses that are amazingly disagreeable even in their specialty markets. Nonetheless, solid thought should be given to the accompanying classes of client specialists. All things considered, content creators will think that its imperative to focus on these classifications:</p>
-<ul>
-<li>
-<p>Current forms of the top standard Web programs.</p>
-</li>
-<li>
-<p>Highly well known more established renditions of standard Web programs.</p>
-</li>
-<li>
-<p>The top client specialists intended to address explicit issues or address specific business sectors, for example, assistive innovations, versatile programs or client specialists focusing on less commonplace media, for example, text-just terminals or print.</p>
-</li>
-</ul>
-<p>Sometimes, another component may just not matter to a specific class of client specialists, or might be unfeasible to plan in a manner that can corrupt. For instance, new scripting APIs can&apos;t be made to work in scriptless client specialists. Be that as it may, as a rule, approaches like the accompanying can be utilized:</p>
-<ul>
-<li>
-<p>another component or quality may give extra semantics without losing basic usefulness when not comprehended.</p>
-</li>
-<li>
-<p>another scripting technique or trait can be tried before use in content utilizing ECMAScript reflection offices.</p>
-</li>
-<li>
-<p>another component or characteristic may give semantics and a straightforward default delivering that can be accomplished utilizing CSS, so expansion of a little template permits smooth corruption.</p>
-</li>
-<li>
-<p>another component, characteristic or scripting API may have conduct that can be imitated using extra content, despite the fact that the scripted methodology may not give a similar degree of execution and comfort.</p>
-</li>
-<li>
-<p>another component may require a profoundly particular delivering, however permit diverse substance to be given as fallback to client specialists that don&apos;t comprehend the component.</p>
-</li>
-<li>
-<p><em><strong>Examples</strong></em></p>
-</li>
-</ul>
-<p>The default introduction of the proposed &apos;insignificant&apos; trait can be copied through the CSS rule &apos;[irrelevant] { show: none; }&apos;.</p>
-<p>Proposed new sight and sound components like &apos;&lt;canvas&gt; fallback &lt;/canvas&gt;&apos; or &apos;&lt;video&gt; fallback &lt;/video&gt;&apos; permit fallback content. More established client specialists will show &quot;fallback&quot; while client specialists supporting &apos;canvas&apos; or &apos;video&apos; will show the interactive media content.</p>
-<p>The proposed &apos;getElementsByClassName()&apos; strategy can be made extensively quicker than unadulterated ECMAScript usage found in existing libraries, however a content based execution can be utilized when the local form isn&apos;t accessible.</p>
-<p>The &apos;&lt;datalist&gt;&apos; component can be related with an &apos;&lt;input&gt;&apos; component and may contain a covered up &apos;&lt;select&gt;&apos; component. This way the fallback for the proposed &quot;combo box&quot; control can be a content field or a book field with a related spring up menu in existing standard programs</p>
-<p>Now and again, another component may essentially not make a difference to a specific class of client specialists, or might be unfeasible to plan in a manner that can debase. For instance, new scripting APIs can&apos;t be made to work in scriptless client specialists. Be that as it may, as a rule, approaches like the accompanying can be utilized:</p>
-<ul>
-<li>
-<p>another component or quality may give extra semantics without losing fundamental usefulness when not comprehended.</p>
-</li>
-<li>
-<p>another scripting strategy or property can be tried before use in content utilizing ECMAScript reflection offices.</p>
-</li>
-<li>
-<p>another component or property may give semantics and a basic default delivering that can be accomplished utilizing CSS, so expansion of a little template permits effortless corruption.</p>
-</li>
-<li>
-<p>another component, quality or scripting Programming interface may have conduct that can be imitated using extra content, in spite of the fact that the scripted methodology may not give a similar degree of execution and accommodation.</p>
-</li>
-<li>
-<p>another component may require a profoundly specific delivering, however permit distinctive substance to be given as fallback to client specialists that don&apos;t comprehend the component.</p>
-</li>
-</ul>
-<p>This rundown isn&apos;t thorough; now and again marginally more muddled methodologies are more viable.</p>
-<hr>
-<h3 class="mume-header" id="do-not-reinvent-the-wheel">Do not Reinvent the Wheel</h3>
-
-<p>If there is already a widely used and implemented technology covering particular use cases, consider specifying that technology in preference to inventing something new for the same purpose. Sometimes, though, new use cases may call for a new approach instead of more extensions on an old approach.</p>
-<p><strong><code>contenteditable=&quot;&quot;</code></strong> was already used and implemented by user agents. No need to invent a new feature.</p>
-<hr>
-<h3 class="mume-header" id="pave-the-cowpaths">Pave the Cowpaths</h3>
-
-<p>When a practice is already widespread among authors, consider adopting it rather than forbidding it or inventing something new.</p>
-<p>Authors already use the <strong><code>\&lt;br/&gt;</code></strong> syntax as opposed to <strong><code>\&lt;br&gt;</code></strong> in HTML and there is no harm done by allowing that to be used.</p>
-<hr>
-<h3 class="mume-header" id="evolution-not-revolution">Evolution Not Revolution</h3>
-
-<p>Revolutions sometimes change the world to the better. Most often, however, it is better to evolve an existing design rather than throwing it away. This way, authors don&apos;t have to learn new models and content will live longer. Specifically, this means that one should prefer to design features so that old content can take advantage of new features without having to make unrelated changes. And implementations should be able to add new features to existing code, rather than having to develop whole separate modes.</p>
-<p>Switching to XML syntax requires a global change, so continue supporting classic HTML syntax as well.</p>
-<h2 class="mume-header" id="2-utility">2. Utility</h2>
-
-<p>These principles call for a design that makes sure HTML can be used effectively for its many intended purposes.</p>
-<hr>
-<h3 class="mume-header" id="solve-real-problems">Solve Real Problems</h3>
-
-<p>Changes to the spec should solve actual real-world problems. Abstract architectures that don&apos;t address an existing need are less favored than pragmatic solutions to problems that web content faces today. And existing widespread problems should be solved, when possible.</p>
-<hr>
-<h3 class="mume-header" id="priority-of-constituencies">Priority of Constituencies</h3>
-
-<p>In case of conflict, consider users over authors over implementors over specifiers over theoretical purity. In other words costs or difficulties to the user should be given more weight than costs to authors; which in turn should be given more weight than costs to implementors; which should be given more weight than costs to authors of the spec itself, which should be given more weight than those proposing changes for theoretical reasons alone. Of course, it is preferred to make things better for multiple constituencies at once.</p>
-<hr>
-<h3 class="mume-header" id="secure-by-design">Secure By Design</h3>
-
-<p>Ensure that features work with the security model of the web. Preferrably address security considerations directly in the specification.</p>
-<p>Communicating between documents from different sites is useful, but an unrestricted version could put user data at risk. Cross-document messaging is designed to allow this without violating security constraints.</p>
-<hr>
-<h3 class="mume-header" id="separation-of-concerns">Separation of Concerns</h3>
-
-<p>HTML should allow separation of content and presentation. For this reason, markup that expresses structure is usually preferred to purely presentational markup. However, structural markup is a means to an end such as media independence. Profound and detailed semantic encoding is not necessary if the end can be reached otherwise. Defining reasonable default presentation for different media may be sufficient. HTML strikes a balance between semantic expressiveness and practical usefulness. Names of elements and attributes in the markup may be pragmatic (for brevity, history, simplicity) rather than completely accurate.</p>
-<p>The <strong><code>article</code></strong> element defines an individual article, but not the details of how it is displayed. A journal article may be the only article on a page, formatted in multiple columns, while a blog post may share a page with multiple other articles and be presented in a box with a border.</p>
-<p>The <strong><code>b</code></strong> and <strong><code>i</code></strong> elements are widely used &#x2014; it is better to give them good default rendering for various media including aural than to try to ban them.</p>
-<hr>
-<h3 class="mume-header" id="dom-consistency">DOM Consistency</h3>
-
-<p>The two serializations should be designed in such a way that the DOM trees produced by the respective parsers appear as consistently as feasible to scripts and other program code operating on the document trees. Discrepancies can be allowed for compatibility with legacy implementations, but the differences should be minimized.</p>
-<p>Also, unless required for compatibility with legacy implementations and deployed content, gratuitous difference in syntactic appearance should be avoided as well.</p>
-<p>The HTML (<strong><code>text/html</code></strong>) parser puts elements in the <strong><code>http://www.w3.org/1999/xhtml</code></strong> namespace in the DOM for compatibility with the XML syntax of HTML&#xA0;5.</p>
-<h2 class="mume-header" id="3-interoperability">3. Interoperability</h2>
-
-<p>These principles exist to improve the chances of HTML implementations being truly interoperable.</p>
-<hr>
-<h3 class="mume-header" id="well-defined-behavior">Well-defined Behavior</h3>
-
-<p>Prefer to clearly define behavior that content authors could rely on, in preference to vague or implementation-defined behavior. This way, it is easier to author content that works in a variety of user agents. However, implementations should still be free to make improvements in areas such as user interface and quality of rendering.</p>
-<hr>
-<h3 class="mume-header" id="avoid-needless-complexity">Avoid Needless Complexity</h3>
-
-<p>Simple solutions are preferred to complex ones, when possible. Simpler features are easier for user agents to implement, more likely to be interoperable, and easier for authors to understand. But this should not be used as an excuse to avoid satisfying the other principles.</p>
-<hr>
-<h3 class="mume-header" id="handle-errors">Handle Errors</h3>
-
-<p>Error handling should be defined so that interoperable implementations can be achieved. Prefer graceful error recovery to hard failure, so that users are not exposed to authoring errors.</p>
-<h2 class="mume-header" id="4-universal-access">4. Universal Access</h2>
-
-<p>Features should be designed for universal access. This category covers various principles related to that.</p>
-<hr>
-<h3 class="mume-header" id="media-independence">Media Independence</h3>
-
-<p>Features should, when possible, work across different platforms, devices, and media. This should not be taken to mean that a feature should be omitted just because some media or platforms can&apos;t support it. For example, interactive features should not be omitted merely because they can not be represented in a printed document.</p>
-<p>The general reflowability of HTML text makes it more suitable to variable screen dimensions than a representation of exact glyph positions.</p>
-<p>A hyperlink can not be actuated in a printed document, but that is no reason to omit the <strong><code>a</code></strong> element.</p>
-<hr>
-<h3 class="mume-header" id="support-world-languages">Support World Languages</h3>
-
-<p>Enable publication in all world languages. But this should not be taken as equalizing writing systems by prohibiting features that do not apply to all of them. Features for packing multiple translations of a document in a single file are out of scope.</p>
-<p>Supporting Unicode allows text in most of the world&apos;s languages, including mixing of text in different languages.</p>
-<p>Italic text is useful because it applies to many bicameral scripts, even though some scripts have no such concept. Similarly, ruby is useful for many scripts, even though it has a CJK focus.</p>
-<p>Text in element content has better language support than text in attribute content; in element content ruby annotations can be inserted, as well as <strong><code>dir</code></strong> attributes and <strong><code>bdo</code></strong> elements in case the Unicode bidirectional algorithm is insufficient to correctly order adjacent runs of mixed direction text.</p>
-<hr>
-<h3 class="mume-header" id="accessibility">Accessibility</h3>
-
-<p>Design features to be accessible to users with disabilities. Access by everyone regardless of ability is essential. This does not mean that features should be omitted entirely if not all users can make full use of them, but alternate mechanisms should be provided.</p>
-<p>The image in an <strong><code>img</code></strong> may not be visible to blind users, but that is a reason to provide alternate text, not to leave out images.</p>
-<p>The <strong><code>progress</code></strong> element is intrinsically accessible as it has unambiguous progress bar semantics which permits mapping to accessibility APIs that can represent progress indicators.</p>
-<hr>
-<h3 class="mume-header" id="sourcehttpswwww3orgtr2007wd-html-design-principles-20071126compatibility"><a href="https://www.w3.org/TR/2007/WD-html-design-principles-20071126/#compatibility">Source</a></h3>
-
-<blockquote>
-<p><a href="http://www.w3.org/TR/2007/WD-html-design-principles-20071126/">http://www.w3.org/TR/2007/WD-html-design-principles-20071126/</a></p>
-</blockquote>
-
-      </div>
-      <div class="md-sidebar-toc"><ul>
-<li><a href="#table-of-contents">Table OF Contents</a>
-<ul>
-<li><a href="#1-compatibility">1. Compatibility</a>
-<ul>
-<li><a href="#support-existing-content">Support Existing Content</a></li>
-<li><a href="#degrade-gracefully">Degrade Gracefully</a></li>
-<li><a href="#do-not-reinvent-the-wheel">Do not Reinvent the Wheel</a></li>
-<li><a href="#pave-the-cowpaths">Pave the Cowpaths</a></li>
-<li><a href="#evolution-not-revolution">Evolution Not Revolution</a></li>
-</ul>
-</li>
-<li><a href="#2-utility">2. Utility</a>
-<ul>
-<li><a href="#solve-real-problems">Solve Real Problems</a></li>
-<li><a href="#priority-of-constituencies">Priority of Constituencies</a></li>
-<li><a href="#secure-by-design">Secure By Design</a></li>
-<li><a href="#separation-of-concerns">Separation of Concerns</a></li>
-<li><a href="#dom-consistency">DOM Consistency</a></li>
-</ul>
-</li>
-<li><a href="#3-interoperability">3. Interoperability</a>
-<ul>
-<li><a href="#well-defined-behavior">Well-defined Behavior</a></li>
-<li><a href="#avoid-needless-complexity">Avoid Needless Complexity</a></li>
-<li><a href="#handle-errors">Handle Errors</a></li>
-</ul>
-</li>
-<li><a href="#4-universal-access">4. Universal Access</a>
-<ul>
-<li><a href="#media-independence">Media Independence</a></li>
-<li><a href="#support-world-languages">Support World Languages</a></li>
-<li><a href="#accessibility">Accessibility</a></li>
-<li><a href="#sourcehttpswwww3orgtr2007wd-html-design-principles-20071126compatibility">Source</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-      <a id="sidebar-toc-btn">&#x2261;</a>
-
-
-
-
-
-
-
-
-<script>
-
-var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
-sidebarTOCBtn.addEventListener('click', function(event) {
-  event.stopPropagation()
-  if (document.body.hasAttribute('html-show-sidebar-toc')) {
-    document.body.removeAttribute('html-show-sidebar-toc')
-  } else {
-    document.body.setAttribute('html-show-sidebar-toc', true)
-  }
-})
-</script>
-
-
-    </body></html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Design Principles</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
+  <script src="./../prism.js"></script>
+  <link rel="stylesheet" href="./../prism.css">
+  <link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./practice.css">"
+  <style>
+    body {
+      background-image: url("./../../../../upload/double-bubble-outline/double-bubble-outline.png")
+    }
+  </style>
+  <link rel="stylesheet"
+    href="file:///c:\Users\bryan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.13\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
+
+</head>
+
+<body for="html-export">
+  <div class="mume markdown-preview  ">
+    <h1 class="mume-header" id="table-of-contents">Table OF Contents</h1>
+
+    <ul>
+      <li><a href="#table-of-contents">Table OF Contents</a>
+        <ul>
+          <li><a href="#1-compatibility">1. Compatibility</a>
+            <ul>
+              <li><a href="#support-existing-content">Support Existing Content</a>
+                <ul>
+                  <li><a href="#examples">Examples</a></li>
+                </ul>
+              </li>
+              <li><a href="#degrade-gracefully">Degrade Gracefully</a></li>
+            </ul>
+          </li>
+          <li><a
+              href="#this-rundown-isnt-comprehensive-at-times-somewhat-more-convoluted-methodologies-are-more-viable">This
+              rundown isn&apos;t comprehensive; at times somewhat more convoluted methodologies are more viable.</a>
+            <ul>
+              <li><a href="#examples-1">Examples</a></li>
+              <li><a href="#do-not-reinvent-the-wheel">Do not Reinvent the Wheel</a></li>
+              <li><a href="#pave-the-cowpaths">Pave the Cowpaths</a></li>
+              <li><a href="#evolution-not-revolution">Evolution Not Revolution</a></li>
+            </ul>
+          </li>
+          <li><a href="#2-utility">2. Utility</a>
+            <ul>
+              <li><a href="#solve-real-problems">Solve Real Problems</a></li>
+              <li><a href="#priority-of-constituencies">Priority of Constituencies</a></li>
+              <li><a href="#secure-by-design">Secure By Design</a></li>
+              <li><a href="#separation-of-concerns">Separation of Concerns</a></li>
+              <li><a href="#dom-consistency">DOM Consistency</a></li>
+            </ul>
+          </li>
+          <li><a href="#3-interoperability">3. Interoperability</a>
+            <ul>
+              <li><a href="#well-defined-behavior">Well-defined Behavior</a></li>
+              <li><a href="#avoid-needless-complexity">Avoid Needless Complexity</a></li>
+              <li><a href="#handle-errors">Handle Errors</a></li>
+            </ul>
+          </li>
+          <li><a href="#4-universal-access">4. Universal Access</a>
+            <ul>
+              <li><a href="#media-independence">Media Independence</a></li>
+              <li><a href="#support-world-languages">Support World Languages</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+              <li><a href="#source">Source</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="mume-header" id="1-compatibility">1. Compatibility</h2>
+
+    <p>There are many ways of interpreting compatibility. Sometimes the terms &quot;backwards compatibility&quot; and
+      &quot;forwards compatibility&quot; are used, but sometimes the meaning of those terms can be unclear. The
+      principles in this section address different facets of compatibility.</p>
+    <hr>
+    <h3 class="mume-header" id="support-existing-content">Support Existing Content</h3>
+
+    <p>This principle applies primarily to the supported language.</p>
+    <p>Existing content often relies upon expected user agent processing and behavior to function as intended.
+      Processing requirements should be specified to ensure that user agents implementing this specification will be
+      able to handle most existing content. In particular, it should be possible to process existing HTML documents as
+      HTML&#xA0;5 and get results that are compatible with the existing expectations of users and authors, based on the
+      behavior of existing browsers. It should be made possible, though not necessarily required, to do this without
+      mode switching.</p>
+    <p>Content relying on existing browser behavior can take many forms. It may rely on elements, attributes or APIs
+      that are part of earlier HTML specifications, but not part of HTML&#xA0;5, or on features that are entirely
+      proprietary. It may depend on specific error handling rules. In rare cases, it may depend on a feature from
+      earlier HTML specifications <em>not</em> being implemented as specified.</p>
+    <p>When considering changes to legacy features or behavior, relative to current implementations and author
+      expectations, the following questions should be considered:</p>
+    <ul>
+      <li>Does a significant quantity of existing content depend on the feature or behavior?</li>
+      <li>Does any of the dependent content occur on particularly popular websites?</li>
+      <li>Is the dependent content genuinely intended for consumption, rather than occurring solely in test cases or
+        examples?</li>
+      <li>Is the dependent content on the public web, rather than found solely on internal sites with a controlled user
+        environment?</li>
+      <li>Does the dependent content currently work as intended in multiple popular user agents, rather than explicitly
+        targeting only one particular user agent, or only very old or otherwise unpopular ones?</li>
+    </ul>
+    <p>The benefit of the proposed change should be weighed against the likely cost of breaking content, as measured by
+      these criteria. In some cases, it may be desirable to make a nonstandard feature or behavior part of the
+      conforming language, if it satisfies a valid use case. However, the fact that something is part of the supported
+      language does not by itself mean that relying on it is condoned or encouraged.</p>
+    <hr>
+    <ul>
+      <li><em><strong>Examples</strong></em></li>
+    </ul>
+    <p>Many sites use broken markup, such as badly nested elements
+      (<strong><code>\&lt;b&gt;a\&lt;i&gt;b\&lt;/b&gt;c\&lt;/i&gt;</code></strong>), and both authors and users have
+      expectations based on the error handling used by legacy user agents. We need to define processing requirements
+      that remain compatible with the expected handling of such content.</p>
+    <p>Some sites rely on the <strong><code>\&lt;u&gt;</code></strong> element giving the presentational effect of an
+      underline.</p>
+    <hr>
+    <h3 class="mume-header" id="degrade-gracefully">Degrade Gracefully</h3>
+
+    <hr>
+    <p>This guideline applies fundamentally to the adjusting language.</p>
+    <p>On the World Wide Web, creators are regularly hesitant to utilize new dialect includes that mess up more seasoned
+      client specialists, or that don&apos;t give a type of elegant fallback. HTML&#xA0;5 report conformance
+      prerequisites should be planned so that Web substance can debase nimbly in more established or less fit client
+      specialists, in any event, when utilizing new components, traits, APIs and substance models.</p>
+    <p>It isn&apos;t really suitable to consider each Web client specialist ever constructed, including even old
+      variants of programs or apparatuses that are amazingly disagreeable even in their specialty markets. Nonetheless,
+      solid thought should be given to the accompanying classes of client specialists. All things considered, content
+      creators will think that its imperative to focus on these classifications:</p>
+    <ul>
+      <li>
+        <p>Current forms of the top standard Web programs.</p>
+      </li>
+      <li>
+        <p>Highly well known more established renditions of standard Web programs.</p>
+      </li>
+      <li>
+        <p>The top client specialists intended to address explicit issues or address specific business sectors, for
+          example, assistive innovations, versatile programs or client specialists focusing on less commonplace media,
+          for example, text-just terminals or print.</p>
+      </li>
+    </ul>
+    <p>Sometimes, another component may just not matter to a specific class of client specialists, or might be
+      unfeasible to plan in a manner that can corrupt. For instance, new scripting APIs can&apos;t be made to work in
+      scriptless client specialists. Be that as it may, as a rule, approaches like the accompanying can be utilized:</p>
+    <ul>
+      <li>
+        <p>another component or quality may give extra semantics without losing basic usefulness when not comprehended.
+        </p>
+      </li>
+      <li>
+        <p>another scripting technique or trait can be tried before use in content utilizing ECMAScript reflection
+          offices.</p>
+      </li>
+      <li>
+        <p>another component or characteristic may give semantics and a straightforward default delivering that can be
+          accomplished utilizing CSS, so expansion of a little template permits smooth corruption.</p>
+      </li>
+      <li>
+        <p>another component, characteristic or scripting API may have conduct that can be imitated using extra content,
+          despite the fact that the scripted methodology may not give a similar degree of execution and comfort.</p>
+      </li>
+      <li>
+        <p>another component may require a profoundly particular delivering, however permit diverse substance to be
+          given as fallback to client specialists that don&apos;t comprehend the component.</p>
+      </li>
+      <li>
+        <p><em><strong>Examples</strong></em></p>
+      </li>
+    </ul>
+    <p>The default introduction of the proposed &apos;insignificant&apos; trait can be copied through the CSS rule
+      &apos;[irrelevant] { show: none; }&apos;.</p>
+    <p>Proposed new sight and sound components like &apos;&lt;canvas&gt; fallback &lt;/canvas&gt;&apos; or
+      &apos;&lt;video&gt; fallback &lt;/video&gt;&apos; permit fallback content. More established client specialists
+      will show &quot;fallback&quot; while client specialists supporting &apos;canvas&apos; or &apos;video&apos; will
+      show the interactive media content.</p>
+    <p>The proposed &apos;getElementsByClassName()&apos; strategy can be made extensively quicker than unadulterated
+      ECMAScript usage found in existing libraries, however a content based execution can be utilized when the local
+      form isn&apos;t accessible.</p>
+    <p>The &apos;&lt;datalist&gt;&apos; component can be related with an &apos;&lt;input&gt;&apos; component and may
+      contain a covered up &apos;&lt;select&gt;&apos; component. This way the fallback for the proposed &quot;combo
+      box&quot; control can be a content field or a book field with a related spring up menu in existing standard
+      programs</p>
+    <p>Now and again, another component may essentially not make a difference to a specific class of client specialists,
+      or might be unfeasible to plan in a manner that can debase. For instance, new scripting APIs can&apos;t be made to
+      work in scriptless client specialists. Be that as it may, as a rule, approaches like the accompanying can be
+      utilized:</p>
+    <ul>
+      <li>
+        <p>another component or quality may give extra semantics without losing fundamental usefulness when not
+          comprehended.</p>
+      </li>
+      <li>
+        <p>another scripting strategy or property can be tried before use in content utilizing ECMAScript reflection
+          offices.</p>
+      </li>
+      <li>
+        <p>another component or property may give semantics and a basic default delivering that can be accomplished
+          utilizing CSS, so expansion of a little template permits effortless corruption.</p>
+      </li>
+      <li>
+        <p>another component, quality or scripting Programming interface may have conduct that can be imitated using
+          extra content, in spite of the fact that the scripted methodology may not give a similar degree of execution
+          and accommodation.</p>
+      </li>
+      <li>
+        <p>another component may require a profoundly specific delivering, however permit distinctive substance to be
+          given as fallback to client specialists that don&apos;t comprehend the component.</p>
+      </li>
+    </ul>
+    <p>This rundown isn&apos;t thorough; now and again marginally more muddled methodologies are more viable.</p>
+    <hr>
+    <h3 class="mume-header" id="do-not-reinvent-the-wheel">Do not Reinvent the Wheel</h3>
+
+    <p>If there is already a widely used and implemented technology covering particular use cases, consider specifying
+      that technology in preference to inventing something new for the same purpose. Sometimes, though, new use cases
+      may call for a new approach instead of more extensions on an old approach.</p>
+    <p><strong><code>contenteditable=&quot;&quot;</code></strong> was already used and implemented by user agents. No
+      need to invent a new feature.</p>
+    <hr>
+    <h3 class="mume-header" id="pave-the-cowpaths">Pave the Cowpaths</h3>
+
+    <p>When a practice is already widespread among authors, consider adopting it rather than forbidding it or inventing
+      something new.</p>
+    <p>Authors already use the <strong><code>\&lt;br/&gt;</code></strong> syntax as opposed to
+      <strong><code>\&lt;br&gt;</code></strong> in HTML and there is no harm done by allowing that to be used.</p>
+    <hr>
+    <h3 class="mume-header" id="evolution-not-revolution">Evolution Not Revolution</h3>
+
+    <p>Revolutions sometimes change the world to the better. Most often, however, it is better to evolve an existing
+      design rather than throwing it away. This way, authors don&apos;t have to learn new models and content will live
+      longer. Specifically, this means that one should prefer to design features so that old content can take advantage
+      of new features without having to make unrelated changes. And implementations should be able to add new features
+      to existing code, rather than having to develop whole separate modes.</p>
+    <p>Switching to XML syntax requires a global change, so continue supporting classic HTML syntax as well.</p>
+    <h2 class="mume-header" id="2-utility">2. Utility</h2>
+
+    <p>These principles call for a design that makes sure HTML can be used effectively for its many intended purposes.
+    </p>
+    <hr>
+    <h3 class="mume-header" id="solve-real-problems">Solve Real Problems</h3>
+
+    <p>Changes to the spec should solve actual real-world problems. Abstract architectures that don&apos;t address an
+      existing need are less favored than pragmatic solutions to problems that web content faces today. And existing
+      widespread problems should be solved, when possible.</p>
+    <hr>
+    <h3 class="mume-header" id="priority-of-constituencies">Priority of Constituencies</h3>
+
+    <p>In case of conflict, consider users over authors over implementors over specifiers over theoretical purity. In
+      other words costs or difficulties to the user should be given more weight than costs to authors; which in turn
+      should be given more weight than costs to implementors; which should be given more weight than costs to authors of
+      the spec itself, which should be given more weight than those proposing changes for theoretical reasons alone. Of
+      course, it is preferred to make things better for multiple constituencies at once.</p>
+    <hr>
+    <h3 class="mume-header" id="secure-by-design">Secure By Design</h3>
+
+    <p>Ensure that features work with the security model of the web. Preferrably address security considerations
+      directly in the specification.</p>
+    <p>Communicating between documents from different sites is useful, but an unrestricted version could put user data
+      at risk. Cross-document messaging is designed to allow this without violating security constraints.</p>
+    <hr>
+    <h3 class="mume-header" id="separation-of-concerns">Separation of Concerns</h3>
+
+    <p>HTML should allow separation of content and presentation. For this reason, markup that expresses structure is
+      usually preferred to purely presentational markup. However, structural markup is a means to an end such as media
+      independence. Profound and detailed semantic encoding is not necessary if the end can be reached otherwise.
+      Defining reasonable default presentation for different media may be sufficient. HTML strikes a balance between
+      semantic expressiveness and practical usefulness. Names of elements and attributes in the markup may be pragmatic
+      (for brevity, history, simplicity) rather than completely accurate.</p>
+    <p>The <strong><code>article</code></strong> element defines an individual article, but not the details of how it is
+      displayed. A journal article may be the only article on a page, formatted in multiple columns, while a blog post
+      may share a page with multiple other articles and be presented in a box with a border.</p>
+    <p>The <strong><code>b</code></strong> and <strong><code>i</code></strong> elements are widely used &#x2014; it is
+      better to give them good default rendering for various media including aural than to try to ban them.</p>
+    <hr>
+    <h3 class="mume-header" id="dom-consistency">DOM Consistency</h3>
+
+    <p>The two serializations should be designed in such a way that the DOM trees produced by the respective parsers
+      appear as consistently as feasible to scripts and other program code operating on the document trees.
+      Discrepancies can be allowed for compatibility with legacy implementations, but the differences should be
+      minimized.</p>
+    <p>Also, unless required for compatibility with legacy implementations and deployed content, gratuitous difference
+      in syntactic appearance should be avoided as well.</p>
+    <p>The HTML (<strong><code>text/html</code></strong>) parser puts elements in the
+      <strong><code>http://www.w3.org/1999/xhtml</code></strong> namespace in the DOM for compatibility with the XML
+      syntax of HTML&#xA0;5.</p>
+    <h2 class="mume-header" id="3-interoperability">3. Interoperability</h2>
+
+    <p>These principles exist to improve the chances of HTML implementations being truly interoperable.</p>
+    <hr>
+    <h3 class="mume-header" id="well-defined-behavior">Well-defined Behavior</h3>
+
+    <p>Prefer to clearly define behavior that content authors could rely on, in preference to vague or
+      implementation-defined behavior. This way, it is easier to author content that works in a variety of user agents.
+      However, implementations should still be free to make improvements in areas such as user interface and quality of
+      rendering.</p>
+    <hr>
+    <h3 class="mume-header" id="avoid-needless-complexity">Avoid Needless Complexity</h3>
+
+    <p>Simple solutions are preferred to complex ones, when possible. Simpler features are easier for user agents to
+      implement, more likely to be interoperable, and easier for authors to understand. But this should not be used as
+      an excuse to avoid satisfying the other principles.</p>
+    <hr>
+    <h3 class="mume-header" id="handle-errors">Handle Errors</h3>
+
+    <p>Error handling should be defined so that interoperable implementations can be achieved. Prefer graceful error
+      recovery to hard failure, so that users are not exposed to authoring errors.</p>
+    <h2 class="mume-header" id="4-universal-access">4. Universal Access</h2>
+
+    <p>Features should be designed for universal access. This category covers various principles related to that.</p>
+    <hr>
+    <h3 class="mume-header" id="media-independence">Media Independence</h3>
+
+    <p>Features should, when possible, work across different platforms, devices, and media. This should not be taken to
+      mean that a feature should be omitted just because some media or platforms can&apos;t support it. For example,
+      interactive features should not be omitted merely because they can not be represented in a printed document.</p>
+    <p>The general reflowability of HTML text makes it more suitable to variable screen dimensions than a representation
+      of exact glyph positions.</p>
+    <p>A hyperlink can not be actuated in a printed document, but that is no reason to omit the
+      <strong><code>a</code></strong> element.</p>
+    <hr>
+    <h3 class="mume-header" id="support-world-languages">Support World Languages</h3>
+
+    <p>Enable publication in all world languages. But this should not be taken as equalizing writing systems by
+      prohibiting features that do not apply to all of them. Features for packing multiple translations of a document in
+      a single file are out of scope.</p>
+    <p>Supporting Unicode allows text in most of the world&apos;s languages, including mixing of text in different
+      languages.</p>
+    <p>Italic text is useful because it applies to many bicameral scripts, even though some scripts have no such
+      concept. Similarly, ruby is useful for many scripts, even though it has a CJK focus.</p>
+    <p>Text in element content has better language support than text in attribute content; in element content ruby
+      annotations can be inserted, as well as <strong><code>dir</code></strong> attributes and
+      <strong><code>bdo</code></strong> elements in case the Unicode bidirectional algorithm is insufficient to
+      correctly order adjacent runs of mixed direction text.</p>
+    <hr>
+    <h3 class="mume-header" id="accessibility">Accessibility</h3>
+
+    <p>Design features to be accessible to users with disabilities. Access by everyone regardless of ability is
+      essential. This does not mean that features should be omitted entirely if not all users can make full use of them,
+      but alternate mechanisms should be provided.</p>
+    <p>The image in an <strong><code>img</code></strong> may not be visible to blind users, but that is a reason to
+      provide alternate text, not to leave out images.</p>
+    <p>The <strong><code>progress</code></strong> element is intrinsically accessible as it has unambiguous progress bar
+      semantics which permits mapping to accessibility APIs that can represent progress indicators.</p>
+    <hr>
+    <h3 class="mume-header" id="sourcehttpswwww3orgtr2007wd-html-design-principles-20071126compatibility"><a
+        href="https://www.w3.org/TR/2007/WD-html-design-principles-20071126/#compatibility">Source</a></h3>
+
+    <blockquote>
+      <p><a
+          href="http://www.w3.org/TR/2007/WD-html-design-principles-20071126/">http://www.w3.org/TR/2007/WD-html-design-principles-20071126/</a>
+      </p>
+    </blockquote>
+
+  </div>
+  <div class="md-sidebar-toc">
+    <ul>
+      <li><a href="#table-of-contents">Table OF Contents</a>
+        <ul>
+          <li><a href="#1-compatibility">1. Compatibility</a>
+            <ul>
+              <li><a href="#support-existing-content">Support Existing Content</a></li>
+              <li><a href="#degrade-gracefully">Degrade Gracefully</a></li>
+              <li><a href="#do-not-reinvent-the-wheel">Do not Reinvent the Wheel</a></li>
+              <li><a href="#pave-the-cowpaths">Pave the Cowpaths</a></li>
+              <li><a href="#evolution-not-revolution">Evolution Not Revolution</a></li>
+            </ul>
+          </li>
+          <li><a href="#2-utility">2. Utility</a>
+            <ul>
+              <li><a href="#solve-real-problems">Solve Real Problems</a></li>
+              <li><a href="#priority-of-constituencies">Priority of Constituencies</a></li>
+              <li><a href="#secure-by-design">Secure By Design</a></li>
+              <li><a href="#separation-of-concerns">Separation of Concerns</a></li>
+              <li><a href="#dom-consistency">DOM Consistency</a></li>
+            </ul>
+          </li>
+          <li><a href="#3-interoperability">3. Interoperability</a>
+            <ul>
+              <li><a href="#well-defined-behavior">Well-defined Behavior</a></li>
+              <li><a href="#avoid-needless-complexity">Avoid Needless Complexity</a></li>
+              <li><a href="#handle-errors">Handle Errors</a></li>
+            </ul>
+          </li>
+          <li><a href="#4-universal-access">4. Universal Access</a>
+            <ul>
+              <li><a href="#media-independence">Media Independence</a></li>
+              <li><a href="#support-world-languages">Support World Languages</a></li>
+              <li><a href="#accessibility">Accessibility</a></li>
+              <li><a href="#sourcehttpswwww3orgtr2007wd-html-design-principles-20071126compatibility">Source</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <a id="sidebar-toc-btn">&#x2261;</a>
+
+
+
+
+
+
+
+
+  <script>
+    var sidebarTOCBtn = document.getElementById( 'sidebar-toc-btn' )
+    sidebarTOCBtn.addEventListener( 'click', function ( event ) {
+      event.stopPropagation()
+      if ( document.body.hasAttribute( 'html-show-sidebar-toc' ) ) {
+        document.body.removeAttribute( 'html-show-sidebar-toc' )
+      } else {
+        document.body.setAttribute( 'html-show-sidebar-toc', true )
+      }
+    } )
+  </script>
+
+
+</body>
+
+</html>
