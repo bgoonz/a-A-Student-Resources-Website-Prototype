@@ -1,5 +1,8 @@
--empty body {
-  background-color: #d37800de;
+body{
+    background-color: #f6f6f6;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #a2a2a2;
 }
 img{
     display: block;
@@ -545,4 +548,29 @@ div.code-toolbar > .toolbar span:hover,
 div.code-toolbar > .toolbar span:focus {
   color: inherit;
   text-decoration: none;
+}
+
+
+#btn-div-wrapper{
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 0;
+  width: 750px;
+  max-width: 80%;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#redirect-btn-div{
+  background: linear-gradient(to bottom right, #30273a, #8d78a5);
+  padding: 5px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  resize: none;
+  border:1px solid #30273a;
+  box-shadow: 0 0 10px #8d78a5;
+  border-radius: 15px 15px 15px 15px;
+  display: flex;
+  justify-content: space-around;
 }
