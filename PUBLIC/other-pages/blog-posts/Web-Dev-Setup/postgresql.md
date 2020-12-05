@@ -1,21 +1,17 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
-*   ✅ Completed
-    
+- ✅ Completed
 
-*   Catalog
-*   Js Py Sep 2020 Online
-*   Week 10 Sep 2020 Online
-*   Installing Postgresql On Windows
+- Catalog
+- Js Py Sep 2020 Online
+- Week 10 Sep 2020 Online
+- Installing Postgresql On Windows
 
 You will install three pieces of software so that you can start using PostgreSQL. You will install PostgreSQL itself on your Windows installation. Then, you will install `psql` in your Ubuntu installation. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL better than just using the command line tool `psql`.
 
 When you read "installation", that means the actual OS that's running on your machine. So, you have a Windows installation, Windows 10, that's running when you boot your computer. Then, when you start the Ubuntu installation, it's as if there's a completely separate computer running inside your computer. It's like having two completely different laptops.
 
-Installing PostgreSQL 12
-------------------------
+## Installing PostgreSQL 12
 
 To install PostgreSQL 12, you need to download the installer from the Internet. PostgreSQL's commercial company, Enterprise DB, offers installers for PostgreSQL for every major platform.
 
@@ -25,25 +21,23 @@ Open [https://www.enterprisedb.com/downloads/postgres-postgresql-downloads](http
 
 Once that installer downloads, run it. You need to go through the normal steps of installing software.
 
-*   Yes, Windows, let the installer make changes to _my_ device.
-*   Thanks for the welcome. Next.
-*   Yeah, that's a good place to install it. Next.
-*   I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.
-    
-    ![Deselect pgAdmin 4 and Stack Builder components](https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-SQL/assets/postgresql-installation-uncheck-components.png)
-    
-*   Also, great looking directory. Thanks. Next.
-    
-*   Oooh! A password! I'll enter **\*\*\*\***. I sure won't forget that because, if I do, I'll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget.** Next.
-*   Sure. 5432. Good to go. Next.
-*   Not even sure what that means. Default! Next.
-*   Yep. Looks good. Next.
-*   Geez. Really? Thanks. Next.
-*   _Time to get a tea._
-*   All right! All done. Finish!
+- Yes, Windows, let the installer make changes to _my_ device.
+- Thanks for the welcome. Next.
+- Yeah, that's a good place to install it. Next.
+- I don't want that pgAdmin nor the Stack Builder things. Uncheck. Uncheck. Next.
 
-Installing PostgreSQL Client Tools on Ubuntu
---------------------------------------------
+  ![Deselect pgAdmin 4 and Stack Builder components](https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-SQL/assets/postgresql-installation-uncheck-components.png)
+
+- Also, great looking directory. Thanks. Next.
+- Oooh! A password! I'll enter **\*\*\*\***. I sure won't forget that because, if I do, I'll have to uninstall and reinstall PostgreSQL and lose all of my hard work. **Seriously, write down this password or use one you will not forget.** Next.
+- Sure. 5432. Good to go. Next.
+- Not even sure what that means. Default! Next.
+- Yep. Looks good. Next.
+- Geez. Really? Thanks. Next.
+- _Time to get a tea._
+- All right! All done. Finish!
+
+## Installing PostgreSQL Client Tools on Ubuntu
 
 Now, to install the PostgreSQL Client tools for Ubuntu. You need to do this so that the Node.js (and later Python) programs running on your Ubuntu installation can access the PostgreSQL server running on your Windows installation. You need to tell `apt`, the package manager, that you want it to go find the PostgreSQL 12 client tools from PostgreSQL itself rather than the common package repositories. You do that by issuing the following two commands. Copy and paste them one at a time into your shell. (If your Ubuntu shell isn't running, start one.)
 
@@ -69,8 +63,7 @@ If it asks you if you want to install them, please tell it "Y".
 
 Test that it installed by typing `psql --version`. You should see it print out information about the version of the installed tools. If it tells you that it can't find the command, try these instructions over.
 
-Configuring the client tools
-----------------------------
+## Configuring the client tools
 
 Since you're going to be accessing the PosgreSQL installation from your Ubuntu installation on your Windows installation, you're going to have to type that you want to access it over and over, which means extra typing. To prevent you from having to do this, you can customize your shell to always add the extra commands for you.
 
@@ -88,7 +81,7 @@ To make sure that you set that up correctly, type `psql -U postgres postgres`. T
 
     psql (12.2 (Ubuntu 12.2-2.pgdg18.04+1))
     Type "help" for help.
-    
+
     postgres=#
 
 Type `\q` and hit Enter to exit the PostgreSQL client tool.
@@ -125,8 +118,7 @@ You can confirm that only you have read/write permission by typing `ls -al ~/.pg
 
 Now, try connecting to PostreSQL by typing `psql postgres`. Because you added the alias to your startup script, and because you created your **.pgpass** file, it should now connect without prompting you for any credentials! Type `\q` and press Enter to exit the PostgreSQL command line client.
 
-Installing Postbird
--------------------
+## Installing Postbird
 
 Head over to the [Postbird releases page on GitHub](https://github.com/Paxa/postbird/releases). Click the installer for Windows which you can recognize because it's the only file in the list that ends with ".exe".
 
@@ -146,12 +138,10 @@ When it's done installing, it will launch itself. Test it out by typing the "pos
 
 You can close it for now. It also installed an icon on your desktop. You can launch it from there or your Start Menu at any time.
 
-What you did
-------------
+## What you did
 
 You installed and configured PosgreSQL 12, a relational database management system, and tools to use it! Well done!
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/js-py---sep-2020-online/week-10-sep-2020-online/installing-postgresql-on-windows)

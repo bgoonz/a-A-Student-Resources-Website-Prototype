@@ -1,6 +1,4 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
 Being a developer isn't just hacking away into the wee hours of the morning or debugging a new feature. In order to become a well-rounded developer we should also understand what tools we need and a minimum understanding of how they work. This includes setting up our computers for development.
 
@@ -8,8 +6,7 @@ Here at App Academy we work with a Ruby on Rails, JavaScript, React, Redux, and 
 
 As we progress through the course you will be prompted to complete a few installation and configuration steps to get your personal machine ready for the next phase.
 
-Phase 0: Preparing your machine
--------------------------------
+## Phase 0: Preparing your machine
 
 Here we will install basic developer tools, such as [homebrew](https://brew.sh/) (a 3rd party package manager for MacOS), Xcode (a library of developer tools provided by Apple), git (a version control system we will be using throughout the course), and VS Code (a full-featured text-editor).
 
@@ -57,13 +54,13 @@ Git is a version control system that allows us to track, commit and revert chang
 
     # install git
     brew install git
-    
+
     # makes git terminal output pretty
     git config --global color.ui true
-    
+
     # this will mark you as the 'author' of each committed change
     git config --global user.name "your name here"
-    
+
     # use the email associated with your GitHub account
     git config --global user.email your_email_here
 
@@ -75,8 +72,7 @@ To verify that the shell commands were installed correctly, run `which code` in 
 
 Next, we'll want to install a few useful VS Code extensions and configure VS Code to play nice with these extensions. Download [this zip file](https://assets.aaonline.io/fullstack/setup_vscode_master.zip), which contains a scripts that will do the work for you. Unzip the file and open the `setup_vscode` directory. Then open that directory in the terminal (drag and drop it over the terminal icon on macOS or right click in the directory and select `Open in Terminal` on most Linux distributions). To run the script, type `./setup_vscode.sh`. The script will do the rest. Simply restart VS Code and you'll be good to go. (Note that there's a second script, called `setup_vscode_linter.sh`. We can't run this script yet but will do so in due time.)
 
-Phase 1: Ruby
--------------
+## Phase 1: Ruby
 
 Here we will be setting up Ruby with the help of [rbenv](https://github.com/rbenv/rbenv), a Ruby environment manager. We like rbenv because it allows us to switch between versions of Ruby easily and setup default versions to use within project directories. This will install instances of Ruby in addition to the system version, which comes pre-installed.
 
@@ -86,33 +82,33 @@ First we will install rbenv, then use it to install our desired version of Ruby.
 
     # install rbenv
     brew install rbenv
-    
+
     # add to the PATH (rbenv commands are now available from terminal)
     # .bashrc is the file that contains all of our terminal settings
     echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
-    
+
     # initialize rbenv everytime you open a new console window (otherwise our system ruby version will take over when we start a new terminal session)
     echo 'eval "$(rbenv init -)"' >> ~/.bashrc
-    
+
     # update current console window with new settings
     source ~/.bashrc
-    
+
     # source .bashrc from .bash_profile (necessary on some machines)
     echo 'source ~/.bashrc' >> ~/.bash_profile
-    
+
     # install Ruby version 2.5.1
     rbenv install 2.5.1
-    
+
     # set version 2.5.1 to be our global default
     rbenv global 2.5.1
-    
+
     # the 'rehash' command updates the environment to your configuration
     rbenv rehash
-    
+
     # and let's verify everything is correct
     # check the version
     ruby -v # => 2.5.1
-    
+
     # check that we are using rbenv (this tells you where the version of ruby you are using is installed)
     which ruby # => /Users/your-username/.rbenv/shims/ruby
 
@@ -120,16 +116,15 @@ First we will install rbenv, then use it to install our desired version of Ruby.
 
 There are a few gems we will want to access globally.
 
-*   Bundler allows us to define project dependencies inside a `Gemfile` and gives us a bunch of commands to update, remove and install them. Check out the [Bundler docs](http://bundler.io/docs.html) for more info.
-*   Pry is an alternative to the Irb (the default Ruby REPL). It is not only more powerful, but also easier to use than Irb and should be your go-to for running and debugging Ruby code. Check out the [Pry website](http://pryrepl.org/) for more info and a super useful tutorial.
-*   Byebug is feature-rich debugging tool for Ruby. With Byebug you can halt the execution of your code and inspect/track variables and the flow of execution. Lots of cool features in here, so check out the [Byebug docs](https://github.com/deivid-rodriguez/byebug)!
+- Bundler allows us to define project dependencies inside a `Gemfile` and gives us a bunch of commands to update, remove and install them. Check out the [Bundler docs](http://bundler.io/docs.html) for more info.
+- Pry is an alternative to the Irb (the default Ruby REPL). It is not only more powerful, but also easier to use than Irb and should be your go-to for running and debugging Ruby code. Check out the [Pry website](http://pryrepl.org/) for more info and a super useful tutorial.
+- Byebug is feature-rich debugging tool for Ruby. With Byebug you can halt the execution of your code and inspect/track variables and the flow of execution. Lots of cool features in here, so check out the [Byebug docs](https://github.com/deivid-rodriguez/byebug)!
 
 Let's install them.
 
     gem install bundler pry byebug
 
-Phase 2: Backend Development
-----------------------------
+## Phase 2: Backend Development
 
 For backend development we will need a database application, a server, and a web-application framework.
 
@@ -160,13 +155,13 @@ Close and reopen your terminal to gain access to the `psql` command. Let's try i
 
     # open the PostgreSQL CLI
     psql
-    
+
     # you should be greeted with a prompt that looks like this
     psql (10.X)
     Type "help" for help.
-    
+
     yourname=#
-    
+
     # type '/q' to quit
     yourname=# \q
 
@@ -184,13 +179,13 @@ Again, verify that installation was successful by opening the SQLite CLI.
 
     # open SQLite CLI with this command
     sqlite3
-    
+
     #  you should see this output
     # SQLite version 3.16.0 2016-11-04 19:09:39
     # Enter ".help" for usage hints.
     # Connected to a transient in-memory database.
     # Use ".open FILENAME" to reopen on a persistent database.
-    
+
     # .q to quit
     sqlite> .q
 
@@ -206,8 +201,7 @@ Fortunately for us, Rails is available as a gem in the Ruby ecosystem. Let's ins
     # verify installation
     which rails # => /Users/username/.rbenv/shims/rails
 
-Phase 3: Frontend Development
------------------------------
+## Phase 3: Frontend Development
 
 ### Node.js & NPM
 
@@ -217,20 +211,19 @@ Again, we want to use a version manager with Node to help us manage potential co
 
     # download and run the official install script
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
-    
+
     # update your terminal config (you will now have access to the nvm command)
     source ~/.bashrc
-    
+
     # install a stable version of node
     nvm install 10.13.0
-    
+
     # set version 10.13.0 as default version
     nvm use 10.13.0
-    
+
     # verify install/config
     which node # => /Users/username/.nvm/versions/node/v10.13.0/bin/node
 
 Node, like Ruby, comes with a package manager called [NPM](https://docs.npmjs.com/), which provides access to a whole ecosystem of libraries and tools we can use. NPM comes pre-bundled with Node, so there is no additional work for us to do. By default we don't need any additional packages installed and will be installing them on a per-project basis.
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/sql/setting-up-a-development-environment--phase-2-)

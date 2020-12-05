@@ -1,11 +1,8 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
 JavaScript development touches a lot of diverse environments: Node, Chrome, Safari, etc. These various environments have different levels of compatibility with advanced JavaScript features like JSX and ES6. To ensure that our JSX and ES6 code works in any environment, we will use a _transpiler_ called **Babel** to convert our code into ES5, the universal, vanilla Javascript compatible with all browsers and Node.
 
-Configuring Babel for Web Apps
-------------------------------
+## Configuring Babel for Web Apps
 
 Webpack can be configured to transpile your JSX and ES6 source code into browser-compatible Javascript when creating the bundle.
 
@@ -30,12 +27,10 @@ Webpack can be configured to transpile your JSX and ES6 source code into browser
       ]
     },
 
-Checking Compatibility
-----------------------
+## Checking Compatibility
 
 [This chart](http://kangax.github.io/compat-table/es6/) is a great resource to see what levels of native support exist for advanced JS features in different environments. However, you shouldn't have to worry about compatibility if you use Babel.
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/react/babel)

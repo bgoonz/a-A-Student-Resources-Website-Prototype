@@ -1,14 +1,4 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
-
-*   ⏱ 30 minutes
-    
-
-*   Catalog
-*   Js Py Sep 2020 Online
-*   Week 1 Sep 2020 Online
-*   Setup Installations Macos
 
 Being a developer isn't just about hacking away into the wee hours of the morning or debugging a new feature. All craftspeople must have mastery of their tools to be successful in their trade, and programmers are no different. For a developer the most important tools are our CLI, text editor, web browser, compiler, package manager, and Node environment for running JavaScript. Mastery of these tools will be invaluable for the entire duration of our careers.
 
@@ -16,14 +6,13 @@ This reading will cover the installation of the basic tools you'll need to run c
 
 When you finish this reading, you should have:
 
-*   Installed Visual Studio Code (VS Code)
-*   Installed Node & NPM (Node Package Manager)
-*   Installed Google Chrome
-*   Installed Xcode & Homebrew (Mac)
-*   Installed Python 3
+- Installed Visual Studio Code (VS Code)
+- Installed Node & NPM (Node Package Manager)
+- Installed Google Chrome
+- Installed Xcode & Homebrew (Mac)
+- Installed Python 3
 
-Preparing your machine
-----------------------
+## Preparing your machine
 
 The commands you need to enter are listed below. Here we will install basic developer tools, such as [homebrew](https://brew.sh/) (a 3rd party package manager for MacOS), [Xcode](https://itunes.apple.com/us/app/xcode/id497799835) (a library of developer tools provided by Apple), VS Code (a full-featured text-editor), and Node (a JavaScript runtime environment).
 
@@ -69,16 +58,16 @@ Open up your console (the Terminal application on Mac) and run the following:
 
     # download and run the official install script
     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
-    
+
     # update your terminal config (you will now have access to the nvm command)
     source ~/.bashrc
-    
+
     # install a stable version of node
     nvm install 10.16
-    
+
     # set version 10.16.0 as default version
     nvm use 10.16
-    
+
     # verify install/config
     which node # => /Users/username/.nvm/versions/node/v10.16.0/bin/node
 
@@ -114,21 +103,19 @@ You can just use _homebrew_ for this install, too.
 
     brew install python
 
-What you learned
-----------------
+## What you learned
 
 How to install the various tools you'll need to create a development environment.
 
 After you finished this reading you should have the following installed:
 
-*   Virtual Studio Code (VS Code)
-*   Node & NPM (Node Package Manager)
-*   Mocha the JavaScript testing framework
-*   Google Chrome
-*   Xcode & Homebrew (Mac)
-*   Python 3
+- Virtual Studio Code (VS Code)
+- Node & NPM (Node Package Manager)
+- Mocha the JavaScript testing framework
+- Google Chrome
+- Xcode & Homebrew (Mac)
+- Python 3
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/js-py---sep-2020-online/week-1-sep-2020-online/setup---installations--macos-)

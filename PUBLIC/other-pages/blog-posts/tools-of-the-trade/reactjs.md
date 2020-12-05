@@ -1,13 +1,10 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
 ### What is React?
 
 [React](https://facebook.github.io/react/) is a JavaScript library for creating UI components. React's specialty is exactly what its name implies: reaction. When the data that is represented by the UI changes, React _reacts_ by updating the UI.
 
-What isn't React?
------------------
+## What isn't React?
 
 React isn't a front end MVC framework. There are no models, no collections, no controllers, and no templates. The basic library provides no router.
 
@@ -28,6 +25,5 @@ This process of _reconciliation_ is so fast that we don't need to carefully chec
 Facebook. Instagram.
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/react/react)

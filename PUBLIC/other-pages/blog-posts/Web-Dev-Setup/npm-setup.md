@@ -1,21 +1,17 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
-*   ⏱ 15 minutes
-    
+- ⏱ 15 minutes
 
-*   Catalog
-*   Full Stack Online
-*   React
-*   Npm
+- Catalog
+- Full Stack Online
+- React
+- Npm
 
 You're likely already somewhat familiar with Node Package Manager (NPM) and how it can be used to install JavaScript dependencies called **node modules** to your app (e.g. `npm install webpack -g`).
 
 This reading will cover the configuration process for automating node module installation for apps that have multiple JS dependencies.
 
-Generating `package.json` with `npm init`
------------------------------------------
+## Generating `package.json` with `npm init`
 
 Much like Ruby's `Gemfile`, the Node Package Manager can be used with a manifest file that lists all of an app's JavaScript dependencies. This file is called `package.json`. While you can write this file by hand, NPM's CLI (command line interface) significantly simplifies the process.
 
@@ -40,8 +36,7 @@ This creates a `package.json` file using default boilerplate from the `--yes` fl
 
 Don't worry about the default settings above; they won't affect how your app runs, and you can always adjust them later.
 
-Installing Packages
--------------------
+## Installing Packages
 
 Once you've generated a `package.json`, you can start installing NPM packages such as `react` and `redux` via the command line:
 
@@ -66,8 +61,7 @@ Now, anyone who gets a copy of your app can download all its dependencies in one
 
     npm install
 
-Add a Webpack Script
---------------------
+## Add a Webpack Script
 
 Recall that, in Ruby, running `bundle exec some_command` is **not the same** as running `some_command`. In the former, the `Gemfile`\-specified version of `some_command` is run, while in the latter, the local version is run. Omitting `bundle exec` when running commands can cause errors if our app isn't compatible with the local version.
 
@@ -87,12 +81,11 @@ Now, when you run `npm run webpack` in the terminal, the `package.json`\-specifi
 
 **NB**: Always run `npm run webpack` rather than `webpack` to minimize the chance of compatibility issues.
 
-*   `npm init --yes`: Initializes an app with NPM by generating a boilerplate `package.json`.
-*   `npm install <package_name>`: Installs and lists a NPM package as a dependency in a `package.json`.
-*   `npm install`: Downloads all JavaScript dependencies listed in a `package.json`.
-*   Add a `webpack` script to enable `npm run webpack`.
+- `npm init --yes`: Initializes an app with NPM by generating a boilerplate `package.json`.
+- `npm install <package_name>`: Installs and lists a NPM package as a dependency in a `package.json`.
+- `npm install`: Downloads all JavaScript dependencies listed in a `package.json`.
+- Add a `webpack` script to enable `npm run webpack`.
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/react/npm)

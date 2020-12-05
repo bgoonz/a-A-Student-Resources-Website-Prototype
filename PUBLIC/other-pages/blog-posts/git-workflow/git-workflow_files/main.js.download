@@ -190,8 +190,8 @@
   font-weight:  ${({theme:e})=>e.t.weights.bold};
 
   ${({center:e})=>e?"margin: 0 auto":""}
-  
-  /* 
+
+  /*
     Styles color changes based on status prop
     clickable true includes hover/active styles
   */
@@ -2247,7 +2247,7 @@ font-weight: ${({theme:e})=>e.t.weights.medium}
   background: ${({theme:e})=>e.t.secondary}
   padding: 10px 12px;
   box-sizing: border-box;
-  border-radius: 2px; 
+  border-radius: 2px;
   outline-width: thin;
   transition: all 0.1s ease;
   outline: none;
@@ -2471,7 +2471,7 @@ font-weight: ${({theme:e})=>e.t.weights.medium}
   border: 1px solid ${({theme:e,checked:t})=>t?e.t.warning:e.t.primary};
   border-top: ${({theme:e,checked:t})=>t?"1px solid "+e.t.warning:"none"};
   margin: 0;
-  
+
   &:first-of-type {
     border-top: 1px solid ${({theme:e,checked:t})=>t?e.t.warning:e.t.primary};
     border-top-left-radius: 6px;
@@ -2859,7 +2859,7 @@ font-weight: ${({theme:e})=>e.t.weights.medium}
   background: #979797;
   opacity: 0.3;
   margin: auto 0;
- 
+
  ${({theme:e})=>e.f.media(e).tablet`
     display: none;
  `}

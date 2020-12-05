@@ -1,21 +1,17 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
-*   ⏱ 30 minutes
-    
+- ⏱ 30 minutes
 
-*   Catalog
-*   Js Py Sep 2020 Online
-*   Week 10 Sep 2020 Online
-*   Installing Postgresql On Macos
+- Catalog
+- Js Py Sep 2020 Online
+- Week 10 Sep 2020 Online
+- Installing Postgresql On Macos
 
 You will install two pieces of software so that you can start using PostgreSQL. You sill install PostgreSQL itself along with all of its tools. Then you will also install Postbird, a cross-platform graphical user interface that makes working with SQL and PostgreSQL better than just using the command line tool `psql`.
 
 You can install both of these products using Homebrew. Your Windows-using classmates don't have this convenience, so pretend you're having a hard time doing this. 😉
 
-Installing PostgreSQL 12
-------------------------
+## Installing PostgreSQL 12
 
 First, update your Homebrew installation. You should do this before each thing that you install using Homebrew.
 
@@ -35,14 +31,13 @@ Now, launch the installation.
 
 This may take a while. Have a tea.
 
-Configuring PostgreSQL 12
--------------------------
+## Configuring PostgreSQL 12
 
 When that completes, you can read the **Caveats** section from the installation output. You should do this with _everything_ that you install using Homebrew.
 
     To migrate existing data from a previous major version of PostgreSQL run:
       brew postgresql-upgrade-database
-    
+
     To have launchd start postgresql now and restart at login:
       brew services start postgresql
     Or, if you don't want/need a background service you can just run:
@@ -54,8 +49,7 @@ You definitely want PostgreSQL to run now and every time you log in. Otherwise y
 
 That should report that PostgreSQL is now started.
 
-Connecting to PostgreSQL
-------------------------
+## Connecting to PostgreSQL
 
 To make sure your client tools are configured properly, type the following in a Terminal. This tells the `psql` client that you want to connect to the "postgres" database, which is the default database created when PostgreSQL is installed.
 
@@ -69,13 +63,12 @@ When you successfully log in, it should show you the following output.
 
     psql (12.2)
     Type "help" for help.
-    
+
     postgres=#
 
 Type `\q` and hit Return to quit the PostgreSQL client.
 
-Installing Postbird
--------------------
+## Installing Postbird
 
 Make sure that your Homebrew can find Postbird. Search for it using the `brew search` command.
 
@@ -112,12 +105,10 @@ In fact, the developer of Postbird has an ['issue' on github](https://github.com
 
 When Postbird starts, type "postgres" into the database field. Then, click the "Connect" button. It should open a new tab and show you basically a blank page. That means everything worked! Exit Postbird by pressing Command+Q or selecting Postbird > "Quit Postbird" from the menu.
 
-What you did
-------------
+## What you did
 
 You installed and configured PosgreSQL 12, a relational database management system, and tools to use it! Well done!
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/js-py---sep-2020-online/week-10-sep-2020-online/installing-postgresql-on-macos)

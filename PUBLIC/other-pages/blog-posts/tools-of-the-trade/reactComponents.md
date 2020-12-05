@@ -1,14 +1,10 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
-What are Components?
---------------------
+## What are Components?
 
 React Components are the building blocks of a React view-layer. They are Javascript functions that return HTML to be rendered onto a document. Because they are typically written in JSX, components often look like HTML dropped into a Javascript file.
 
-A Simple Example
-----------------
+## A Simple Example
 
 Download [this example](https://assets.aaonline.io/fullstack/react/demos/simple_component.zip) in another tab and read along below.
 
@@ -30,12 +26,10 @@ The demo also contains a `package.json` file, which is used to configure NPM and
 
 The demo also contains a `webpack.config.js` file, which configures Webpack. Note that the output file, `bundle.js`, is sourced in our `index.html` and represents all of our app's code, along with its dependencies (`react` and `react-dom`). Webpack is also responsible for transpiling our JSX into raw Javascript for the browser. More on this later, too.
 
-Dependencies
-------------
+## Dependencies
 
 In order to create React components, you will need to require the `react` and `react-dom` packages from [`npm`](chrome-extension://cjedbglnccaioiolemnfhjncicchinao/npm).
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/react/react-components)

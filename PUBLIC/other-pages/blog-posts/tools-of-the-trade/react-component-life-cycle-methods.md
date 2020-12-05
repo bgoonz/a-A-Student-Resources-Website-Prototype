@@ -1,6 +1,4 @@
-# App Academy Open
 
-> Learn to code online with access to App Academy’s entire full-stack course for free
 
 Components sometimes need to call certain functions or run other bits of code at various points during their lifecycle. For example, a component might need to fetch new data from the server once it has been mounted to the DOM. Code for these actions live in a component's **lifecycle methods**.
 
@@ -11,14 +9,14 @@ Take a look at this code snippet and then read below for a brief explanation.
         super();
         this.state = {items: []};
       }
-    
+
       componentDidMount() {
         $.ajax({
           url: '/items',
           success: response => this.setState({items: response});
         });
       }
-    
+
       render() {
         if (this.state.items.length === 0) {
           return (
@@ -38,11 +36,10 @@ In the example above, `MyAjaxComponent` initially renders as `<div>Fetching Item
 
 Check out [the official documentation](https://facebook.github.io/react/docs/component-specs.html) for details on other component lifecycle methods that you may need. Commonly used ones include:
 
-*   `componentDidMount`
-*   `componentWillUnmount`
-*   `componentDidUpdate`
+- `componentDidMount`
+- `componentWillUnmount`
+- `componentDidUpdate`
 
 Did you find this lesson helpful?
-
 
 [Source](https://open.appacademy.io/learn/full-stack-online/react/lifecycle-methods)

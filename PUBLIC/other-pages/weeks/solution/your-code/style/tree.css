@@ -7,7 +7,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 12px 20px 1fr auto;
-  padding: .25em 0;
+  padding: 0.25em 0;
 }
 
 .tree-entry__disclosure {
@@ -16,11 +16,11 @@
 }
 
 .tree-entry__disclosure--closed::before {
-  content: '\25B6';
+  content: "\25B6";
 }
 
 .tree-entry__disclosure--opened::before {
-  content: '\25BC';
+  content: "\25BC";
 }
 
 .tree-entry__icon {

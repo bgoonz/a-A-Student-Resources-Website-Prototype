@@ -63,7 +63,7 @@
   display: block;
 }
 .owl-carousel.owl-hidden {
-  opacity: .8;
+  opacity: 0.8;
 }
 .owl-carousel.owl-refresh .owl-item {
   visibility: visible;
@@ -72,7 +72,6 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-
 }
 .owl-carousel.owl-grab {
   cursor: move;

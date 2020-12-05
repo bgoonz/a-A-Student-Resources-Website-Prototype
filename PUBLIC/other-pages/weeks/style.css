@@ -93,7 +93,7 @@ h1 {
   text-align: center;
   font-size: 500%;
   background-color: white;
-  background-color: ;
+  background-color: transparent ;
   border-radius: 1pc;
   width: 90%;
   margin: auto;
@@ -290,7 +290,7 @@ pre[class*="language-"],
 pre[class*="language-"] {
   border-radius: 0.5em;
   border: 0.3em solid hsl(0, 0%, 60%); /* #282A2B */
-  box-shadow: 1px 1px 0.5em black
+  box-shadow: 1px 1px 0.5em black;
   margin: 0.5em 0;
   overflow: auto;
   padding: 1em;
