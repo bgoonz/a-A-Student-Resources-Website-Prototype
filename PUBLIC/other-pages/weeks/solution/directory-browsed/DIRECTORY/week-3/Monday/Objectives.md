@@ -48,7 +48,7 @@ setInterval(function () {
 }, 5000);
 ```
 
-**Write a program that accepts user input using Node’s readline module**
+**Write a program that accepts user input using Node's readline module**
 
 ```js
 const askGuess = () => {

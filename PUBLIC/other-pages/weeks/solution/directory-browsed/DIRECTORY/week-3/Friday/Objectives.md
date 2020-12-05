@@ -11,7 +11,7 @@
 - const name;
   - throws an error - syntax error: missing initalizer.
 
-**2. Explain why functions are “First Class Objects” in JavaScript**
+**2. Explain why functions are "First Class Objects" in JavaScript**
 
 - Functions are considered first class objects in JS because they can be assigned to variables, can be passed as arguments in parameters, and can also be returned from inside other functions.
 
@@ -22,7 +22,7 @@
 
 **4. (Whiteboarding) Implement a closure**
 
-**5. Identify JavaScript’s falsey values**
+**5. Identify JavaScript's falsey values**
 
 - 0
 - ""

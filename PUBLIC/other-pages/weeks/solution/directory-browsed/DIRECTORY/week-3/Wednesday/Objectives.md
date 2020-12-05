@@ -33,7 +33,7 @@
 
 - nano [name of file]
 
-**7. Use ‘curl’ to download a file.**
+**7. Use 'curl' to download a file.**
 
 - curl -o [url]
   - -o flag actually saves the file and gives us the option of changing the dl'd file name.

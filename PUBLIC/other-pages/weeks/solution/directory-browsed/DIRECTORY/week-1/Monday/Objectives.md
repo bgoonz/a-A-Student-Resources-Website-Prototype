@@ -2,7 +2,7 @@
 
 ## **Expressions and Intro to Functions**
 
-- **Given a working REPL interface, write and execute a statement that will print “hello world” using console.log**
+- **Given a working REPL interface, write and execute a statement that will print "hello world" using console.log**
   - `console.log("hello world!");`
 
 * Identify that strings are a list of characters defined by using double or single quotes\*\*
@@ -48,11 +48,11 @@
     | F | T | F |
     | F | F | F |
 
-- **Given an expression consisting of >, >=, ===, <, <=, compute it’s value**
+- **Given an expression consisting of >, >=, ===, <, <=, compute it's value**
   ```js
   console.log(24 > 3 && false); // false
   ```
-- **Apply De Morgan’s law to a boolean expression**
+- **Apply De Morgan's law to a boolean expression**
 
   ```js
   !(A || B) === !A && !B;
@@ -65,7 +65,7 @@
   console.log((2 + 4) * 5); // 30
   ```
 
-- **Given an expression, use the grouping operator to change it’s evaluation**
+- **Given an expression, use the grouping operator to change it's evaluation**
 
   ```js
   console.log(2 + 3 * 4); // => 14
@@ -117,7 +117,7 @@
   }
   ```
 
-* **Define a function that calculates the average of two numbers, call it, pass in arguments, and print it’s return value**
+* **Define a function that calculates the average of two numbers, call it, pass in arguments, and print it's return value**
 
   ```js
   function avgOfTwo(num1, num2) {
