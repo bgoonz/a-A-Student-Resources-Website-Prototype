@@ -20,28 +20,19 @@
   content: ".";
   display: block;
   clear: both;
-  visibility: hidden;
+  visibility: visibile;
   line-height: 0;
   height: 0;
 }
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
 }
-.owl-carousel .owl-item,
-.owl-carousel .owl-wrapper {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-}
+
 .owl-carousel .owl-item {
   min-height: 1px;
   float: left;
-  -webkit-backface-visibility: hidden;
+
   -webkit-touch-callout: none;
 }
 .owl-carousel .owl-item img {
@@ -72,16 +63,16 @@
   display: block;
 }
 .owl-carousel.owl-hidden {
-  opacity: 0;
+  opacity: .8;
 }
 .owl-carousel.owl-refresh .owl-item {
-  visibility: hidden;
+  visibility: visible;
 }
 .owl-carousel.owl-drag .owl-item {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+
 }
 .owl-carousel.owl-grab {
   cursor: move;
@@ -140,7 +131,7 @@
   background: url(owl.video.play.png) no-repeat;
   cursor: pointer;
   z-index: 1;
-  -webkit-backface-visibility: hidden;
+
   transition: transform 0.1s ease;
 }
 .owl-carousel .owl-video-play-icon:hover {

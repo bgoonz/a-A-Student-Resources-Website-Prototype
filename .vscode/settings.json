@@ -1,0 +1,10 @@
+{
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#423B5D",
+    "titleBar.activeForeground": "#FCFCFD",
+    "workbench.fontAliasing": "antialiased",
+    "explorer.confirmDragAndDrop": false,
+    "activityBar.background": "#2F2A43"
+  },
+  "liveServer.settings.port": 5501
+}

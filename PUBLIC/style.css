@@ -830,11 +830,11 @@ SECTIONS
 }
 
 .section {
-  background-color: #ffffff;
+  background-color: rgba(255,255,255,50);
   padding: 8rem 0;
   position: relative;
   display: block;
-  background-image: "./other-pages/blog-posts/9-thigs-you-should-know-about/double-bubble-outline/double-bubble-outline/double-bubble-outline.png";
+
 }
 
 .section-title {
@@ -1093,7 +1093,7 @@ COURSE MODULES
   position: absolute;
   bottom: 0;
   left: 0;
-  visibility: hidden;
+  /* visibility: hidden; */
   right: 0;
   opacity: 0;
   top: 0;

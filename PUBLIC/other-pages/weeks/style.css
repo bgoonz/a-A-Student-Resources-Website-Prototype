@@ -1,8 +1,39 @@
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
+}
+
 body{
     background-color: #f6f6f6;
   line-height: 1.6;
   font-size: 16px;
-  color: #a2a2a2;
+
 }
 img{
     display: block;
@@ -182,18 +213,26 @@ th {
 }
 
 code pre {
-  border-radius: 1pc;
+  border-radius: 3pc;
   width: 100%;
   margin: auto;
   padding: 10px;
   position: sticky;
   margin-bottom: 25px;
+  -webkit-border-radius: 3pc;
+  -moz-border-radius: 3pc;
+  -ms-border-radius: 3pc;
+  -o-border-radius: 3pc;
 }
 code {
-  color:#572d17
+  color:black;
   margin:left;
-  background-color:;
-  border-radius: 2px;
+  background-color:white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 #quiz{
 
@@ -225,7 +264,7 @@ pre[class*="language-"] {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: 1em;
   text-align: left;
-  text-shadow: 0 -0.1em 0.2em black;
+
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
@@ -250,8 +289,8 @@ pre[class*="language-"],
 /* Code blocks */
 pre[class*="language-"] {
   border-radius: 0.5em;
-  border: 0.3em solid hsl(0, 0%, 33%); /* #282A2B */
-  box-shadow: 1px 1px 0.5em black inset;
+  border: 0.3em solid hsl(0, 0%, 60%); /* #282A2B */
+  box-shadow: 1px 1px 0.5em black
   margin: 0.5em 0;
   overflow: auto;
   padding: 1em;
@@ -481,9 +520,9 @@ pre[id].linkable-line-numbers span.line-numbers-rows {
 pre[id].linkable-line-numbers span.line-numbers-rows > span:before {
   cursor: pointer;
 }
-pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
+/* pre[id].linkable-line-numbers span.line-numbers-rows > span:hover:before {
   background-color: rgba(128, 128, 128, 0.2);
-}
+} */
 
 div.code-toolbar {
   position: relative;
@@ -531,11 +570,11 @@ div.code-toolbar > .toolbar button {
 div.code-toolbar > .toolbar a,
 div.code-toolbar > .toolbar button,
 div.code-toolbar > .toolbar span {
-  color: #bbb;
+
   font-size: 0.8em;
   padding: 0 0.5em;
   background: #f5f2f0;
-  background: rgba(224, 224, 224, 0.2);
+
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
 }
