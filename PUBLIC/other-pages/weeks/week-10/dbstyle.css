@@ -2,10 +2,11 @@ body {
 	font-family: Arial, Helvetica, FreeSans, sans-serif;
 	font-size: 10pt;
 	line-height: 1.2;
-	display: flex;
+  display:flex; flex-direction:column; justify-content:center;
+  min-height:100vh;
 	flex-direction: column;
 	justify-content: center;
-	min-height: 100vh;
+
 	max-width: max-content;
 	margin: auto;
 }
@@ -89,7 +90,12 @@ body {
 	}
 
 	pre {
-		font-family: Monaco, "Courier New", monospace;
+    font-family: Monaco, "Courier New", monospace;
+        border: 1px solid #949494;
+    border-radius: 4px;
+    padding: .5em .7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 	}
 	@font-face {
 		font-family: Chunkfive;
@@ -293,7 +299,12 @@ span.MsoHyperlink {
 p {
 	margin: auto;
 	font-size: 12pt;
-	font-family: "Times New Roman", serif;
+  font-family: "Times New Roman", serif;
+      border: 1px solid #949494;
+    border-radius: 4px;
+    padding: .5em .7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 code {
@@ -304,7 +315,12 @@ pre {
 	mso-style-link: "HTML Preformatted Char";
 	margin: auto;
 	font-size: 10pt;
-	font-family: "Courier New";
+  font-family: "Courier New";
+      border: 1px solid #949494;
+    border-radius: 4px;
+    padding: .5em .7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 span.Heading1Char {
@@ -366,7 +382,7 @@ ul {
 p {
 	width: 60em;
 	margin: auto;
-	background: #dcf5ed98;
+	background:transparent;
 }
 
 .ow-anywhere {

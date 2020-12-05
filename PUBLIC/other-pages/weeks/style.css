@@ -484,7 +484,9 @@ pre[data-line] {
   line-height: inherit;
   white-space: pre;
 }
-
+#home-link2{
+  margin:auto;
+}
 .line-highlight:before,
 .line-highlight[data-end]:after {
   content: attr(data-start);
@@ -578,7 +580,9 @@ div.code-toolbar > .toolbar span {
   box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.5em;
 }
-
+.section-button {
+  display:inline;
+}
 div.code-toolbar > .toolbar a:hover,
 div.code-toolbar > .toolbar a:focus,
 div.code-toolbar > .toolbar button:hover,
@@ -591,13 +595,14 @@ div.code-toolbar > .toolbar span:focus {
 
 
 #btn-div-wrapper{
-  margin: 0 auto;
-  margin-top: 100px;
-  padding: 0;
-  width: 750px;
-  max-width: 80%;
-  padding-bottom: 40px;
-  text-align: center;
+  display:inline;
+ border: 2px dashed #444;
+  height: 125px;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  /* just for demo */
+  min-width: 612px;
 }
 
 #redirect-btn-div{
@@ -610,6 +615,6 @@ div.code-toolbar > .toolbar span:focus {
   border:1px solid #30273a;
   box-shadow: 0 0 10px #8d78a5;
   border-radius: 15px 15px 15px 15px;
-  display: flex;
+ display:inline;
   justify-content: space-around;
 }
