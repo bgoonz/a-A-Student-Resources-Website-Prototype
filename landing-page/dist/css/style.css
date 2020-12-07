@@ -197,7 +197,7 @@ html {
 	box-sizing: inherit;
 }
 body {
-	background: #fff;
+	background: whitesmoke;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
@@ -926,7 +926,8 @@ label {
 	visibility: hidden;
 }
 .button {
-	display: inline-flex;
+	display: grid;
+border:1px solid black;
 	font-size: 14px;
 	letter-spacing: 0px;
 	font-weight: 700;
@@ -943,7 +944,7 @@ label {
 	padding: 16px 40px;
 	height: 48px;
 	text-align: center;
-	white-space: nowrap;
+	white-space: normal;
 }
 .button:active {
 	outline: 0;
@@ -982,6 +983,10 @@ label {
 .button-secondary {
 	color: #fff !important;
 	transition: background 0.15s ease;
+	-webkit-transition: background 0.15s ease;
+	-moz-transition: background 0.15s ease;
+	-ms-transition: background 0.15s ease;
+	-o-transition: background 0.15s ease;
 }
 .button-primary {
 	background: #4234f8;
