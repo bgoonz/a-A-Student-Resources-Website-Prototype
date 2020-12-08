@@ -185,7 +185,7 @@ instance<span class="token punctuation">.</span><span class="token function">get
 </pre></li>
 <li>However, if getters and/or setters are defined for field they will be invoked, instead of returning the value from <code>dataValues</code>.</li>
 <li>Accessing properties directly or using get is preferred for regular use, <code>getDataValue</code> should only be used for custom getters.</li>
-<li>See <a href="https://sequelize.org/master/class/lib/model.js~Model.html">Public Methods</a></li>
+<li>See <a class="btn" href="https://sequelize.org/master/class/lib/model.js~Model.html">Public Methods</a></li>
 </ul>
 </li>
 </ul>
@@ -339,7 +339,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>
 <h6>Applying WHERE clause</h6>
 <ul>
-<li>The where option is used to filter the query. There are lots of operators to use for the where clause, available as Symbols from <a href="https://sequelize.org/master/variable/index.html#static-variable-Op">Operator Symbols</a>.</li>
+<li>The where option is used to filter the query. There are lots of operators to use for the where clause, available as Symbols from <a class="btn" href="https://sequelize.org/master/variable/index.html#static-variable-Op">Operator Symbols</a>.</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">Post<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   where<span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -581,87 +581,87 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token keyword">await</span> User<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span><span class="token string">&apos;age&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> where<span class="token punctuation">:</span> <span class="token punctuation">{</span> age<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>Op<span class="token punctuation">.</span>gt<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
 <span class="token keyword">await</span> User<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token string">&apos;age&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 55</span>
 <span class="token keyword">await</span> User<span class="token punctuation">.</span><span class="token function">sum</span><span class="token punctuation">(</span><span class="token string">&apos;age&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> where<span class="token punctuation">:</span> <span class="token punctuation">{</span> age<span class="token punctuation">:</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>Op<span class="token punctuation">.</span>gt<span class="token punctuation">]</span><span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 50</span>
-</pre><h5 class="mume-header" id="validations-and-constraintshttpssequelizeorgmastermanualvalidations-and-constraintshtml"><a href="https://sequelize.org/master/manual/validations-and-constraints.html">Validations and Constraints</a></h5>
+</pre><h5 class="mume-header" id="validations-and-constraintshttpssequelizeorgmastermanualvalidations-and-constraintshtml"><a class="btn" href="https://sequelize.org/master/manual/validations-and-constraints.html">Validations and Constraints</a></h5>
 
 <hr>
 <p>END</p>
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#sequelize">Sequelize</a>
+<li><a class="btn" href="#sequelize">Sequelize</a>
 <ul>
-<li><a href="#command-line">Command Line</a>
+<li><a class="btn" href="#command-line">Command Line</a>
 <ul>
-<li><a href="#initialize-project">Initialize Project</a></li>
-<li><a href="#create-database">Create Database</a></li>
-<li><a href="#seeds">Seeds</a>
+<li><a class="btn" href="#initialize-project">Initialize Project</a></li>
+<li><a class="btn" href="#create-database">Create Database</a></li>
+<li><a class="btn" href="#seeds">Seeds</a>
 <ul>
-<li><a href="#generate-a-new-seed-file">Generate a new seed file</a></li>
-<li><a href="#run-all-pending-seeds">Run all pending seeds</a></li>
-<li><a href="#rollback-seeds">Rollback Seeds</a></li>
+<li><a class="btn" href="#generate-a-new-seed-file">Generate a new seed file</a></li>
+<li><a class="btn" href="#run-all-pending-seeds">Run all pending seeds</a></li>
+<li><a class="btn" href="#rollback-seeds">Rollback Seeds</a></li>
 </ul>
 </li>
-<li><a href="#migrations">Migrations</a>
+<li><a class="btn" href="#migrations">Migrations</a>
 <ul>
-<li><a href="#generate-a-model-and-its-migration">Generate a model and its migration</a></li>
-<li><a href="#run-all-pending-migrations">Run all pending migrations</a></li>
-<li><a href="#rollback-migrations">Rollback Migrations</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#javascript-sql-functions">Javascript SQL Functions</a>
-<ul>
-<li><a href="#connecting-to-a-database">Connecting to a Database</a></li>
-<li><a href="#testing-the-connection">Testing the Connection</a></li>
-<li><a href="#create-a-table">Create a Table</a></li>
-<li><a href="#delete-table">Delete Table</a></li>
-<li><a href="#adding-a-column">Adding a column</a></li>
-<li><a href="#removing-a-column">Removing a column</a></li>
-</ul>
-</li>
-<li><a href="#models">Models</a>
-<ul>
-<li><a href="#model-basics">Model Basics</a>
-<ul>
-<li><a href="#naming-models">Naming Models</a></li>
-<li><a href="#defining-a-model">Defining a Model</a>
-<ul>
-<li><a href="#using-sequelizedefine">Using <code>sequelize.define</code></a></li>
-</ul>
-</li>
-<li><a href="#synchronizing-a-model">Synchronizing a Model</a>
-<ul>
-<li><a href="#promises-and-asyncawait">Promises and <code>async</code>/<code>await</code></a></li>
-</ul>
-</li>
-<li><a href="#model-instances">Model Instances</a></li>
+<li><a class="btn" href="#generate-a-model-and-its-migration">Generate a model and its migration</a></li>
+<li><a class="btn" href="#run-all-pending-migrations">Run all pending migrations</a></li>
+<li><a class="btn" href="#rollback-migrations">Rollback Migrations</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#queries">Queries</a>
+<li><a class="btn" href="#javascript-sql-functions">Javascript SQL Functions</a>
 <ul>
-<li><a href="#insert-queries">INSERT queries</a></li>
-<li><a href="#select-queries">SELECT queries</a></li>
-<li><a href="#update-queries">UPDATE queries</a></li>
-<li><a href="#delete-queries">DELETE queries</a></li>
-<li><a href="#ordering-results">Ordering Results</a>
+<li><a class="btn" href="#connecting-to-a-database">Connecting to a Database</a></li>
+<li><a class="btn" href="#testing-the-connection">Testing the Connection</a></li>
+<li><a class="btn" href="#create-a-table">Create a Table</a></li>
+<li><a class="btn" href="#delete-table">Delete Table</a></li>
+<li><a class="btn" href="#adding-a-column">Adding a column</a></li>
+<li><a class="btn" href="#removing-a-column">Removing a column</a></li>
+</ul>
+</li>
+<li><a class="btn" href="#models">Models</a>
 <ul>
-<li><a href="#limits-and-offset">Limits and Offset</a></li>
-<li><a href="#grouping-results">Grouping Results</a>
+<li><a class="btn" href="#model-basics">Model Basics</a>
 <ul>
-<li><a href="#public-methods">Public Methods</a></li>
+<li><a class="btn" href="#naming-models">Naming Models</a></li>
+<li><a class="btn" href="#defining-a-model">Defining a Model</a>
+<ul>
+<li><a class="btn" href="#using-sequelizedefine">Using <code>sequelize.define</code></a></li>
+</ul>
+</li>
+<li><a class="btn" href="#synchronizing-a-model">Synchronizing a Model</a>
+<ul>
+<li><a class="btn" href="#promises-and-asyncawait">Promises and <code>async</code>/<code>await</code></a></li>
+</ul>
+</li>
+<li><a class="btn" href="#model-instances">Model Instances</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#utility-methods">Utility Methods</a>
+<li><a class="btn" href="#queries">Queries</a>
 <ul>
-<li><a href="#count">Count</a></li>
-<li><a href="#max-min-and-sum">max, min, and sum</a>
+<li><a class="btn" href="#insert-queries">INSERT queries</a></li>
+<li><a class="btn" href="#select-queries">SELECT queries</a></li>
+<li><a class="btn" href="#update-queries">UPDATE queries</a></li>
+<li><a class="btn" href="#delete-queries">DELETE queries</a></li>
+<li><a class="btn" href="#ordering-results">Ordering Results</a>
 <ul>
-<li><a href="#validations-and-constraintshttpssequelizeorgmastermanualvalidations-and-constraintshtml">Validations and Constraints</a></li>
+<li><a class="btn" href="#limits-and-offset">Limits and Offset</a></li>
+<li><a class="btn" href="#grouping-results">Grouping Results</a>
+<ul>
+<li><a class="btn" href="#public-methods">Public Methods</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="btn" href="#utility-methods">Utility Methods</a>
+<ul>
+<li><a class="btn" href="#count">Count</a></li>
+<li><a class="btn" href="#max-min-and-sum">max, min, and sum</a>
+<ul>
+<li><a class="btn" href="#validations-and-constraintshttpssequelizeorgmastermanualvalidations-and-constraintshtml">Validations and Constraints</a></li>
 </ul>
 </li>
 </ul>

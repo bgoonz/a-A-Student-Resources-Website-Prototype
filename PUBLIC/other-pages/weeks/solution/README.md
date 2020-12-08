@@ -71,9 +71,9 @@ open-sourced book called JavaScript Allonge, Sixth Edition, by Reg Braithwaite.
 The **server** directory contains the node server that powers the application
 and serves your page. It starts _two_ servers:
 
-* http://localhost:3000 - this is a built-in and rudimentary file browser that
+- http://localhost:3000 - this is a built-in and rudimentary file browser that
   your application would replace
-* http://localhost:3001 - this will server your code and serve your API requests
+- http://localhost:3001 - this will server your code and serve your API requests
   when you `fetch` data
 
 The **your-code** directory contains **browser.html**, the file in which you
@@ -96,7 +96,7 @@ the first column will be for the server http://localhost:3001. All of the paths
 are relative to the **directory-browsed** directory.
 
 | URL                    | HTTP Verb | What it does                                                 |
-|------------------------|-----------|--------------------------------------------------------------|
+| ---------------------- | --------- | ------------------------------------------------------------ |
 | /api/path/«dir-path»   | GET       | This returns the list of files and directories in «dir-path» |
 | /api/file/«file-path»  | GET       | Returns the contents of the file at «file-path»              |
 | /api/entry/«file-path» | PATCH     | Moves a file from one location to another                    |
@@ -145,5 +145,5 @@ of files from that directory and return them. If the directory doesn't exist (or
 something bad happens), then your code will get an appropriate HTTP status code
 that indicates the error, like 404.
 
->Remember that you will need to check `response.ok`
->in `fetch` calls to catch things like 404 errors.)
+> Remember that you will need to check `response.ok`
+> in `fetch` calls to catch things like 404 errors.)

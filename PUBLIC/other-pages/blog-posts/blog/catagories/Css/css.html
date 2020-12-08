@@ -75,7 +75,7 @@
 <span class="token selector">header *</span> <span class="token punctuation">{</span>
     <span class="token comment">/* style that will be applied to all the elements inside the header tag */</span>
 <span class="token punctuation">}</span>
-</pre><p>The universal selector was commonly used for resetting CSS properties on all the elements. It&apos;s worth mentioning that it is always feared of being bad for performance. These claims were disproved according to the <a href="http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/">tests ran by Steve Souders</a> and it was proven that their impact on performance is negligible in real world scenarios.</p>
+</pre><p>The universal selector was commonly used for resetting CSS properties on all the elements. It&apos;s worth mentioning that it is always feared of being bad for performance. These claims were disproved according to the <a class="btn" href="http://www.stevesouders.com/blog/2009/03/10/performance-impact-of-css-selectors/">tests ran by Steve Souders</a> and it was proven that their impact on performance is negligible in real world scenarios.</p>
 <p>The most common use of the universal selector nowadays is setting the <code>box-sizing</code> like the following:</p>
 <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector">*</span> <span class="token punctuation">{</span>
     <span class="token property">box-sizing</span><span class="token punctuation">:</span> border-box<span class="token punctuation">;</span>
@@ -140,7 +140,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Please check the information posted on our <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>privacy-policy.html<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>privacy policy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> before continueing to use this service.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
 </pre><p>When the user move the pointer over the <code>&lt;a&gt;</code> tag, the underlying text below the link will disappear. Note how these types of selectors are written; it starts with a column then the keyword is attacked to it directly.</p>
 <p><strong>A little bit of history</strong><br>
-The <code>:hover</code> selector is supported on every type of elements but that wasn&apos;t always the case. On IE6, the <code>:hover</code> selector used to work on anchor tags only. Also, IE7 and IE8 used to ignore the <code>:hover</code> selector if a strict doctype is not used.  Developers used to mimic the hover effect by using JavaScript to add and remove classes like <code>.hover</code> on <code>mouseEnter</code> / <code>mouseLeave</code> events on elements. This was a commonly used technique when creating drop down menus as the the submenu was being displayed when the user hover the <code>li</code> and not the <code>a</code> inside. This technique was first described on <a href="http://alistapart.com/article/dropdowns">a list a part</a> and was called Suckerfish Dropdown back in 2003!</p>
+The <code>:hover</code> selector is supported on every type of elements but that wasn&apos;t always the case. On IE6, the <code>:hover</code> selector used to work on anchor tags only. Also, IE7 and IE8 used to ignore the <code>:hover</code> selector if a strict doctype is not used.  Developers used to mimic the hover effect by using JavaScript to add and remove classes like <code>.hover</code> on <code>mouseEnter</code> / <code>mouseLeave</code> events on elements. This was a commonly used technique when creating drop down menus as the the submenu was being displayed when the user hover the <code>li</code> and not the <code>a</code> inside. This technique was first described on <a class="btn" href="http://alistapart.com/article/dropdowns">a list a part</a> and was called Suckerfish Dropdown back in 2003!</p>
 <p>Be careful of using the hover to change the dimensions of an element or the size of its text. It will reposition the surrounding elements and text and will also trigger what we call the <em>reflow</em> or <em>layout thrashing</em> which is a performance bottle neck (see reflow, repainting). Instead, use CSS transition to achieve a similar effect. Consider the following:</p>
 <pre data-role="codeBlock" data-info="css" class="language-css"><span class="token selector">a</span> <span class="token punctuation">{</span>
   <span class="token property">font-size</span><span class="token punctuation">:</span> <span class="token number">12</span><span class="token unit">px</span><span class="token punctuation">;</span>
@@ -170,7 +170,7 @@ The <code>:hover</code> selector is supported on every type of elements but that
 <p>Another common issue reported to developers is to remove the dotted outline around the links that look like the following on Firefox</p>
 <p>This outline is the style that Firefox applies to the links that receive focus. OK let&apos;s get something off the road first ... If someone is to discover something like that then that user must&apos;ve used the tabs to navigate the page. Anyone who would use something like that will fall in love quickly with the landmark  that says where you are now exactly ... Why would anyone want to remove that?</p>
 <p>The answer is, some people discover this without using the tab for navigation. For instance, if you clicked a link that open in a new browser window then you close that window you will find that the link has received focus. The user knows nothing about the focus state nor using the keyboard for navigation. S/he think it&apos;s odd and report it.</p>
-<p>Another common use for the focus state is to mimic the behaviors shown on hover. Below is a screenshot taken from <a href="https://getbootstrap.com/docs/4.1/components/tooltips/">the documentation</a> of the popular UI toolkit Bootstrap featuring the tooltip component.</p>
+<p>Another common use for the focus state is to mimic the behaviors shown on hover. Below is a screenshot taken from <a class="btn" href="https://getbootstrap.com/docs/4.1/components/tooltips/">the documentation</a> of the popular UI toolkit Bootstrap featuring the tooltip component.</p>
 <p><img src="../images/css/selectors-focus-tooltip.png" alt></p>
 <p>Tooltips are displayed on hover. To improve accessibility, the tooltip is displayed for those who focus the element as well. Can you figure out which one received the focus and which one received the hover? Correct; the tooltip at the top was triggered using the focus (can you see the focus outline on the link?) and the one at the bottom received the hover (notice the underline added to to this particular link). Bootstrap uses JavaScript to display these information but the same can be applied with CSS using focus state and a different type of selectors we will discuss later on.</p>
 <p>The last think about focus is that it can be used to <strong>bring user attention to an element that looks inert by default</strong> although it can be interactive. Consider the following HTML of an accordion component on a web page:</p>
@@ -195,8 +195,8 @@ The <code>:hover</code> selector is supported on every type of elements but that
 </pre><h4 class="mume-header" id="focus-within-selector"><code>:focus-within</code> selector</h4>
 
 <p><code>:focus-within</code> is a relatively new pseudo-class selector. It matches an element that have a child element within its tree that received focus. This selector has been a dream for many developers who cared about making their content accessible because it enables us to achieve effects and behaviors that weren&apos;t available without the use of JavaScript.</p>
-<p>A common problem it solves is the navigation of dropdown menus using keyboard. The submenu only displays using <code>:hover</code> on the parent <code>li</code> and can be made visible if its title receive a focus. Once the focus move on to the submenu, the menu disappear because it is no longer receiving the focus nor the hover. To get a better understanding of the behavior you can check <a href="https://codepen.io/ahmadalfy/pen/ppJGBJ">this pen</a> and try to navigate it using the <code>tab</code> key.</p>
-<p>Another common pattern this selector helps to solve is the customization of the <code>select</code> element. This technique was described by <a href="https://github.com/filamentgroup/select-css">filament group</a> with a single flaw; you cannot change the caret&apos;s orientation when the <code>select</code> is opened. Using <code>:focus-within</code> can help you overcome that because when the select is opened, it will be focused and the wrapper can be selected using that selector to apply any style we want to the caret.</p>
+<p>A common problem it solves is the navigation of dropdown menus using keyboard. The submenu only displays using <code>:hover</code> on the parent <code>li</code> and can be made visible if its title receive a focus. Once the focus move on to the submenu, the menu disappear because it is no longer receiving the focus nor the hover. To get a better understanding of the behavior you can check <a class="btn" href="https://codepen.io/ahmadalfy/pen/ppJGBJ">this pen</a> and try to navigate it using the <code>tab</code> key.</p>
+<p>Another common pattern this selector helps to solve is the customization of the <code>select</code> element. This technique was described by <a class="btn" href="https://github.com/filamentgroup/select-css">filament group</a> with a single flaw; you cannot change the caret&apos;s orientation when the <code>select</code> is opened. Using <code>:focus-within</code> can help you overcome that because when the select is opened, it will be focused and the wrapper can be selected using that selector to apply any style we want to the caret.</p>
 <h4 class="mume-header" id="active-selector"><code>:active</code> selector</h4>
 
 <p>This selector can be used to target an element being clicked. For instance, a button being clicked without releasing the mouse button. Once the button is released, it is no longer active. A common use for this selector is to mimic the effect of a button being pushed downward like the following:</p>
@@ -217,7 +217,7 @@ The <code>:hover</code> selector is supported on every type of elements but that
 </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
 
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">&gt;</span></span>Click me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
-</pre><p>You can try it to see the effect <a href="https://jsfiddle.net/f5rwk9ed/3/">here</a>.</p>
+</pre><p>You can try it to see the effect <a class="btn" href="https://jsfiddle.net/f5rwk9ed/3/">here</a>.</p>
 <p>&#x26A0;&#xFE0F; It&apos;s worth mentioning that new comers commonly misunderstand this selector of being used to apply specific style to the menu item that indicate the <em>active</em> page.</p>
 <hr>
 <p>Remaining:</p>
@@ -273,22 +273,22 @@ The <code>:hover</code> selector is supported on every type of elements but that
 </pre>
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#css">CSS</a><br>
-- <a href="#css-specificity">CSS Specificity</a>
+<li><a class="btn" href="#css">CSS</a><br>
+- <a class="btn" href="#css-specificity">CSS Specificity</a>
 <ul>
-<li><a href="#selectors">Selectors</a>
+<li><a class="btn" href="#selectors">Selectors</a>
 <ul>
-<li><a href="#types-of-selectors">Types of selectors</a>
+<li><a class="btn" href="#types-of-selectors">Types of selectors</a>
 <ul>
-<li><a href="#the-universal-selector">The universal selector</a></li>
-<li><a href="#type-element-selector">Type / Element selector</a></li>
-<li><a href="#class-selector">Class selector</a></li>
-<li><a href="#pseudoclass-selectors">Pseudoclass selectors</a></li>
-<li><a href="#hover-selector"><code>:hover</code> selector</a></li>
-<li><a href="#focus-selector"><code>:focus</code> selector</a></li>
-<li><a href="#focus-within-selector"><code>:focus-within</code> selector</a></li>
-<li><a href="#active-selector"><code>:active</code> selector</a></li>
-<li><a href="#vector-shadows">Vector Shadows</a></li>
+<li><a class="btn" href="#the-universal-selector">The universal selector</a></li>
+<li><a class="btn" href="#type-element-selector">Type / Element selector</a></li>
+<li><a class="btn" href="#class-selector">Class selector</a></li>
+<li><a class="btn" href="#pseudoclass-selectors">Pseudoclass selectors</a></li>
+<li><a class="btn" href="#hover-selector"><code>:hover</code> selector</a></li>
+<li><a class="btn" href="#focus-selector"><code>:focus</code> selector</a></li>
+<li><a class="btn" href="#focus-within-selector"><code>:focus-within</code> selector</a></li>
+<li><a class="btn" href="#active-selector"><code>:active</code> selector</a></li>
+<li><a class="btn" href="#vector-shadows">Vector Shadows</a></li>
 </ul>
 </li>
 </ul>

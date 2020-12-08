@@ -103,7 +103,7 @@ h1 {
 - The `:hover` selector, for example, will apply the styles if the user's cursor is on top of the element.
 - In the below example, by hovering over the link, the color and font changes on the text and a border is applied. When the user moves their cursor off of the link, the `:hover` styles are no longer applied and it goes back to the styling associated with the standard `a` tag.
 ```html
-<a href="https://google.com">Link</a>
+<a class="btn" href="https://google.com">Link</a>
 ```
 ```css
 a {

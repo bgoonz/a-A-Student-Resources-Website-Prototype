@@ -5,7 +5,7 @@
   "use strict";
   var locations = [
     [
-      '<div class="infobox"><h3 class="title"><a href="#">Where I live</a></h3><span>Weehawken NJ</span><span>+551-254-5505</span></div>',
+      '<div class="infobox"><h3 class="title"><a class="btn" href="#">Where I live</a></h3><span>Weehawken NJ</span><span>+551-254-5505</span></div>',
       40.76788,
       -74.0163,
       2,

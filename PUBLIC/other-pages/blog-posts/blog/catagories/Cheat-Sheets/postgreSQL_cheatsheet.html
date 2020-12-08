@@ -61,15 +61,15 @@
 </tr>
 <tr>
 <td>To quit the psql:<code>\q</code></td>
-<td><a href="https://www.postgresqltutorial.com/postgresql-show-databases/">List all databases</a> in the PostgreSQL database server<code>\l</code></td>
+<td><a class="btn" href="https://www.postgresqltutorial.com/postgresql-show-databases/">List all databases</a> in the PostgreSQL database server<code>\l</code></td>
 </tr>
 <tr>
 <td>List all schemas:<code>\dn</code></td>
-<td>List all <a href="https://www.postgresqltutorial.com/postgresql-stored-procedures/">stored procedures</a> and functions:<code>\df</code></td>
+<td>List all <a class="btn" href="https://www.postgresqltutorial.com/postgresql-stored-procedures/">stored procedures</a> and functions:<code>\df</code></td>
 </tr>
 <tr>
-<td>List all <a href="https://www.postgresqltutorial.com/postgresql-views/">views</a>:<code>\dv</code></td>
-<td><a href="https://www.postgresqltutorial.com/postgresql-show-tables/">Lists all tables</a> in a current database.<code>\dt</code></td>
+<td>List all <a class="btn" href="https://www.postgresqltutorial.com/postgresql-views/">views</a>:<code>\dv</code></td>
+<td><a class="btn" href="https://www.postgresqltutorial.com/postgresql-show-tables/">Lists all tables</a> in a current database.<code>\dt</code></td>
 </tr>
 <tr>
 <td>Or to get more information on tables in the current database:<code>\dt+</code></td>
@@ -81,7 +81,7 @@
 </tr>
 </tbody>
 </table>
-<p>Create a new <a href="https://www.postgresqltutorial.com/postgresql-roles/">role</a>:</p>
+<p>Create a new <a class="btn" href="https://www.postgresqltutorial.com/postgresql-roles/">role</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE ROLE role_name;
 </code></pre><p>Create a new role with a <code>username</code> and <code>password</code>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE ROLE username NOINHERIT LOGIN PASSWORD password;
@@ -93,49 +93,49 @@
 <h2 class="mume-header" id="managing-databases">Managing databases</h2>
 
 <p>===========================<br>
-<a href="https://www.postgresqltutorial.com/postgresql-create-database/">Create a new database</a>:</p>
+<a class="btn" href="https://www.postgresqltutorial.com/postgresql-create-database/">Create a new database</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE DATABASE [IF NOT EXISTS] db_name;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-drop-database/">Delete a database permanently</a>:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-drop-database/">Delete a database permanently</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>DROP DATABASE [IF EXISTS] db_name;
 </code></pre><p>===========================</p>
 <h2 class="mume-header" id="managing-tables">Managing tables</h2>
 
 <p>===========================<br>
-<a href="https://www.postgresqltutorial.com/postgresql-create-table/">Create a new table</a> or a <a href="https://www.postgresqltutorial.com/postgresql-temporary-table/">temporary table</a></p>
+<a class="btn" href="https://www.postgresqltutorial.com/postgresql-create-table/">Create a new table</a> or a <a class="btn" href="https://www.postgresqltutorial.com/postgresql-temporary-table/">temporary table</a></p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE [TEMP] TABLE [IF NOT EXISTS] table_name(
        pk SERIAL PRIMARY KEY,
    c1 type(size) NOT NULL,
    c2 type(size) NULL,
    ...
 );
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-add-column/">Add a new column</a> to a table:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-add-column/">Add a new column</a> to a table:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name ADD COLUMN new_column_name TYPE;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-drop-column/">Drop a column</a> in a table:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-drop-column/">Drop a column</a> in a table:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name DROP COLUMN column_name;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-rename-column/">Rename a column</a>:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-rename-column/">Rename a column</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name RENAME column_name TO new_column_name;
 </code></pre><p>Set or remove a default value for a column:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name ALTER COLUMN [SET DEFAULT value | DROP DEFAULT]
-</code></pre><p>Add a <a href="https://www.postgresqltutorial.com/postgresql-primary-key/">primary key </a>to a table.</p>
+</code></pre><p>Add a <a class="btn" href="https://www.postgresqltutorial.com/postgresql-primary-key/">primary key </a>to a table.</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name ADD PRIMARY KEY (column,...);
 </code></pre><p>Remove the primary key from a table.</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name
 DROP CONSTRAINT primary_key_constraint_name;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-rename-table/">Rename a table</a>.</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-rename-table/">Rename a table</a>.</p>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name RENAME TO new_table_name;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-drop-table/">Drop a table</a> and its dependent objects:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-drop-table/">Drop a table</a> and its dependent objects:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>DROP TABLE [IF EXISTS] table_name CASCADE;
 </code></pre><p>===========================</p>
 <h2 class="mume-header" id="managing-views">Managing views</h2>
 
 <p>===========================<br>
-<a href="https://www.postgresqltutorial.com/managing-postgresql-views/">Create a view</a>:</p>
+<a class="btn" href="https://www.postgresqltutorial.com/managing-postgresql-views/">Create a view</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE OR REPLACE view_name AS
 query;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-recursive-view/">Create a recursive view</a>:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-recursive-view/">Create a recursive view</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE RECURSIVE VIEW view_name(column_list) AS
 SELECT column_list;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-materialized-views/">Create a materialized view</a>:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-materialized-views/">Create a materialized view</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>CREATE MATERIALIZED VIEW view_name
 AS
 query
@@ -173,23 +173,23 @@ FROM table;
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table
 WHERE condition;
-</code></pre><p>Assign an <a href="https://www.postgresqltutorial.com/postgresql-alias/">alias</a> to a column in the result set:</p>
+</code></pre><p>Assign an <a class="btn" href="https://www.postgresqltutorial.com/postgresql-alias/">alias</a> to a column in the result set:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT column_1 AS new_column_1, ...
 FROM table;
-</code></pre><p>Query data using the <code><a href="https://www.postgresqltutorial.com/postgresql-like/">LIKE</a></code> operator:</p>
+</code></pre><p>Query data using the <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-like/">LIKE</a></code> operator:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column LIKE &apos;%value%&apos;
-</code></pre><p>Query data using the <code><a href="https://www.postgresqltutorial.com/postgresql-between/">BETWEEN</a> </code>operator:</p>
+</code></pre><p>Query data using the <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-between/">BETWEEN</a> </code>operator:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column BETWEEN low AND high;
-</code></pre><p>Query data using the <code><a href="https://www.postgresqltutorial.com/postgresql-in/">IN</a> </code>operator:</p>
+</code></pre><p>Query data using the <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-in/">IN</a> </code>operator:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column IN (value1, value2,...);
-</code></pre><p>Constrain the returned rows with the <code><a href="https://www.postgresqltutorial.com/postgresql-limit/">LIMIT</a></code> clause:</p>
+</code></pre><p>Constrain the returned rows with the <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-limit/">LIMIT</a></code> clause:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 LIMIT limit OFFSET offset
 ORDER BY column_name;
-</code></pre><p>Query data from multiple using the <a href="https://www.postgresqltutorial.com/postgresql-inner-join/">inner join</a>, <a href="https://www.postgresqltutorial.com/postgresql-left-join/">left join</a>, <a href="https://www.postgresqltutorial.com/postgresql-full-outer-join/">full outer join</a>, <a href="https://www.postgresqltutorial.com/postgresql-cross-join/">cross join</a> and <a href="https://www.postgresqltutorial.com/postgresql-natural-join/">natural join</a>:</p>
+</code></pre><p>Query data from multiple using the <a class="btn" href="https://www.postgresqltutorial.com/postgresql-inner-join/">inner join</a>, <a class="btn" href="https://www.postgresqltutorial.com/postgresql-left-join/">left join</a>, <a class="btn" href="https://www.postgresqltutorial.com/postgresql-full-outer-join/">full outer join</a>, <a class="btn" href="https://www.postgresqltutorial.com/postgresql-cross-join/">cross join</a> and <a class="btn" href="https://www.postgresqltutorial.com/postgresql-natural-join/">natural join</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table1
 INNER JOIN table2 ON conditions
@@ -212,11 +212,11 @@ FROM table_name;
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT select_list
 FROM table
 ORDER BY column ASC [DESC], column2 ASC [DESC],...;
-</code></pre><p>Group rows using <code><a href="https://www.postgresqltutorial.com/postgresql-group-by/">GROUP BY</a></code> clause.</p>
+</code></pre><p>Group rows using <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-group-by/">GROUP BY</a></code> clause.</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table
 GROUP BY column_1, column_2, ...;
-</code></pre><p>Filter groups using the <code><a href="https://www.postgresqltutorial.com/postgresql-having/">HAVING</a></code> clause.</p>
+</code></pre><p>Filter groups using the <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-having/">HAVING</a></code> clause.</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table
 GROUP BY column_1
@@ -225,11 +225,11 @@ HAVING condition;
 <h2 class="mume-header" id="set-operations">Set operations</h2>
 
 <p>===========================<br>
-Combine the result set of two or more queries with <code><a href="https://www.postgresqltutorial.com/postgresql-union/">UNION</a></code> operator:</p>
+Combine the result set of two or more queries with <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-union/">UNION</a></code> operator:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table1
 UNION
 SELECT * FROM table2;
-</code></pre><p>Minus a result set using <code><a href="https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/">EXCEPT</a></code> operator:</p>
+</code></pre><p>Minus a result set using <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/">EXCEPT</a></code> operator:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table1
 EXCEPT
 SELECT * FROM table2;
@@ -241,7 +241,7 @@ SELECT * FROM table2;
 <h2 class="mume-header" id="modifying-data">Modifying data</h2>
 
 <p>===========================<br>
-<a href="https://www.postgresqltutorial.com/postgresql-insert/">Insert a new row into a table</a>:</p>
+<a class="btn" href="https://www.postgresqltutorial.com/postgresql-insert/">Insert a new row into a table</a>:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>INSERT INTO table(column1,column2,...)
 VALUES(value_1,value_2,...);
 </code></pre><p>Insert multiple rows into a table:</p>
@@ -249,7 +249,7 @@ VALUES(value_1,value_2,...);
 VALUES(value_1,value_2,...),
       (value_1,value_2,...),
       (value_1,value_2,...)...
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-update/">Update</a> data for all rows:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-update/">Update</a> data for all rows:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>UPDATE table_name
 SET column_1 = value_1,
     ...;
@@ -258,7 +258,7 @@ SET column_1 = value_1,
 SET column_1 = value_1,
     ...
 WHERE condition;
-</code></pre><p><a href="https://www.postgresqltutorial.com/postgresql-delete/">Delete all rows</a> of a table:</p>
+</code></pre><p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-delete/">Delete all rows</a> of a table:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>DELETE FROM table_name;
 </code></pre><p>Delete specific rows based on a condition:</p>
 <pre data-role="codeBlock" data-info class="language-"><code>DELETE FROM table_name
@@ -274,15 +274,15 @@ WHERE condition;
 </code></pre>
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#postgresql-commands">PostgreSQL commands</a></li>
-<li><a href="#managing-databases">Managing databases</a></li>
-<li><a href="#managing-tables">Managing tables</a></li>
-<li><a href="#managing-views">Managing views</a></li>
-<li><a href="#managing-indexes">Managing indexes</a></li>
-<li><a href="#querying-data-from-tables">Querying data from tables</a></li>
-<li><a href="#set-operations">Set operations</a></li>
-<li><a href="#modifying-data">Modifying data</a></li>
-<li><a href="#performance">Performance</a></li>
+<li><a class="btn" href="#postgresql-commands">PostgreSQL commands</a></li>
+<li><a class="btn" href="#managing-databases">Managing databases</a></li>
+<li><a class="btn" href="#managing-tables">Managing tables</a></li>
+<li><a class="btn" href="#managing-views">Managing views</a></li>
+<li><a class="btn" href="#managing-indexes">Managing indexes</a></li>
+<li><a class="btn" href="#querying-data-from-tables">Querying data from tables</a></li>
+<li><a class="btn" href="#set-operations">Set operations</a></li>
+<li><a class="btn" href="#modifying-data">Modifying data</a></li>
+<li><a class="btn" href="#performance">Performance</a></li>
 </ul>
 </div>
       <a id="sidebar-toc-btn">&#x2261;</a>

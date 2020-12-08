@@ -175,7 +175,7 @@
   IN GROUP role_name [, ...]
 </code></pre><ul>
 <li>
-<h6><a href="https://www.postgresql.org/docs/13/sql-createrole.html">Detailed List of Parameters</a></h6>
+<h6><a class="btn" href="https://www.postgresql.org/docs/13/sql-createrole.html">Detailed List of Parameters</a></h6>
 </li>
 </ul>
 <h5 class="mume-header" id="deleting-users">Deleting Users</h5>
@@ -187,7 +187,7 @@
 <li>a role cannot be removed if it is still referenced in any database of the cluster; an error will be thrown.</li>
 <li>Before dropping the role, you must drop all objects it owns (or reassign their ownership)
 <ul>
-<li>see <a href="https://www.postgresql.org/docs/13/sql-drop-owned.html"><code>DROP OWNED</code></a> or <a href="https://www.postgresql.org/docs/13/sql-reassign-owned.html"><code>REASSIGN OWNED</code></a></li>
+<li>see <a class="btn" href="https://www.postgresql.org/docs/13/sql-drop-owned.html"><code>DROP OWNED</code></a> or <a class="btn" href="https://www.postgresql.org/docs/13/sql-reassign-owned.html"><code>REASSIGN OWNED</code></a></li>
 </ul>
 </li>
 </ul>
@@ -291,7 +291,7 @@ DROP COLUMN &#xAB;column_name&#xBB;;
 <h6>Renaming a Column</h6>
 <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE &#xAB;name&#xBB;
 RENAME COLUMN &#xAB;column_name&#xBB; TO &#xAB;new_name&#xBB;;
-</code></pre><h6><a href="https://www.postgresql.org/docs/13/sql-altertable.html">More ALTER TABLE Options</a></h6>
+</code></pre><h6><a class="btn" href="https://www.postgresql.org/docs/13/sql-altertable.html">More ALTER TABLE Options</a></h6>
 </li>
 </ul>
 <h5 class="mume-header" id="adding-rows-values">Adding Rows (Values)</h5>
@@ -820,56 +820,56 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#sql">SQL</a><br>
-- <a href="#structured-query-language">Structured Query Language</a><br>
-- <a href="#lightblue-postgresql-lightblue"> PostgreSQL </a>
+<li><a class="btn" href="#sql">SQL</a><br>
+- <a class="btn" href="#structured-query-language">Structured Query Language</a><br>
+- <a class="btn" href="#lightblue-postgresql-lightblue"> PostgreSQL </a>
 <ul>
-<li><a href="#sql-commands">SQL Commands</a>
+<li><a class="btn" href="#sql-commands">SQL Commands</a>
 <ul>
-<li><a href="#user-management">User Management</a>
+<li><a class="btn" href="#user-management">User Management</a>
 <ul>
-<li><a href="#creating-users">Creating Users</a></li>
-<li><a href="#deleting-users">Deleting Users</a></li>
-<li><a href="#setting-roles">Setting Roles</a></li>
+<li><a class="btn" href="#creating-users">Creating Users</a></li>
+<li><a class="btn" href="#deleting-users">Deleting Users</a></li>
+<li><a class="btn" href="#setting-roles">Setting Roles</a></li>
 </ul>
 </li>
-<li><a href="#database-management">Database Management</a>
+<li><a class="btn" href="#database-management">Database Management</a>
 <ul>
-<li><a href="#creating-a-database">Creating a Database</a></li>
-<li><a href="#deleting-a-database">Deleting a Database</a></li>
+<li><a class="btn" href="#creating-a-database">Creating a Database</a></li>
+<li><a class="btn" href="#deleting-a-database">Deleting a Database</a></li>
 </ul>
 </li>
-<li><a href="#table-management">Table Management</a>
+<li><a class="btn" href="#table-management">Table Management</a>
 <ul>
-<li><a href="#creating-a-table">Creating a Table</a></li>
-<li><a href="#altering-tables">Altering Tables</a></li>
-<li><a href="#adding-rows-values">Adding Rows (Values)</a></li>
+<li><a class="btn" href="#creating-a-table">Creating a Table</a></li>
+<li><a class="btn" href="#altering-tables">Altering Tables</a></li>
+<li><a class="btn" href="#adding-rows-values">Adding Rows (Values)</a></li>
 </ul>
 </li>
-<li><a href="#queries">Queries</a>
+<li><a class="btn" href="#queries">Queries</a>
 <ul>
-<li><a href="#select-query">Select Query</a></li>
-<li><a href="#where-clause">WHERE clause</a></li>
-<li><a href="#order-by">ORDER BY</a></li>
+<li><a class="btn" href="#select-query">Select Query</a></li>
+<li><a class="btn" href="#where-clause">WHERE clause</a></li>
+<li><a class="btn" href="#order-by">ORDER BY</a></li>
 </ul>
 </li>
-<li><a href="#constraints">Constraints</a>
+<li><a class="btn" href="#constraints">Constraints</a>
 <ul>
-<li><a href="#check-constraints">Check Constraints</a></li>
-<li><a href="#not-null-constraints">Not-Null Constraints</a></li>
-<li><a href="#unique-constraints">Unique Constraints</a></li>
-<li><a href="#primary-keys">Primary Keys</a></li>
-<li><a href="#foreign-keys">Foreign Keys</a></li>
+<li><a class="btn" href="#check-constraints">Check Constraints</a></li>
+<li><a class="btn" href="#not-null-constraints">Not-Null Constraints</a></li>
+<li><a class="btn" href="#unique-constraints">Unique Constraints</a></li>
+<li><a class="btn" href="#primary-keys">Primary Keys</a></li>
+<li><a class="btn" href="#foreign-keys">Foreign Keys</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#sql-data-types">SQL Data Types</a></li>
-<li><a href="#sql-operators">SQL Operators</a>
+<li><a class="btn" href="#sql-data-types">SQL Data Types</a></li>
+<li><a class="btn" href="#sql-operators">SQL Operators</a>
 <ul>
-<li><a href="#logical-operators">Logical Operators</a></li>
-<li><a href="#arithmetic-operators">Arithmetic Operators</a></li>
-<li><a href="#comparison-operators">Comparison Operators</a></li>
+<li><a class="btn" href="#logical-operators">Logical Operators</a></li>
+<li><a class="btn" href="#arithmetic-operators">Arithmetic Operators</a></li>
+<li><a class="btn" href="#comparison-operators">Comparison Operators</a></li>
 </ul>
 </li>
 </ul>

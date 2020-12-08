@@ -1,57 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
+    <!---------------------------------------(meta)------------------------------------------->
 
-    <script async defer>
-      var sidebarTOCBtn = document.getElementById( 'sidebar-toc-btn' )
-      sidebarTOCBtn.addEventListener( 'click', function ( event ) {
-        event.stopPropagation()
-        if ( document.body.hasAttribute( 'html-show-sidebar-toc' ) ) {
-          document.body.removeAttribute( 'html-show-sidebar-toc' )
-        } else {
-          document.body.setAttribute( 'html-show-sidebar-toc', true )
-        }
-      } )
-    </script>
-<style type="text/css">
-#home-link{
-    	margin: 1em 0 0.5em 0;
-	color: #606468;
-	font-weight: bold;
-	font-family: 'Ultra', sans-serif;
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week-</title>
+    <!-------------------------------(Standardized styles)------------------------------------>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../../css/animate.css" />
+    <!---------------------------------(customized styles)------------------------------------>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style type="text/css"></style>
+    <!--------------------------------(syntax hilighting)------------------------------------->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/default.min.css"
+    />
+<link rel="stlyesheet" href="./prism.css">
+    <!-------------------------------------(scripts)------------------------------------------>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
+<script async src="./prism.js"></script>
+    <title>Week1</title>
+  </head>
 
-	line-height: 42px;
-	text-transform: uppercase;
-	text-shadow: 0 7px black, 0 3px #777;
-font-size:3em;
-  color: black;
-  font-weight: bold;
-}
-
-</style>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/default.min.css">
-  <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
-  <!-- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>Week-9</title>
-
-
-
-   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i" rel="stylesheet">
-  <!-- Custom & Default Styles -->
-<link rel="stylesheet" href="./../../css/bootstrap.css">
-  <link rel="stylesheet" href="./../../css/font-awesome.min.css">
-<link rel="stylesheet" href="./../../css/bootstrap-theme.css">
-
-
-</head>
-</head>
 <!-------------------------END-OF-HEADER-------------------------->
 
 
@@ -60,29 +46,29 @@ font-size:3em;
     <div id="redirect-btns-div" class="col-sm-4">
 
       <div class="section-button text-center">
-        <a href="./../../index.html" class="btn btn-primary">HOME</a>
+        <a class="btn" href="./../../index.html" class="btn btn-primary">HOME</a>
       </div>
       <div class="section-button text-center">
-        <a href="./week-9/quiz/wk9-quiz.html" class="btn btn-primary">week-9-quiz</a>
+        <a class="btn" href="./week-9/quiz/wk9-quiz.html" class="btn btn-primary">week-9-quiz</a>
       </div>
 
       <div class="section-button text-center">
-        <a href="./week-9/w9-projects/css-modernize-craigslist-starter/attributes-project.html"
+        <a class="btn" href="./week-9/w9-projects/css-modernize-craigslist-starter/attributes-project.html"
           class="btn btn-primary">modernize-craigslist</a>
       </div>
 
       <div class="section-button text-center">
-        <a href="./week-9/w9-projects/trello/flexbox-project.css" class="btn btn-primary">Trello</a>
+        <a class="btn" href="./week-9/w9-projects/trello/flexbox-project.css" class="btn btn-primary">Trello</a>
       </div>
 
 
 
       <div class="section-button text-center">
-        <a href="./week-9/w9-projects/aa-times/index.html" class="btn btn-primary">a/A Times</a>
+        <a class="btn" href="./week-9/w9-projects/aa-times/index.html" class="btn btn-primary">a/A Times</a>
       </div>
 
       <div class="section-button text-center">
-        <a href="./week-9/w9-projects/catstagram/public/index.html" class="btn btn-primary">Catstagram</a>
+        <a class="btn" href="./week-9/w9-projects/catstagram/public/index.html" class="btn btn-primary">Catstagram</a>
       </div>
 
 
@@ -1842,34 +1828,34 @@ document<span class="token punctuation">.</span><span class="token function">que
   <div>
   <div class="md-sidebar-toc">
     <ul>
-      <li><a href="#css-and-ajax-week-9-learning-objectives">CSS and AJAX (Week 9) - Learning Objectives</a>
+      <li><a class="btn" href="#css-and-ajax-week-9-learning-objectives">CSS and AJAX (Week 9) - Learning Objectives</a>
         <ul>
-          <li><a href="#assessment-structure">Assessment Structure</a></li>
-          <li><a href="#basic-css-w09d1-learning-objectives">Basic CSS (W09D1) - Learning Objectives</a>
+          <li><a class="btn" href="#assessment-structure">Assessment Structure</a></li>
+          <li><a class="btn" href="#basic-css-w09d1-learning-objectives">Basic CSS (W09D1) - Learning Objectives</a>
             <ul>
-              <li><a href="#basic-css">Basic CSS</a></li>
+              <li><a class="btn" href="#basic-css">Basic CSS</a></li>
             </ul>
           </li>
-          <li><a href="#ajax-asynchronous-javascript-and-xml-w09d2-learning-objectives">AJAX (Asynchronous JavaScript
+          <li><a class="btn" href="#ajax-asynchronous-javascript-and-xml-w09d2-learning-objectives">AJAX (Asynchronous JavaScript
               and XML) (W09D2) - Learning Objectives</a>
             <ul>
-              <li><a href="#ajax">AJAX</a></li>
+              <li><a class="btn" href="#ajax">AJAX</a></li>
             </ul>
           </li>
-          <li><a href="#media-queries-positioning-and-layouts-w09d3-learning-objectives">Media Queries, Positioning, and
+          <li><a class="btn" href="#media-queries-positioning-and-layouts-w09d3-learning-objectives">Media Queries, Positioning, and
               Layouts (W09D3) - Learning Objectives</a>
             <ul>
-              <li><a href="#media-queries">Media Queries</a></li>
-              <li><a href="#layout-and-the-box-model">Layout and the Box Model</a></li>
-              <li><a href="#flexible-box-layout">Flexible Box Layout</a></li>
-              <li><a href="#grid-layout">Grid Layout</a></li>
+              <li><a class="btn" href="#media-queries">Media Queries</a></li>
+              <li><a class="btn" href="#layout-and-the-box-model">Layout and the Box Model</a></li>
+              <li><a class="btn" href="#flexible-box-layout">Flexible Box Layout</a></li>
+              <li><a class="btn" href="#grid-layout">Grid Layout</a></li>
             </ul>
           </li>
-          <li><a href="#interactivity-and-bem-w09d4-learning-objectives">Interactivity and BEM (W09D4) - Learning
+          <li><a class="btn" href="#interactivity-and-bem-w09d4-learning-objectives">Interactivity and BEM (W09D4) - Learning
               Objectives</a>
             <ul>
-              <li><a href="#interactivity">Interactivity</a></li>
-              <li><a href="#block-element-modifier-bem">Block, Element, Modifier (BEM)</a></li>
+              <li><a class="btn" href="#interactivity">Interactivity</a></li>
+              <li><a class="btn" href="#block-element-modifier-bem">Block, Element, Modifier (BEM)</a></li>
             </ul>
           </li>
         </ul>
@@ -1883,7 +1869,7 @@ document<span class="token punctuation">.</span><span class="token function">que
 
   </div>
 
-  <div id="home-link2"> <a href="./../../index.html">HOME</a>
+  <div id="home-link2"> <a class="btn" href="./../../index.html">HOME</a>
   </div>
 </body>
 

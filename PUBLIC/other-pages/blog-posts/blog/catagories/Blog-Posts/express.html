@@ -39,22 +39,22 @@
 <h4 class="mume-header" id="jump-to">Jump to...</h4>
 
 <ul>
-<li><a href="#routing">Routing</a>
+<li><a class="btn" href="#routing">Routing</a>
 <ul>
-<li><a href="#routingmethods">Methods</a></li>
-<li><a href="#paths">Paths</a></li>
-<li><a href="#parameters">Parameters</a></li>
-<li><a href="#handlers">Handlers</a></li>
+<li><a class="btn" href="#routingmethods">Methods</a></li>
+<li><a class="btn" href="#paths">Paths</a></li>
+<li><a class="btn" href="#parameters">Parameters</a></li>
+<li><a class="btn" href="#handlers">Handlers</a></li>
 </ul>
 </li>
-<li><a href="#middleware">Middleware</a>
+<li><a class="btn" href="#middleware">Middleware</a>
 <ul>
-<li><a href="#sessions">Sessions</a></li>
+<li><a class="btn" href="#sessions">Sessions</a></li>
 </ul>
 </li>
-<li><a href="#properties">Express Properties</a></li>
-<li><a href="#methods">Express Methods</a></li>
-<li><a href="#forms">Forms</a></li>
+<li><a class="btn" href="#properties">Express Properties</a></li>
+<li><a class="btn" href="#methods">Express Methods</a></li>
+<li><a class="btn" href="#forms">Forms</a></li>
 </ul>
 <h4 class="mume-header" id="installing-express">Installing Express</h4>
 
@@ -111,7 +111,7 @@
 <li><code>PATH</code> is a path on the server.</li>
 <li><code>HANDLER</code> is the function executed when the route is matched.
 <ul>
-<li>You can provide multiple callback functions that behave like <a href="#middleware">middleware</a> to handle a <a href="#methods">request</a>.</li>
+<li>You can provide multiple callback functions that behave like <a class="btn" href="#middleware">middleware</a> to handle a <a class="btn" href="#methods">request</a>.</li>
 </ul>
 </li>
 </ul>
@@ -173,7 +173,7 @@
 </ul>
 </li>
 </ul>
-<p><a href="https://expressjs.com/en/guide/routing.html">List of root paths</a></p>
+<p><a class="btn" href="https://expressjs.com/en/guide/routing.html">List of root paths</a></p>
 <h4 class="mume-header" id="route-parameters-a-idparametersa">Route Parameters <a id="parameters" href></a></h4>
 
 <ul>
@@ -193,7 +193,7 @@ req.params: { &quot;userId&quot;: &quot;34&quot;, &quot;bookId&quot;: &quot;8989
 <h4 class="mume-header" id="route-handlers-a-idhandlersa">Route Handlers <a id="handlers" href></a></h4>
 
 <ul>
-<li>You can provide multiple callback functions that behave like <a href="#middleware">middleware</a> to handle a request.</li>
+<li>You can provide multiple callback functions that behave like <a class="btn" href="#middleware">middleware</a> to handle a request.</li>
 <li>Route handlers can be in the form of a function, an array of functions, or combinations of both.
 <ul>
 <li>You can create chainable route handlers for a route path by using <strong><code>app.route()</code></strong></li>
@@ -298,7 +298,7 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
 <li>
 <h5>Error-handling</h5>
 <ul>
-<li>Define <a href="https://expressjs.com/en/guide/error-handling.html">error-handling</a> middleware functions in the same way as other middleware functions, except with four arguments instead of three, specifically with the signature (<code>err</code>, <code>req</code>, <code>res</code>, <code>next</code>)):<pre data-role="codeBlock" data-info="js" class="language-javascript">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<li>Define <a class="btn" href="https://expressjs.com/en/guide/error-handling.html">error-handling</a> middleware functions in the same way as other middleware functions, except with four arguments instead of three, specifically with the signature (<code>err</code>, <code>req</code>, <code>res</code>, <code>next</code>)):<pre data-role="codeBlock" data-info="js" class="language-javascript">app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> req<span class="token punctuation">,</span> res<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
   console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">.</span>stack<span class="token punctuation">)</span>
   res<span class="token punctuation">.</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&apos;Something broke!&apos;</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span>
@@ -321,17 +321,17 @@ app<span class="token punctuation">.</span><span class="token function">use</spa
 <tr>
 <td><code>express.static(root, [options])</code></td>
 <td>serves status assets such as HTML files, images, and so on.</td>
-<td><code>root</code>: specifies the root directory <code>options</code>: <a href="https://expressjs.com/en/4x/api.html#express.static">options object</a></td>
+<td><code>root</code>: specifies the root directory <code>options</code>: <a class="btn" href="https://expressjs.com/en/4x/api.html#express.static">options object</a></td>
 </tr>
 <tr>
 <td><code>express.json([options])</code></td>
 <td>parses incoming requests with JSON payloads</td>
-<td><code>options</code>: <a href="https://expressjs.com/en/4x/api.html#express.json">options object</a></td>
+<td><code>options</code>: <a class="btn" href="https://expressjs.com/en/4x/api.html#express.json">options object</a></td>
 </tr>
 <tr>
 <td><code>express.urlencoded([options])</code></td>
 <td>parses incoming requests with URL-encoded payloads</td>
-<td><code>options</code>: <a href="https://expressjs.com/en/4x/api.html#express.urlencoded">options object</a></td>
+<td><code>options</code>: <a class="btn" href="https://expressjs.com/en/4x/api.html#express.urlencoded">options object</a></td>
 </tr>
 </tbody>
 </table>
@@ -527,10 +527,10 @@ express-session deprecated undefined saveUninitialized option; provide saveUnini
 <table>
 <thead>
 <tr>
-<th><a href="https://expressjs.com/en/4x/api.html#req">Request</a></th>
-<th><a href="https://expressjs.com/en/4x/api.html#app">Application</a></th>
-<th><a href="https://expressjs.com/en/4x/api.html#res">Response</a></th>
-<th><a href="https://expressjs.com/en/4x/api.html#router">Router</a></th>
+<th><a class="btn" href="https://expressjs.com/en/4x/api.html#req">Request</a></th>
+<th><a class="btn" href="https://expressjs.com/en/4x/api.html#app">Application</a></th>
+<th><a class="btn" href="https://expressjs.com/en/4x/api.html#res">Response</a></th>
+<th><a class="btn" href="https://expressjs.com/en/4x/api.html#router">Router</a></th>
 <th>Middleware</th>
 </tr>
 </thead>
@@ -859,7 +859,7 @@ router<span class="token punctuation">.</span><span class="token function">post<
 </ul>
 </li>
 </ul>
-<p><a href="https://getbootstrap.com/docs/4.4/components/forms/">Bootstrap Form Control</a></p>
+<p><a class="btn" href="https://getbootstrap.com/docs/4.4/components/forms/">Bootstrap Form Control</a></p>
 <h2 class="mume-header" id="error-handling">Error Handling</h2>
 
 <ul>
@@ -908,54 +908,54 @@ router<span class="token punctuation">.</span><span class="token function">post<
 
       </div>
       <div class="md-sidebar-toc"><ul>
-<li><a href="#expressjs">Express.js</a><br>
-- <a href="#jump-to">Jump to...</a><br>
-- <a href="#installing-express">Installing Express</a><br>
-- <a href="#creating-an-express-application">Creating an Express Application</a>
+<li><a class="btn" href="#expressjs">Express.js</a><br>
+- <a class="btn" href="#jump-to">Jump to...</a><br>
+- <a class="btn" href="#installing-express">Installing Express</a><br>
+- <a class="btn" href="#creating-an-express-application">Creating an Express Application</a>
 <ul>
-<li><a href="#routing-a-idroutinga">Routing </a>
+<li><a class="btn" href="#routing-a-idroutinga">Routing </a>
 <ul>
-<li><a href="#route-methods-a-idroutingmethodsa">Route Methods </a></li>
-<li><a href="#route-paths-a-idpathsa">Route Paths </a></li>
-<li><a href="#route-parameters-a-idparametersa">Route Parameters </a></li>
-<li><a href="#route-handlers-a-idhandlersa">Route Handlers </a></li>
+<li><a class="btn" href="#route-methods-a-idroutingmethodsa">Route Methods </a></li>
+<li><a class="btn" href="#route-paths-a-idpathsa">Route Paths </a></li>
+<li><a class="btn" href="#route-parameters-a-idparametersa">Route Parameters </a></li>
+<li><a class="btn" href="#route-handlers-a-idhandlersa">Route Handlers </a></li>
 </ul>
 </li>
-<li><a href="#middleware-a-idmiddlewarea">Middleware </a>
+<li><a class="btn" href="#middleware-a-idmiddlewarea">Middleware </a>
 <ul>
-<li><a href="#listening-for-http-connections">Listening for HTTP Connections</a></li>
-<li><a href="#configurable-middleware">Configurable Middleware</a></li>
+<li><a class="btn" href="#listening-for-http-connections">Listening for HTTP Connections</a></li>
+<li><a class="btn" href="#configurable-middleware">Configurable Middleware</a></li>
 </ul>
 </li>
-<li><a href="#sessions-a-idsessionsa">Sessions </a>
+<li><a class="btn" href="#sessions-a-idsessionsa">Sessions </a>
 <ul>
-<li><a href="#installing-express-sessions">Installing Express sessions</a></li>
-<li><a href="#adding-express-session-middleware-to-the-app-module">Adding  <code>express-session</code> middleware to the <code>app</code> module.</a></li>
-<li><a href="#session-store">Session Store</a></li>
-<li><a href="#drawbacks">Drawbacks</a></li>
+<li><a class="btn" href="#installing-express-sessions">Installing Express sessions</a></li>
+<li><a class="btn" href="#adding-express-session-middleware-to-the-app-module">Adding  <code>express-session</code> middleware to the <code>app</code> module.</a></li>
+<li><a class="btn" href="#session-store">Session Store</a></li>
+<li><a class="btn" href="#drawbacks">Drawbacks</a></li>
 </ul>
 </li>
-<li><a href="#express-methods-a-idmethodsa">Express Methods </a></li>
-<li><a href="#express-properties-a-idpropertiesa">Express Properties </a></li>
-<li><a href="#forms-a-idformsa">Forms </a>
+<li><a class="btn" href="#express-methods-a-idmethodsa">Express Methods </a></li>
+<li><a class="btn" href="#express-properties-a-idpropertiesa">Express Properties </a></li>
+<li><a class="btn" href="#forms-a-idformsa">Forms </a>
 <ul>
-<li><a href="#form-handling">Form Handling</a>
+<li><a class="btn" href="#form-handling">Form Handling</a>
 <ul>
-<li><a href="#process-flowchart-for-processing-form-requests">Process flowchart for processing form requests</a></li>
+<li><a class="btn" href="#process-flowchart-for-processing-form-requests">Process flowchart for processing form requests</a></li>
 </ul>
 </li>
-<li><a href="#validation-and-sanitazion">Validation and Sanitazion</a></li>
-<li><a href="#routes">Routes</a></li>
+<li><a class="btn" href="#validation-and-sanitazion">Validation and Sanitazion</a></li>
+<li><a class="btn" href="#routes">Routes</a></li>
 </ul>
 </li>
-<li><a href="#error-handling">Error Handling</a>
+<li><a class="btn" href="#error-handling">Error Handling</a>
 <ul>
-<li><a href="#the-default-error-handler">The default error handler</a></li>
+<li><a class="btn" href="#the-default-error-handler">The default error handler</a></li>
 </ul>
 </li>
-<li><a href="#template-inheritance">Template Inheritance</a>
+<li><a class="btn" href="#template-inheritance">Template Inheritance</a>
 <ul>
-<li><a href="#block-append-prepend">Block <code>append</code> / <code>prepend</code></a></li>
+<li><a class="btn" href="#block-append-prepend">Block <code>append</code> / <code>prepend</code></a></li>
 </ul>
 </li>
 </ul>

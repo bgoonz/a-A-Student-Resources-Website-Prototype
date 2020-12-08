@@ -1,77 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!---------------------------------------(meta)------------------------------------------->
 
-<head>
-
-  <script async defer>
-    var sidebarTOCBtn = document.getElementById( 'sidebar-toc-btn' )
-    sidebarTOCBtn.addEventListener( 'click', function ( event ) {
-      event.stopPropagation()
-      if ( document.body.hasAttribute( 'html-show-sidebar-toc' ) ) {
-        document.body.removeAttribute( 'html-show-sidebar-toc' )
-      } else {
-        document.body.setAttribute( 'html-show-sidebar-toc', true )
-      }
-    } )
-  </script>
-  <link rel="stylesheet"
-    href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/default.min.css">
-  <script
-    src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
-  <!-- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>Week-10</title>
-
-  <!--
-
-   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-  -->
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
-    rel="stylesheet">
-  <!-- Custom & Default Styles -->
-  <link rel="stylesheet" href="./../../css/bootstrap.min.css">
-  <link rel="stylesheet" href="./../../css/font-awesome.min.css">
-
-  <link rel="stylesheet" href="./../../css/animate.css">
-
-</head>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week-</title>
+    <!-------------------------------(Standardized styles)------------------------------------>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i"
+      rel="stylesheet"
+    />
+    <!-- Custom & Default Styles -->
+    <link rel="stylesheet" href="./../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./../../css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../../css/animate.css" />
+    <!---------------------------------(customized styles)------------------------------------>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style type="text/css"></style>
+    <!--------------------------------(syntax hilighting)------------------------------------->
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/styles/default.min.css"
+    />
+<link rel="stlyesheet" href="./prism.css">
+    <!-------------------------------------(scripts)------------------------------------------>
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.4.0/build/highlight.min.js"></script>
+<script async src="./prism.js"></script>
+    <title>Week1</title>
+  </head>
 <!-------------------------END-OF-HEADER-------------------------->
 
 
-<body>
+  <body for="html-export">
 
-  <div id="home-link"> <a href="./../../index.html">HOME</a></div>
+  <div id="home-link"> <a class="btn" href="./../../index.html">HOME</a></div>
   <iframe src="https://quizlet.com/535158481/match/embed?x=1jj1" height="500"
     width="100%" style="border:0"></iframe>
 
-  <iframe height="400px" width="100%"
-    src="https://repl.it/@bgoonz/a-A-Student-Resources-Website-Prototype?lite=true"
-    scrolling="no" frameborder="no" allowtransparency="true"
-    allowfullscreen="true"
-    sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+
+<iframe height="400px" width="100%" src="https://repl.it/@bgoonz/week-10-take-2?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
   <center>
-    <div id="DB-primer"> <a href="./week-10/Database+Primer.html">Data Base
+    <div id="DB-primer"> <a class="btn" href="./week-10/Database+Primer.html">Data Base
         Primer</a></div>
   </center>
 
 
 
 
-  <title>sequelize_cheatsheet (1)</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet"
-    href="file:///c:\Users\bryan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.5.13\node_modules\@shd101wyy\mume\dependencies\katex\katex.min.css">
-
-  <link rel="stylesheet" href="./week-10//week-10.css">
 
 
 
@@ -80,12 +63,13 @@
 
 
 
-  </head>
-
-  <!-------------------------END-OF-HEADER-------------------------->
 
 
-  <body for="html-export">
+
+
+
+
+
     <div class="mume markdown-preview  ">
       <h1 class="mume-header" id="sequelize-cheatsheet">Sequelize Cheatsheet
       </h1>
@@ -266,40 +250,40 @@
     </div>
     <div class="md-sidebar-toc">
       <ul>
-        <li><a href="#sequelize-cheatsheet">Sequelize Cheatsheet</a>
+        <li><a class="btn" href="#sequelize-cheatsheet">Sequelize Cheatsheet</a>
           <ul>
-            <li><a href="#command-line">Command Line</a>
+            <li><a class="btn" href="#command-line">Command Line</a>
               <ul>
-                <li><a href="#init-project">Init Project</a></li>
-                <li><a href="#create-database">Create Database</a></li>
-                <li><a href="#generate-a-model-and-its-migration">Generate a
+                <li><a class="btn" href="#init-project">Init Project</a></li>
+                <li><a class="btn" href="#create-database">Create Database</a></li>
+                <li><a class="btn" href="#generate-a-model-and-its-migration">Generate a
                     model and its migration</a></li>
-                <li><a href="#run-pending-migrations">Run pending migrations</a>
+                <li><a class="btn" href="#run-pending-migrations">Run pending migrations</a>
                 </li>
-                <li><a href="#rollback-one-migration">Rollback one migration</a>
+                <li><a class="btn" href="#rollback-one-migration">Rollback one migration</a>
                 </li>
-                <li><a href="#rollback-all-migrations">Rollback all
+                <li><a class="btn" href="#rollback-all-migrations">Rollback all
                     migrations</a></li>
-                <li><a href="#generate-a-new-seed-file">Generate a new seed
+                <li><a class="btn" href="#generate-a-new-seed-file">Generate a new seed
                     file</a></li>
-                <li><a href="#run-all-pending-seeds">Run all pending seeds</a>
+                <li><a class="btn" href="#run-all-pending-seeds">Run all pending seeds</a>
                 </li>
-                <li><a href="#rollback-one-seed">Rollback one seed</a></li>
-                <li><a href="#rollback-all-seeds">Rollback all seeds</a></li>
+                <li><a class="btn" href="#rollback-one-seed">Rollback one seed</a></li>
+                <li><a class="btn" href="#rollback-all-seeds">Rollback all seeds</a></li>
               </ul>
             </li>
-            <li><a href="#migrations">Migrations</a>
+            <li><a class="btn" href="#migrations">Migrations</a>
               <ul>
-                <li><a href="#column-attribute-keywords">Column Attribute
+                <li><a class="btn" href="#column-attribute-keywords">Column Attribute
                     Keywords</a></li>
               </ul>
             </li>
-            <li><a href="#model-associations">Model Associations</a>
+            <li><a class="btn" href="#model-associations">Model Associations</a>
               <ul>
-                <li><a href="#one-to-one-between-student-and-scholarship">One to
+                <li><a class="btn" href="#one-to-one-between-student-and-scholarship">One to
                     One between Student and Scholarship</a>
                 </li>
-                <li><a href="#one-to-many-between-student-and-class">One to Many
+                <li><a class="btn" href="#one-to-many-between-student-and-class">One to Many
                     between Student and Class</a></li>
                 <li><a
                     href="#many-to-many-between-student-and-lesson-through-studentlessons-table">Many
@@ -307,12 +291,12 @@
                     Student and Lesson through StudentLessons table</a></li>
               </ul>
             </li>
-            <li><a href="#query-format">Query Format</a>
+            <li><a class="btn" href="#query-format">Query Format</a>
               <ul>
-                <li><a href="#findone">findOne</a></li>
-                <li><a href="#findall">findAll</a></li>
-                <li><a href="#findbypk">findByPk</a></li>
-                <li><a href="#common-where-operators">Common Where Operators</a>
+                <li><a class="btn" href="#findone">findOne</a></li>
+                <li><a class="btn" href="#findall">findAll</a></li>
+                <li><a class="btn" href="#findbypk">findByPk</a></li>
+                <li><a class="btn" href="#common-where-operators">Common Where Operators</a>
                 </li>
               </ul>
             </li>
@@ -408,7 +392,7 @@
       <h2 class="mume-header" id="managing-tables">Managing tables</h2>
 
       <p>===========================<br>
-        <a href="https://www.postgresqltutorial.com/postgresql-create-table/">Create
+        <a class="btn" href="https://www.postgresqltutorial.com/postgresql-create-table/">Create
           a new table</a> or a <a
           href="https://www.postgresqltutorial.com/postgresql-temporary-table/">temporary
           table</a></p>
@@ -419,7 +403,7 @@
    ...
 );
 </code></pre>
-      <p><a href="https://www.postgresqltutorial.com/postgresql-add-column/">Add
+      <p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-add-column/">Add
           a new column</a> to a table:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE table_name ADD COLUMN new_column_name TYPE;
 </code></pre>
@@ -459,7 +443,7 @@ DROP CONSTRAINT primary_key_constraint_name;
       <h2 class="mume-header" id="managing-views">Managing views</h2>
 
       <p>===========================<br>
-        <a href="https://www.postgresqltutorial.com/managing-postgresql-views/">Create
+        <a class="btn" href="https://www.postgresqltutorial.com/managing-postgresql-views/">Create
           a view</a>:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>CREATE OR REPLACE view_name AS
 query;
@@ -529,25 +513,25 @@ WHERE condition;
 FROM table;
 </code></pre>
       <p>Query data using the
-        <code><a href="https://www.postgresqltutorial.com/postgresql-like/">LIKE</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-like/">LIKE</a></code>
         operator:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column LIKE &apos;%value%&apos;
 </code></pre>
       <p>Query data using the
-        <code><a href="https://www.postgresqltutorial.com/postgresql-between/">BETWEEN</a> </code>operator:
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-between/">BETWEEN</a> </code>operator:
       </p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column BETWEEN low AND high;
 </code></pre>
       <p>Query data using the
-        <code><a href="https://www.postgresqltutorial.com/postgresql-in/">IN</a> </code>operator:
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-in/">IN</a> </code>operator:
       </p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 WHERE column IN (value1, value2,...);
 </code></pre>
       <p>Constrain the returned rows with the
-        <code><a href="https://www.postgresqltutorial.com/postgresql-limit/">LIMIT</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-limit/">LIMIT</a></code>
         clause:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table_name
 LIMIT limit OFFSET offset
@@ -590,14 +574,14 @@ FROM table
 ORDER BY column ASC [DESC], column2 ASC [DESC],...;
 </code></pre>
       <p>Group rows using
-        <code><a href="https://www.postgresqltutorial.com/postgresql-group-by/">GROUP BY</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-group-by/">GROUP BY</a></code>
         clause.</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table
 GROUP BY column_1, column_2, ...;
 </code></pre>
       <p>Filter groups using the
-        <code><a href="https://www.postgresqltutorial.com/postgresql-having/">HAVING</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-having/">HAVING</a></code>
         clause.</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT *
 FROM table
@@ -609,14 +593,14 @@ HAVING condition;
 
       <p>===========================<br>
         Combine the result set of two or more queries with
-        <code><a href="https://www.postgresqltutorial.com/postgresql-union/">UNION</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-union/">UNION</a></code>
         operator:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table1
 UNION
 SELECT * FROM table2;
 </code></pre>
       <p>Minus a result set using
-        <code><a href="https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/">EXCEPT</a></code>
+        <code><a class="btn" href="https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-except/">EXCEPT</a></code>
         operator:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM table1
 EXCEPT
@@ -631,7 +615,7 @@ SELECT * FROM table2;
       <h2 class="mume-header" id="modifying-data">Modifying data</h2>
 
       <p>===========================<br>
-        <a href="https://www.postgresqltutorial.com/postgresql-insert/">Insert a
+        <a class="btn" href="https://www.postgresqltutorial.com/postgresql-insert/">Insert a
           new row into a table</a>:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>INSERT INTO table(column1,column2,...)
 VALUES(value_1,value_2,...);
@@ -656,7 +640,7 @@ SET column_1 = value_1,
     ...
 WHERE condition;
 </code></pre>
-      <p><a href="https://www.postgresqltutorial.com/postgresql-delete/">Delete
+      <p><a class="btn" href="https://www.postgresqltutorial.com/postgresql-delete/">Delete
           all rows</a> of a table:</p>
       <pre data-role="codeBlock" data-info class="language-"><code>DELETE FROM table_name;
 </code></pre>
@@ -678,16 +662,16 @@ WHERE condition;
     </div>
     <div class="md-sidebar-toc">
       <ul>
-        <li><a href="#postgresql-commands">PostgreSQL commands</a></li>
-        <li><a href="#managing-databases">Managing databases</a></li>
-        <li><a href="#managing-tables">Managing tables</a></li>
-        <li><a href="#managing-views">Managing views</a></li>
-        <li><a href="#managing-indexes">Managing indexes</a></li>
-        <li><a href="#querying-data-from-tables">Querying data from tables</a>
+        <li><a class="btn" href="#postgresql-commands">PostgreSQL commands</a></li>
+        <li><a class="btn" href="#managing-databases">Managing databases</a></li>
+        <li><a class="btn" href="#managing-tables">Managing tables</a></li>
+        <li><a class="btn" href="#managing-views">Managing views</a></li>
+        <li><a class="btn" href="#managing-indexes">Managing indexes</a></li>
+        <li><a class="btn" href="#querying-data-from-tables">Querying data from tables</a>
         </li>
-        <li><a href="#set-operations">Set operations</a></li>
-        <li><a href="#modifying-data">Modifying data</a></li>
-        <li><a href="#performance">Performance</a></li>
+        <li><a class="btn" href="#set-operations">Set operations</a></li>
+        <li><a class="btn" href="#modifying-data">Modifying data</a></li>
+        <li><a class="btn" href="#performance">Performance</a></li>
       </ul>
     </div>
     <a id="sidebar-toc-btn">&#x2261;</a>
@@ -697,106 +681,106 @@ WHERE condition;
         10<br><em>Relational Databases</em></h1>
 
       <hr>
-      <p><a href="#make-it-pretty-learning-objectives"><strong>Make It Pretty
+      <p><a class="btn" href="#make-it-pretty-learning-objectives"><strong>Make It Pretty
             Learning Objectives</strong></a></p>
       <ul>
-        <li><a href="#make-it-pretty-practice"><strong>Make It Pretty
+        <li><a class="btn" href="#make-it-pretty-practice"><strong>Make It Pretty
               Practice</strong></a>
           <ul>
-            <li><a href="#what-recruiters-are-looking-for">What Recruiters Are
+            <li><a class="btn" href="#what-recruiters-are-looking-for">What Recruiters Are
                 Looking For</a></li>
-            <li><a href="#attributes-of-great-looking-websites">Attributes of
+            <li><a class="btn" href="#attributes-of-great-looking-websites">Attributes of
                 Great Looking Websites</a></li>
-            <li><a href="#additional-requirements">Additional requirements</a>
+            <li><a class="btn" href="#additional-requirements">Additional requirements</a>
             </li>
-            <li><a href="#avoid-these-things">Avoid these things</a></li>
-            <li><a href="#exercise">Exercise</a></li>
+            <li><a class="btn" href="#avoid-these-things">Avoid these things</a></li>
+            <li><a class="btn" href="#exercise">Exercise</a></li>
           </ul>
         </li>
       </ul>
-      <p><a href="#rdbms-and-database-entity-learning-objectives"><strong>RDBMS
+      <p><a class="btn" href="#rdbms-and-database-entity-learning-objectives"><strong>RDBMS
             And Database Entity Learning Objectives</strong></a></p>
       <ul>
         <li><a
             href="#database-lingobrthe-relational-database-management-system"><strong>Database
               Lingo: Relational Database Management System</strong></a>
           <ul>
-            <li><a href="#rdbms">RDBMS</a></li>
-            <li><a href="#what-is-postgresql">What is PostgreSQL?</a></li>
-            <li><a href="#what-is-sql">What is SQL?</a></li>
+            <li><a class="btn" href="#rdbms">RDBMS</a></li>
+            <li><a class="btn" href="#what-is-postgresql">What is PostgreSQL?</a></li>
+            <li><a class="btn" href="#what-is-sql">What is SQL?</a></li>
           </ul>
         </li>
-        <li><a href="#installing-postgresql-12-and-postbird-on-windows"><strong>Installing
+        <li><a class="btn" href="#installing-postgresql-12-and-postbird-on-windows"><strong>Installing
               PostgreSQL 12 and Postbird on Windows</strong></a></li>
-        <li><a href="#installing-postgresql-12-and-postbird-on-macos"><strong>Installing
+        <li><a class="btn" href="#installing-postgresql-12-and-postbird-on-macos"><strong>Installing
               PostgreSQL 12 and Postbird on macOS</strong></a></li>
-        <li><a href="#user-management-walk-through"><strong>User Management
+        <li><a class="btn" href="#user-management-walk-through"><strong>User Management
               Walk-Through</strong></a>
           <ul>
-            <li><a href="#naming-a-user">Naming a user</a></li>
-            <li><a href="#creating-a-superuser">Creating a superuser</a></li>
-            <li><a href="#creating-a-limited-user">Creating a limited user</a>
+            <li><a class="btn" href="#naming-a-user">Naming a user</a></li>
+            <li><a class="btn" href="#creating-a-superuser">Creating a superuser</a></li>
+            <li><a class="btn" href="#creating-a-limited-user">Creating a limited user</a>
             </li>
-            <li><a href="#removing-a-user">Removing a user</a></li>
-            <li><a href="#case-sensitivity">Case sensitivity</a></li>
+            <li><a class="btn" href="#removing-a-user">Removing a user</a></li>
+            <li><a class="btn" href="#case-sensitivity">Case sensitivity</a></li>
           </ul>
         </li>
-        <li><a href="#database-management-walk-through"><strong>Database
+        <li><a class="btn" href="#database-management-walk-through"><strong>Database
               Management Walk-Through</strong></a>
           <ul>
-            <li><a href="#naming-a-database">Naming a database</a></li>
-            <li><a href="#creating-a-database-for-your-user">Creating a database
+            <li><a class="btn" href="#naming-a-database">Naming a database</a></li>
+            <li><a class="btn" href="#creating-a-database-for-your-user">Creating a database
                 for your user</a></li>
-            <li><a href="#creating-other-users-and-databases">Creating other
+            <li><a class="btn" href="#creating-other-users-and-databases">Creating other
                 users and databases</a></li>
-            <li><a href="#applying-security-to-databases">Applying security to
+            <li><a class="btn" href="#applying-security-to-databases">Applying security to
                 databases</a></li>
-            <li><a href="#listing-databases-and-granting-privileges">Listing
+            <li><a class="btn" href="#listing-databases-and-granting-privileges">Listing
                 databases and granting privileges</a></li>
-            <li><a href="#time-to-clean-up">Time to clean up</a></li>
+            <li><a class="btn" href="#time-to-clean-up">Time to clean up</a></li>
           </ul>
         </li>
-        <li><a href="#table-management-walk-through-part-i"><strong>Table
+        <li><a class="btn" href="#table-management-walk-through-part-i"><strong>Table
               Management Walk-Through - Part I</strong></a>
           <ul>
-            <li><a href="#what-is-a-table">What is a table?</a></li>
-            <li><a href="#defining-tables">Defining tables</a></li>
-            <li><a href="#other-data-types">Other data types</a></li>
-            <li><a href="#naming-a-table">Naming a table</a></li>
-            <li><a href="#writing-the-sql">Writing the SQL</a></li>
-            <li><a href="#listing-tables-and-table-definitions">Listing tables
+            <li><a class="btn" href="#what-is-a-table">What is a table?</a></li>
+            <li><a class="btn" href="#defining-tables">Defining tables</a></li>
+            <li><a class="btn" href="#other-data-types">Other data types</a></li>
+            <li><a class="btn" href="#naming-a-table">Naming a table</a></li>
+            <li><a class="btn" href="#writing-the-sql">Writing the SQL</a></li>
+            <li><a class="btn" href="#listing-tables-and-table-definitions">Listing tables
                 and table definitions</a></li>
-            <li><a href="#deleting-a-table">Deleting a table</a></li>
+            <li><a class="btn" href="#deleting-a-table">Deleting a table</a></li>
           </ul>
         </li>
-        <li><a href="#table-management-walk-through-part-ii"><strong>Table
+        <li><a class="btn" href="#table-management-walk-through-part-ii"><strong>Table
               Management Walk-Through - Part II</strong></a>
           <ul>
-            <li><a href="#nullable-columns">Nullable columns</a></li>
-            <li><a href="#default-values">Default values</a></li>
-            <li><a href="#primary-keys">Primary keys</a></li>
-            <li><a href="#unique-values">Unique values</a></li>
-            <li><a href="#refactor-for-data-integrity">Refactor for data
+            <li><a class="btn" href="#nullable-columns">Nullable columns</a></li>
+            <li><a class="btn" href="#default-values">Default values</a></li>
+            <li><a class="btn" href="#primary-keys">Primary keys</a></li>
+            <li><a class="btn" href="#unique-values">Unique values</a></li>
+            <li><a class="btn" href="#refactor-for-data-integrity">Refactor for data
                 integrity</a></li>
-            <li><a href="#order-of-table-declarations">Order of table
+            <li><a class="btn" href="#order-of-table-declarations">Order of table
                 declarations</a></li>
           </ul>
         </li>
-        <li><a href="#database-management-project"><em>Database Management
+        <li><a class="btn" href="#database-management-project"><em>Database Management
               Project</em></a></li>
       </ul>
-      <p><a href="#sql-learning-objectives"><strong>SQL Learning
+      <p><a class="btn" href="#sql-learning-objectives"><strong>SQL Learning
             Objectives</strong></a></p>
       <ul>
-        <li><a href="#retrieving-rows-from-a-table-using-select"><strong>Retrieving
+        <li><a class="btn" href="#retrieving-rows-from-a-table-using-select"><strong>Retrieving
               Rows From A Table Using SELECT</strong></a>
           <ul>
-            <li><a href="#what-is-a-query">What is a query?</a></li>
-            <li><a href="#example-table">Example table</a></li>
-            <li><a href="#using-psql-in-the-terminal">Using psql in the
+            <li><a class="btn" href="#what-is-a-query">What is a query?</a></li>
+            <li><a class="btn" href="#example-table">Example table</a></li>
+            <li><a class="btn" href="#using-psql-in-the-terminal">Using psql in the
                 terminal</a></li>
-            <li><a href="#simple-select-query">Simple SELECT Query</a></li>
-            <li><a href="#formatting-select-statements">Formatting SELECT
+            <li><a class="btn" href="#simple-select-query">Simple SELECT Query</a></li>
+            <li><a class="btn" href="#formatting-select-statements">Formatting SELECT
                 statements</a></li>
           </ul>
         </li>
@@ -804,108 +788,108 @@ WHERE condition;
             href="#selecting-table-rows-using-where-and-common-operators"><strong>Selecting
               Table Rows Using WHERE And Common Operators</strong></a>
           <ul>
-            <li><a href="#using-select-and-where">Using SELECT and WHERE</a>
+            <li><a class="btn" href="#using-select-and-where">Using SELECT and WHERE</a>
             </li>
           </ul>
         </li>
-        <li><a href="#inserting-data-into-a-table"><strong>Inserting Data Into A
+        <li><a class="btn" href="#inserting-data-into-a-table"><strong>Inserting Data Into A
               Table</strong></a></li>
-        <li><a href="#foreign-keys-and-the-join-operation"><strong>Foreign Keys
+        <li><a class="btn" href="#foreign-keys-and-the-join-operation"><strong>Foreign Keys
               And The JOIN Operation</strong></a>
           <ul>
-            <li><a href="#setting-up-the-database">Setting up the database</a>
+            <li><a class="btn" href="#setting-up-the-database">Setting up the database</a>
             </li>
             <li><a
                 href="#using-join-to-retrieve-rows-from-multiple-tables">Using
                 JOIN to retrieve rows from multiple tables</a></li>
-            <li><a href="#helpful-links">Helpful links:</a></li>
+            <li><a class="btn" href="#helpful-links">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#writing-and-running-a-seed-file-in-psql"><strong>Writing
+        <li><a class="btn" href="#writing-and-running-a-seed-file-in-psql"><strong>Writing
               And Running A Seed File In PSQL</strong></a>
           <ul>
-            <li><a href="#creating-a-seed-file">Creating a seed file</a></li>
-            <li><a href="#populating-a-database-via-left-caret">Populating a
+            <li><a class="btn" href="#creating-a-seed-file">Creating a seed file</a></li>
+            <li><a class="btn" href="#populating-a-database-via-left-caret">Populating a
                 database via &lt; (&#x201C;left caret&#x201D;)</a></li>
-            <li><a href="#populating-the-database-via-pipe">Populating the
+            <li><a class="btn" href="#populating-the-database-via-pipe">Populating the
                 database via | (&#x201C;pipe&#x201D;)</a></li>
           </ul>
         </li>
-        <li><a href="#create-and-seed-a-database-project"><em>Create And Seed A
+        <li><a class="btn" href="#create-and-seed-a-database-project"><em>Create And Seed A
               Database Project</em></a></li>
-        <li><a href="#solving-the-sql-menagerie-project"><em>Solving The SQL
+        <li><a class="btn" href="#solving-the-sql-menagerie-project"><em>Solving The SQL
               Menagerie Project</em></a></li>
-        <li><a href="#creating-a-schema-for-relational-database-design"><strong>Creating
+        <li><a class="btn" href="#creating-a-schema-for-relational-database-design"><strong>Creating
               A Schema For Relational Database Design</strong></a>
           <ul>
-            <li><a href="#what-is-relational-database-design">What is Relational
+            <li><a class="btn" href="#what-is-relational-database-design">What is Relational
                 Database Design?</a></li>
-            <li><a href="#stages-of-relational-database-design">Stages of
+            <li><a class="btn" href="#stages-of-relational-database-design">Stages of
                 Relational Database Design</a></li>
-            <li><a href="#schema-design-tools">Schema design tools</a></li>
+            <li><a class="btn" href="#schema-design-tools">Schema design tools</a></li>
           </ul>
         </li>
-        <li><a href="#using-sql-transactions"><strong>Using SQL
+        <li><a class="btn" href="#using-sql-transactions"><strong>Using SQL
               Transactions</strong></a>
           <ul>
-            <li><a href="#what-is-a-transaction">What is a transaction?</a></li>
-            <li><a href="#implicit-vs-explicit-transactions">Implicit vs.
+            <li><a class="btn" href="#what-is-a-transaction">What is a transaction?</a></li>
+            <li><a class="btn" href="#implicit-vs-explicit-transactions">Implicit vs.
                 explicit transactions</a></li>
-            <li><a href="#when-to-use-transactions-and-why">When to use
+            <li><a class="btn" href="#when-to-use-transactions-and-why">When to use
                 transactions and why</a></li>
-            <li><a href="#transaction-properties-acid">Transaction properties:
+            <li><a class="btn" href="#transaction-properties-acid">Transaction properties:
                 ACID</a></li>
-            <li><a href="#helpful-links-1">Helpful links:</a></li>
+            <li><a class="btn" href="#helpful-links-1">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#joins-vs-subqueries"><strong>Joins vs.
+        <li><a class="btn" href="#joins-vs-subqueries"><strong>Joins vs.
               Subqueries</strong></a>
           <ul>
-            <li><a href="#what-is-a-join">What is a JOIN?</a></li>
-            <li><a href="#what-is-a-subquery">What is a subquery?</a></li>
-            <li><a href="#using-joins-vs-subqueries">Using joins vs.
+            <li><a class="btn" href="#what-is-a-join">What is a JOIN?</a></li>
+            <li><a class="btn" href="#what-is-a-subquery">What is a subquery?</a></li>
+            <li><a class="btn" href="#using-joins-vs-subqueries">Using joins vs.
                 subqueries</a></li>
-            <li><a href="#helpful-links-2">Helpful links:</a></li>
+            <li><a class="btn" href="#helpful-links-2">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#postgresql-indexes"><strong>PostgreSQL
+        <li><a class="btn" href="#postgresql-indexes"><strong>PostgreSQL
               Indexes</strong></a>
           <ul>
-            <li><a href="#what-is-a-postgresql-index">What is a PostgreSQL
+            <li><a class="btn" href="#what-is-a-postgresql-index">What is a PostgreSQL
                 index?</a></li>
-            <li><a href="#how-to-create-an-index">How to create an index</a>
+            <li><a class="btn" href="#how-to-create-an-index">How to create an index</a>
             </li>
-            <li><a href="#when-to-use-an-index">When to use an index</a></li>
+            <li><a class="btn" href="#when-to-use-an-index">When to use an index</a></li>
           </ul>
         </li>
-        <li><a href="#node-postgres-and-prepared-statements"><strong>Node-Postgres
+        <li><a class="btn" href="#node-postgres-and-prepared-statements"><strong>Node-Postgres
               And Prepared Statements</strong></a>
           <ul>
-            <li><a href="#connecting">Connecting</a></li>
-            <li><a href="#prepared-statement">Prepared Statement</a></li>
-            <li><a href="#try-it-out-for-yourself">Try it out for yourself</a>
+            <li><a class="btn" href="#connecting">Connecting</a></li>
+            <li><a class="btn" href="#prepared-statement">Prepared Statement</a></li>
+            <li><a class="btn" href="#try-it-out-for-yourself">Try it out for yourself</a>
             </li>
           </ul>
         </li>
-        <li><a href="#recipe-box-project"><em>Recipe Box Project</em></a></li>
+        <li><a class="btn" href="#recipe-box-project"><em>Recipe Box Project</em></a></li>
       </ul>
-      <p><a href="#orm-learning-objectives"><strong>ORM Learning
+      <p><a class="btn" href="#orm-learning-objectives"><strong>ORM Learning
             Objectives</strong></a></p>
       <ul>
-        <li><a href="#installing-and-using-sequelize"><strong>Installing And
+        <li><a class="btn" href="#installing-and-using-sequelize"><strong>Installing And
               Using Sequelize</strong></a>
           <ul>
-            <li><a href="#what-is-an-orm">What Is An ORM?</a></li>
-            <li><a href="#how-to-install-sequelize">How To Install Sequelize</a>
+            <li><a class="btn" href="#what-is-an-orm">What Is An ORM?</a></li>
+            <li><a class="btn" href="#how-to-install-sequelize">How To Install Sequelize</a>
             </li>
-            <li><a href="#how-to-initialize-sequelize">How To Initialize
+            <li><a class="btn" href="#how-to-initialize-sequelize">How To Initialize
                 Sequelize</a></li>
             <li><a
                 href="#verifying-that-sequelize-can-connect-to-the-database">Verifying
                 That Sequelize Can Connect To The Database</a></li>
-            <li><a href="#our-preexisting-database-schema">Our Preexisting
+            <li><a class="btn" href="#our-preexisting-database-schema">Our Preexisting
                 Database Schema</a></li>
-            <li><a href="#using-sequelize-to-generate-the-model-file">Using
+            <li><a class="btn" href="#using-sequelize-to-generate-the-model-file">Using
                 Sequelize To Generate The Model File</a></li>
             <li><a
                 href="#examining-and-modifying-a-sequelize-model-file">Examining
@@ -913,41 +897,41 @@ WHERE condition;
             <li><a
                 href="#using-the-cat-model-to-fetch-and-update-sql-data">Using
                 The <code>Cat</code> Model To Fetch And Update SQL Data</a></li>
-            <li><a href="#reading-and-changing-record-attributes">Reading And
+            <li><a class="btn" href="#reading-and-changing-record-attributes">Reading And
                 Changing Record Attributes</a></li>
           </ul>
         </li>
-        <li><a href="#using-database-migrations"><strong>Using Database
+        <li><a class="btn" href="#using-database-migrations"><strong>Using Database
               Migrations</strong></a>
           <ul>
-            <li><a href="#sequelize-migration-files">Sequelize Migration
+            <li><a class="btn" href="#sequelize-migration-files">Sequelize Migration
                 Files</a></li>
-            <li><a href="#running-a-migration">Running A Migration</a></li>
-            <li><a href="#rolling-back-a-migration">Rolling Back A Migration</a>
+            <li><a class="btn" href="#running-a-migration">Running A Migration</a></li>
+            <li><a class="btn" href="#rolling-back-a-migration">Rolling Back A Migration</a>
             </li>
-            <li><a href="#editing-a-migration-file">Editing A Migration File</a>
+            <li><a class="btn" href="#editing-a-migration-file">Editing A Migration File</a>
             </li>
-            <li><a href="#up-and-down-are-asynchronous"><code>up</code> And
+            <li><a class="btn" href="#up-and-down-are-asynchronous"><code>up</code> And
                 <code>down</code> are Asynchronous</a></li>
-            <li><a href="#writing-a-down-method">Writing A <code>down</code>
+            <li><a class="btn" href="#writing-a-down-method">Writing A <code>down</code>
                 Method</a></li>
-            <li><a href="#advantages-of-migrations">Advantages Of Migrations</a>
+            <li><a class="btn" href="#advantages-of-migrations">Advantages Of Migrations</a>
             </li>
           </ul>
         </li>
-        <li><a href="#crud-operations-using-sequelize"><strong>CRUD Operations
+        <li><a class="btn" href="#crud-operations-using-sequelize"><strong>CRUD Operations
               Using Sequelize</strong></a>
           <ul>
-            <li><a href="#creating-a-new-record">Creating A New Record</a></li>
-            <li><a href="#reading-a-record-by-primary-key">Reading A Record By
+            <li><a class="btn" href="#creating-a-new-record">Creating A New Record</a></li>
+            <li><a class="btn" href="#reading-a-record-by-primary-key">Reading A Record By
                 Primary Key</a></li>
-            <li><a href="#updating-a-record">Updating A Record</a></li>
-            <li><a href="#destroying-a-record">Destroying A Record</a></li>
-            <li><a href="#class-methods-for-crud">Class Methods For CRUD</a>
+            <li><a class="btn" href="#updating-a-record">Updating A Record</a></li>
+            <li><a class="btn" href="#destroying-a-record">Destroying A Record</a></li>
+            <li><a class="btn" href="#class-methods-for-crud">Class Methods For CRUD</a>
             </li>
           </ul>
         </li>
-        <li><a href="#querying-using-sequelize"><strong>Querying Using
+        <li><a class="btn" href="#querying-using-sequelize"><strong>Querying Using
               Sequelize</strong></a>
           <ul>
             <li><a
@@ -958,25 +942,25 @@ WHERE condition;
                 href="#using-findall-to-find-objects-not-matching-a-criterion">Using
                 <code>findAll</code> To Find Objects Not Matching A
                 Criterion</a></li>
-            <li><a href="#combining-criteria-with-opand">Combining Criteria with
+            <li><a class="btn" href="#combining-criteria-with-opand">Combining Criteria with
                 <code>Op.and</code></a></li>
-            <li><a href="#combining-criteria-with-opor">Combining Criteria with
+            <li><a class="btn" href="#combining-criteria-with-opor">Combining Criteria with
                 <code>Op.or</code></a></li>
-            <li><a href="#querying-with-comparisons">Querying With
+            <li><a class="btn" href="#querying-with-comparisons">Querying With
                 Comparisons</a></li>
-            <li><a href="#ordering-results">Ordering Results</a></li>
-            <li><a href="#limiting-results-and-findone">Limiting Results and
+            <li><a class="btn" href="#ordering-results">Ordering Results</a></li>
+            <li><a class="btn" href="#limiting-results-and-findone">Limiting Results and
                 <code>findOne</code></a></li>
           </ul>
         </li>
-        <li><a href="#model-validations-with-sequelize"><strong>Model
+        <li><a class="btn" href="#model-validations-with-sequelize"><strong>Model
               Validations With Sequelize</strong></a>
           <ul>
-            <li><a href="#validating-that-an-attribute-is-not-null">Validating
+            <li><a class="btn" href="#validating-that-an-attribute-is-not-null">Validating
                 That An Attribute Is Not <code>NULL</code></a></li>
-            <li><a href="#the-notempty-validation">The <code>notEmpty</code>
+            <li><a class="btn" href="#the-notempty-validation">The <code>notEmpty</code>
                 Validation</a></li>
-            <li><a href="#forbidding-long-string-values">Forbidding Long String
+            <li><a class="btn" href="#forbidding-long-string-values">Forbidding Long String
                 Values</a></li>
             <li><a
                 href="#validating-that-a-numeric-value-is-within-a-specified-range">Validating
@@ -986,28 +970,28 @@ WHERE condition;
                 That An Attribute Is Among A Finite Set Of Values</a></li>
           </ul>
         </li>
-        <li><a href="#transactions-with-sequelize"><strong>Transactions With
+        <li><a class="btn" href="#transactions-with-sequelize"><strong>Transactions With
               Sequelize</strong></a>
           <ul>
-            <li><a href="#the-problem-database-updates-can-fail">The Problem:
+            <li><a class="btn" href="#the-problem-database-updates-can-fail">The Problem:
                 Database Updates Can Fail</a></li>
-            <li><a href="#the-solution-database-transactions">The Solution:
+            <li><a class="btn" href="#the-solution-database-transactions">The Solution:
                 Database Transactions</a></li>
-            <li><a href="#the-bankaccounts-schema">The <code>BankAccounts</code>
+            <li><a class="btn" href="#the-bankaccounts-schema">The <code>BankAccounts</code>
                 Schema</a></li>
             <li><a
                 href="#example-an-update-fails-because-of-validation-failure">Example:
                 An Update Fails Because Of Validation Failure</a></li>
-            <li><a href="#incorrect-solutions">Incorrect Solutions</a></li>
-            <li><a href="#using-a-database-transaction-with-sequelize">Using A
+            <li><a class="btn" href="#incorrect-solutions">Incorrect Solutions</a></li>
+            <li><a class="btn" href="#using-a-database-transaction-with-sequelize">Using A
                 Database Transaction With Sequelize</a></li>
-            <li><a href="#aside-what-is-the-transaction-object">Aside: What Is
+            <li><a class="btn" href="#aside-what-is-the-transaction-object">Aside: What Is
                 The <code>Transaction</code> Object?</a></li>
-            <li><a href="#transactions-prevent-_race-conditions_">Transactions
+            <li><a class="btn" href="#transactions-prevent-_race-conditions_">Transactions
                 Prevent <em>Race Conditions</em></a></li>
           </ul>
         </li>
-        <li><a href="#recipe-box-with-sequelize-project"><em>Recipe Box With
+        <li><a class="btn" href="#recipe-box-with-sequelize-project"><em>Recipe Box With
               Sequelize Project</em></a></li>
       </ul>
       <hr>
@@ -1122,7 +1106,7 @@ WHERE condition;
         tools, and other areas that you want to draw the user&apos;s eye to. Use
         it<br>
         sparingly!</p>
-      <p>Use <a href="https://fonts.google.com/">Google Font Pairing</a>
+      <p>Use <a class="btn" href="https://fonts.google.com/">Google Font Pairing</a>
         recommendations to find good fonts. In general, you<br>
         should not have more than 2 fonts in a web app and you should avoid
         mixing serif<br>
@@ -1228,7 +1212,7 @@ WHERE condition;
       </ul>
       <h2 class="mume-header" id="exercise">Exercise</h2>
 
-      <p>Select three sites from <a href="https://www.producthunt.com/">Product
+      <p>Select three sites from <a class="btn" href="https://www.producthunt.com/">Product
           Hunt</a>. For each site, list the:</p>
       <ul>
         <li>Fonts Used</li>
@@ -4957,7 +4941,7 @@ VALUES
         psql, enter the following to add new table rows. <em>Note the use of
           single<br>
           quotation marks for string values. Also note that, since we used the
-          <a href="https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546"><code>SERIAL</code><br>
+          <a class="btn" href="https://gist.github.com/Kartones/dd3ff5ec5ea238d4c546"><code>SERIAL</code><br>
             pseudo-type</a> to auto-increment the ID values, we can simply write
           <code>DEFAULT</code><br>
           for the ID values when inserting new table rows.</em></p>
@@ -5083,7 +5067,7 @@ DETAIL:  Key <span class="token punctuation">(</span>id<span class="token punctu
         &#x201C;puppies&#x201D; table and the<br>
         &#x201C;friends&#x201D; table, we can access data from both tables. We
         can do so by using a<br>
-        <a href="http://www.postgresqltutorial.com/postgresql-boolean/">JOIN
+        <a class="btn" href="http://www.postgresqltutorial.com/postgresql-boolean/">JOIN
           operation</a> in our SELECT query. Type the following into psql:</p>
       <pre data-role="codeBlock" data-info="sql" class="language-sql"><span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> puppies
 <span class="token keyword">INNER</span> <span class="token keyword">JOIN</span> breeds <span class="token keyword">ON</span> <span class="token punctuation">(</span>puppies<span class="token punctuation">.</span>breed_id <span class="token operator">=</span> breeds<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -5142,7 +5126,7 @@ postgres<span class="token operator">-</span><span class="token comment"># INNER
         <li><a
             href="http://www.postgresqltutorial.com/postgresql-boolean/">PostgreSQL
             Docs: Joins Between Tables</a></li>
-        <li><a href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL
+        <li><a class="btn" href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL
             Tutorial: PostgreSQL Joins</a></li>
       </ul>
       <hr>
@@ -6583,7 +6567,7 @@ List of relations
         below.</p>
       <p>Free Database Diagram (ERD) Design Tools:</p>
       <ul>
-        <li><a href="https://sqlzoo.net/wiki/SELECT_Reference">Lucidchart</a>
+        <li><a class="btn" href="https://sqlzoo.net/wiki/SELECT_Reference">Lucidchart</a>
         </li>
         <li><a
             href="https://www.postgresql.org/docs/9.6/datatype-numeric.html">draw.io</a>
@@ -6949,7 +6933,7 @@ List of relations
         <li><a
             href="http://www.postgresqltutorial.com/postgresql-boolean/">PostgreSQL:
             BEGIN</a></li>
-        <li><a href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL:
+        <li><a class="btn" href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL:
             COMMIT</a></li>
         <li><a
             href="https://www.postgresql.org/docs/9.6/datatype-numeric.html">PostgreSQL:
@@ -7525,7 +7509,7 @@ Total runtime: <span class="token number">14.452</span> ms
         <li><a
             href="http://www.postgresqltutorial.com/postgresql-boolean/">PostgreSQL
             docs: Indexes</a></li>
-        <li><a href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL docs:
+        <li><a class="btn" href="https://sqlzoo.net/wiki/SELECT_Reference">PostgreSQL docs:
             Performance Tips</a></li>
         <li><a
             href="https://www.postgresql.org/docs/9.6/datatype-numeric.html">Heroku
@@ -7543,7 +7527,7 @@ Total runtime: <span class="token number">14.452</span> ms
       <h1 class="mume-header" id="node-postgres-and-prepared-statements">
         Node-Postgres And Prepared Statements</h1>
 
-      <p>The library <a href="https://www.node-postgres.com">node-postgres</a>
+      <p>The library <a class="btn" href="https://www.node-postgres.com">node-postgres</a>
         is, not too surprisingly, the library that Node.js<br>
         applications use to connect to a database managed by a PostgreSQL RDBMS.
         The<br>
@@ -8236,7 +8220,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
         <strong>node_modules</strong><br>
         directory is &quot;pg&quot;. That line of code looks like this and can
         be found all over the<br>
-        <a href="https://www.node-postgres.com">node-postgres</a> documentation.
+        <a class="btn" href="https://www.node-postgres.com">node-postgres</a> documentation.
       </p>
       <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> Pool <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;pg&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre>
@@ -8604,7 +8588,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
       <p>The application is a standard <a
           href="https://www.expressjs.com">express.js</a> application using the
-        <a href="https://pugjs.org">pug</a> library<br>
+        <a class="btn" href="https://pugjs.org">pug</a> library<br>
         to generate the HTML and the <a
           href="https://www.node-postgres.com">node-postgres</a> library to
         connect to the database.</p>
@@ -10551,7 +10535,7 @@ null
       <p>We&apos;ve scratched the surface of the many query options supported
         by<br>
         Sequelize. You may find more information as necessary by reading the<br>
-        <a href="https://sequelize.org/v5/manual/querying.html">Sequelize
+        <a class="btn" href="https://sequelize.org/v5/manual/querying.html">Sequelize
           querying documentation</a>. You can in<br>
         particular review the <a
           href="https://sequelize.org/v5/manual/querying.html#operators">list of
@@ -11964,7 +11948,7 @@ Executing (76321a03-93c5-47c0-861a-cf24c3e6f3bf): COMMIT;
 
       <p>The application is a standard <a
           href="https://www.expressjs.com">express.js</a> application using the
-        <a href="https://pugjs.org">pug</a> library<br>
+        <a class="btn" href="https://pugjs.org">pug</a> library<br>
         to generate the HTML and the <a
           href="https://www.node-postgres.com">node-postgres</a> library to
         connect to the database.</p>
@@ -11991,7 +11975,7 @@ Executing (76321a03-93c5-47c0-861a-cf24c3e6f3bf): COMMIT;
 
       <p>You&apos;re going to be using JavaScript and the tools of Sequelize.
         Keep the<br>
-        <a href="https://sequelize.org/v5/">Sequelize documentation</a> open and
+        <a class="btn" href="https://sequelize.org/v5/">Sequelize documentation</a> open and
         handy. Even developers that use ORMs every<br>
         day will keep the documentation open because there&apos;s so much to
         know about them.</p>
@@ -12751,199 +12735,199 @@ module<span class="token punctuation">.</span><span class="token function-variab
     </div>
     <div class="md-sidebar-toc">
       <ul>
-        <li><a href="#make-it-pretty-learning-objectives">Make It Pretty
+        <li><a class="btn" href="#make-it-pretty-learning-objectives">Make It Pretty
             Learning Objectives</a></li>
-        <li><a href="#make-it-pretty-practice">Make It Pretty Practice</a>
+        <li><a class="btn" href="#make-it-pretty-practice">Make It Pretty Practice</a>
           <ul>
-            <li><a href="#what-recruiters-are-looking-for">What Recruiters Are
+            <li><a class="btn" href="#what-recruiters-are-looking-for">What Recruiters Are
                 Looking For</a></li>
-            <li><a href="#attributes-of-great-looking-websites">Attributes of
+            <li><a class="btn" href="#attributes-of-great-looking-websites">Attributes of
                 Great Looking Websites</a></li>
-            <li><a href="#additional-requirements">Additional requirements</a>
+            <li><a class="btn" href="#additional-requirements">Additional requirements</a>
             </li>
-            <li><a href="#avoid-these-things">Avoid these things</a></li>
-            <li><a href="#exercise">Exercise</a></li>
+            <li><a class="btn" href="#avoid-these-things">Avoid these things</a></li>
+            <li><a class="btn" href="#exercise">Exercise</a></li>
           </ul>
         </li>
-        <li><a href="#rdbms-and-database-entity-learning-objectives">RDBMS And
+        <li><a class="btn" href="#rdbms-and-database-entity-learning-objectives">RDBMS And
             Database Entity Learning Objectives</a></li>
         <li><a
             href="#database-lingobrthe-relational-database-management-system">Database
             Lingo<br><em>The Relational Database Management System</em></a>
           <ul>
-            <li><a href="#rdbms">RDBMS</a></li>
-            <li><a href="#what-is-postgresql">What is PostgreSQL?</a></li>
-            <li><a href="#what-is-sql">What is SQL?</a></li>
-            <li><a href="#what-we-learned">What we learned:</a></li>
+            <li><a class="btn" href="#rdbms">RDBMS</a></li>
+            <li><a class="btn" href="#what-is-postgresql">What is PostgreSQL?</a></li>
+            <li><a class="btn" href="#what-is-sql">What is SQL?</a></li>
+            <li><a class="btn" href="#what-we-learned">What we learned:</a></li>
           </ul>
         </li>
         <li><a
             href="#installing-postgresql-12-and-postbird-on-windows">Installing
             PostgreSQL 12 and Postbird on Windows</a>
           <ul>
-            <li><a href="#installing-postgresql-12">Installing PostgreSQL 12</a>
+            <li><a class="btn" href="#installing-postgresql-12">Installing PostgreSQL 12</a>
             </li>
             <li><a
                 href="#installing-postgresql-client-tools-on-ubuntu">Installing
                 PostgreSQL Client Tools on Ubuntu</a></li>
-            <li><a href="#configuring-the-client-tools">Configuring the client
+            <li><a class="btn" href="#configuring-the-client-tools">Configuring the client
                 tools</a></li>
-            <li><a href="#installing-postbird">Installing Postbird</a></li>
-            <li><a href="#what-you-did">What you did</a></li>
+            <li><a class="btn" href="#installing-postbird">Installing Postbird</a></li>
+            <li><a class="btn" href="#what-you-did">What you did</a></li>
           </ul>
         </li>
-        <li><a href="#installing-postgresql-12-and-postbird-on-macos">Installing
+        <li><a class="btn" href="#installing-postgresql-12-and-postbird-on-macos">Installing
             PostgreSQL 12 and Postbird on macOS</a>
           <ul>
-            <li><a href="#installing-postgresql-12-1">Installing PostgreSQL
+            <li><a class="btn" href="#installing-postgresql-12-1">Installing PostgreSQL
                 12</a></li>
-            <li><a href="#configuring-postgresql-12">Configuring PostgreSQL
+            <li><a class="btn" href="#configuring-postgresql-12">Configuring PostgreSQL
                 12</a></li>
-            <li><a href="#connecting-to-postgresql">Connecting to PostgreSQL</a>
+            <li><a class="btn" href="#connecting-to-postgresql">Connecting to PostgreSQL</a>
             </li>
-            <li><a href="#installing-postbird-1">Installing Postbird</a></li>
-            <li><a href="#what-you-did-1">What you did</a></li>
+            <li><a class="btn" href="#installing-postbird-1">Installing Postbird</a></li>
+            <li><a class="btn" href="#what-you-did-1">What you did</a></li>
           </ul>
         </li>
-        <li><a href="#user-management-walk-through">User Management
+        <li><a class="btn" href="#user-management-walk-through">User Management
             Walk-Through</a>
           <ul>
-            <li><a href="#naming-a-user">Naming a user</a></li>
-            <li><a href="#creating-a-superuser">Creating a superuser</a></li>
-            <li><a href="#creating-a-limited-user">Creating a limited user</a>
+            <li><a class="btn" href="#naming-a-user">Naming a user</a></li>
+            <li><a class="btn" href="#creating-a-superuser">Creating a superuser</a></li>
+            <li><a class="btn" href="#creating-a-limited-user">Creating a limited user</a>
             </li>
-            <li><a href="#removing-a-user">Removing a user</a></li>
-            <li><a href="#case-sensitivity">Case sensitivity</a></li>
-            <li><a href="#what-you-learned">What you learned</a></li>
+            <li><a class="btn" href="#removing-a-user">Removing a user</a></li>
+            <li><a class="btn" href="#case-sensitivity">Case sensitivity</a></li>
+            <li><a class="btn" href="#what-you-learned">What you learned</a></li>
           </ul>
         </li>
-        <li><a href="#database-management-walk-through">Database Management
+        <li><a class="btn" href="#database-management-walk-through">Database Management
             Walk-Through</a>
           <ul>
-            <li><a href="#naming-a-database">Naming a database</a></li>
-            <li><a href="#creating-a-database-for-your-user">Creating a database
+            <li><a class="btn" href="#naming-a-database">Naming a database</a></li>
+            <li><a class="btn" href="#creating-a-database-for-your-user">Creating a database
                 for your user</a></li>
-            <li><a href="#creating-other-users-and-databases">Creating other
+            <li><a class="btn" href="#creating-other-users-and-databases">Creating other
                 users and databases</a></li>
-            <li><a href="#applying-security-to-databases">Applying security to
+            <li><a class="btn" href="#applying-security-to-databases">Applying security to
                 databases</a></li>
-            <li><a href="#listing-databases-and-granting-privileges">Listing
+            <li><a class="btn" href="#listing-databases-and-granting-privileges">Listing
                 databases and granting privileges</a></li>
-            <li><a href="#time-to-clean-up">Time to clean up</a></li>
-            <li><a href="#what-youve-done">What you&apos;ve done</a></li>
+            <li><a class="btn" href="#time-to-clean-up">Time to clean up</a></li>
+            <li><a class="btn" href="#what-youve-done">What you&apos;ve done</a></li>
           </ul>
         </li>
-        <li><a href="#table-management-walk-through-part-i">Table Management
+        <li><a class="btn" href="#table-management-walk-through-part-i">Table Management
             Walk-Through - Part I</a>
           <ul>
-            <li><a href="#what-is-a-table">What is a table?</a></li>
-            <li><a href="#defining-tables">Defining tables</a>
+            <li><a class="btn" href="#what-is-a-table">What is a table?</a></li>
+            <li><a class="btn" href="#defining-tables">Defining tables</a>
               <ul>
-                <li><a href="#string-types">String types</a></li>
-                <li><a href="#numeric-types">Numeric types</a></li>
+                <li><a class="btn" href="#string-types">String types</a></li>
+                <li><a class="btn" href="#numeric-types">Numeric types</a></li>
               </ul>
             </li>
-            <li><a href="#other-data-types">Other data types</a></li>
-            <li><a href="#naming-a-table">Naming a table</a></li>
-            <li><a href="#writing-the-sql">Writing the SQL</a></li>
-            <li><a href="#listing-tables-and-table-definitions">Listing tables
+            <li><a class="btn" href="#other-data-types">Other data types</a></li>
+            <li><a class="btn" href="#naming-a-table">Naming a table</a></li>
+            <li><a class="btn" href="#writing-the-sql">Writing the SQL</a></li>
+            <li><a class="btn" href="#listing-tables-and-table-definitions">Listing tables
                 and table definitions</a></li>
-            <li><a href="#deleting-a-table">Deleting a table</a></li>
-            <li><a href="#what-youve-done-1">What you&apos;ve done</a></li>
+            <li><a class="btn" href="#deleting-a-table">Deleting a table</a></li>
+            <li><a class="btn" href="#what-youve-done-1">What you&apos;ve done</a></li>
           </ul>
         </li>
-        <li><a href="#table-management-walk-through-part-ii">Table Management
+        <li><a class="btn" href="#table-management-walk-through-part-ii">Table Management
             Walk-Through - Part II</a>
           <ul>
-            <li><a href="#nullable-columns">Nullable columns</a></li>
-            <li><a href="#default-values">Default values</a></li>
-            <li><a href="#primary-keys">Primary keys</a></li>
-            <li><a href="#unique-values">Unique values</a></li>
-            <li><a href="#refactor-for-data-integrity">Refactor for data
+            <li><a class="btn" href="#nullable-columns">Nullable columns</a></li>
+            <li><a class="btn" href="#default-values">Default values</a></li>
+            <li><a class="btn" href="#primary-keys">Primary keys</a></li>
+            <li><a class="btn" href="#unique-values">Unique values</a></li>
+            <li><a class="btn" href="#refactor-for-data-integrity">Refactor for data
                 integrity</a></li>
-            <li><a href="#order-of-table-declarations">Order of table
+            <li><a class="btn" href="#order-of-table-declarations">Order of table
                 declarations</a></li>
-            <li><a href="#what-youve-done-2">What you&apos;ve done</a></li>
+            <li><a class="btn" href="#what-youve-done-2">What you&apos;ve done</a></li>
           </ul>
         </li>
-        <li><a href="#database-management-project">Database Management
+        <li><a class="btn" href="#database-management-project">Database Management
             Project</a>
           <ul>
-            <li><a href="#instructions">Instructions</a></li>
+            <li><a class="btn" href="#instructions">Instructions</a></li>
           </ul>
         </li>
-        <li><a href="#sql-learning-objectives">SQL Learning Objectives</a></li>
-        <li><a href="#retrieving-rows-from-a-table-using-select">Retrieving Rows
+        <li><a class="btn" href="#sql-learning-objectives">SQL Learning Objectives</a></li>
+        <li><a class="btn" href="#retrieving-rows-from-a-table-using-select">Retrieving Rows
             From A Table Using SELECT</a>
           <ul>
-            <li><a href="#what-is-a-query">What is a query?</a></li>
-            <li><a href="#example-table">Example table</a></li>
-            <li><a href="#using-psql-in-the-terminal">Using psql in the
+            <li><a class="btn" href="#what-is-a-query">What is a query?</a></li>
+            <li><a class="btn" href="#example-table">Example table</a></li>
+            <li><a class="btn" href="#using-psql-in-the-terminal">Using psql in the
                 terminal</a></li>
-            <li><a href="#simple-select-query">Simple SELECT Query</a>
+            <li><a class="btn" href="#simple-select-query">Simple SELECT Query</a>
               <ul>
-                <li><a href="#select-all-rows">SELECT all rows</a></li>
-                <li><a href="#select-by-column">SELECT by column</a></li>
-                <li><a href="#select-multiple-columns">SELECT multiple
+                <li><a class="btn" href="#select-all-rows">SELECT all rows</a></li>
+                <li><a class="btn" href="#select-by-column">SELECT by column</a></li>
+                <li><a class="btn" href="#select-multiple-columns">SELECT multiple
                     columns</a></li>
               </ul>
             </li>
-            <li><a href="#formatting-select-statements">Formatting SELECT
+            <li><a class="btn" href="#formatting-select-statements">Formatting SELECT
                 statements</a></li>
-            <li><a href="#what-we-learned-1">What we learned:</a></li>
+            <li><a class="btn" href="#what-we-learned-1">What we learned:</a></li>
           </ul>
         </li>
         <li><a
             href="#selecting-table-rows-using-where-and-common-operators">Selecting
             Table Rows Using WHERE And Common Operators</a>
           <ul>
-            <li><a href="#using-select-and-where">Using SELECT and WHERE</a>
+            <li><a class="btn" href="#using-select-and-where">Using SELECT and WHERE</a>
               <ul>
-                <li><a href="#where-clause-for-a-single-value">WHERE clause for
+                <li><a class="btn" href="#where-clause-for-a-single-value">WHERE clause for
                     a single value</a></li>
-                <li><a href="#where-clause-for-a-list-of-values">WHERE clause
+                <li><a class="btn" href="#where-clause-for-a-list-of-values">WHERE clause
                     for a list of values</a></li>
               </ul>
             </li>
-            <li><a href="#what-we-learned-2">What we learned:</a></li>
+            <li><a class="btn" href="#what-we-learned-2">What we learned:</a></li>
           </ul>
         </li>
-        <li><a href="#inserting-data-into-a-table">Inserting Data Into A
+        <li><a class="btn" href="#inserting-data-into-a-table">Inserting Data Into A
             Table</a>
           <ul>
-            <li><a href="#what-we-learned-3">What we learned:</a></li>
+            <li><a class="btn" href="#what-we-learned-3">What we learned:</a></li>
           </ul>
         </li>
-        <li><a href="#foreign-keys-and-the-join-operation">Foreign Keys And The
+        <li><a class="btn" href="#foreign-keys-and-the-join-operation">Foreign Keys And The
             JOIN Operation</a>
           <ul>
-            <li><a href="#setting-up-the-database">Setting up the database</a>
+            <li><a class="btn" href="#setting-up-the-database">Setting up the database</a>
             </li>
             <li><a
                 href="#using-join-to-retrieve-rows-from-multiple-tables">Using
                 JOIN to retrieve rows from multiple tables</a></li>
-            <li><a href="#what-we-learned-4">What we learned:</a></li>
-            <li><a href="#helpful-links">Helpful links:</a></li>
+            <li><a class="btn" href="#what-we-learned-4">What we learned:</a></li>
+            <li><a class="btn" href="#helpful-links">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#writing-and-running-a-seed-file-in-psql">Writing And
+        <li><a class="btn" href="#writing-and-running-a-seed-file-in-psql">Writing And
             Running A Seed File In PSQL</a>
           <ul>
-            <li><a href="#creating-a-seed-file">Creating a seed file</a></li>
-            <li><a href="#populating-a-database-via-left-caret">Populating a
+            <li><a class="btn" href="#creating-a-seed-file">Creating a seed file</a></li>
+            <li><a class="btn" href="#populating-a-database-via-left-caret">Populating a
                 database via &lt; (&#x201C;left caret&#x201D;)</a></li>
-            <li><a href="#populating-the-database-via-pipe">Populating the
+            <li><a class="btn" href="#populating-the-database-via-pipe">Populating the
                 database via | (&#x201C;pipe&#x201D;)</a></li>
-            <li><a href="#what-we-learned-5">What we learned:</a></li>
+            <li><a class="btn" href="#what-we-learned-5">What we learned:</a></li>
           </ul>
         </li>
-        <li><a href="#create-and-seed-a-database-project">Create And Seed A
+        <li><a class="btn" href="#create-and-seed-a-database-project">Create And Seed A
             Database Project</a>
           <ul>
-            <li><a href="#project-overview">Project overview</a></li>
-            <li><a href="#phase-1-create-a-new-database">Phase 1: Create a new
+            <li><a class="btn" href="#project-overview">Project overview</a></li>
+            <li><a class="btn" href="#phase-1-create-a-new-database">Phase 1: Create a new
                 database</a></li>
-            <li><a href="#phase-2-create-a-seeds-seed-file">Phase 2: Create a
+            <li><a class="btn" href="#phase-2-create-a-seeds-seed-file">Phase 2: Create a
                 seeds seed file</a></li>
             <li><a
                 href="#phase-3-pipe-your-seed-file-into-your-new-database">Phase
@@ -12967,125 +12951,125 @@ module<span class="token punctuation">.</span><span class="token function-variab
             </li>
           </ul>
         </li>
-        <li><a href="#solving-the-sql-menagerie-project">Solving The SQL
+        <li><a class="btn" href="#solving-the-sql-menagerie-project">Solving The SQL
             Menagerie Project</a>
           <ul>
-            <li><a href="#getting-started">Getting started</a></li>
-            <li><a href="#project-overview-1">Project overview</a></li>
+            <li><a class="btn" href="#getting-started">Getting started</a></li>
+            <li><a class="btn" href="#project-overview-1">Project overview</a></li>
             <li><a
                 href="#phase-1-pipe-in-a-seed-file-to-create-new-database-tables">Phase
                 1: Pipe in a seed file to create new database tables</a></li>
-            <li><a href="#phase-2-write-basic-select-statements">Phase 2: Write
+            <li><a class="btn" href="#phase-2-write-basic-select-statements">Phase 2: Write
                 basic SELECT statements</a></li>
-            <li><a href="#phase-3-add-where-clauses">Phase 3: Add WHERE
+            <li><a class="btn" href="#phase-3-add-where-clauses">Phase 3: Add WHERE
                 clauses</a></li>
-            <li><a href="#phase-4-use-a-join-operation">Phase 4: Use a JOIN
+            <li><a class="btn" href="#phase-4-use-a-join-operation">Phase 4: Use a JOIN
                 operation</a></li>
-            <li><a href="#bonuses">Bonuses</a></li>
+            <li><a class="btn" href="#bonuses">Bonuses</a></li>
           </ul>
         </li>
-        <li><a href="#creating-a-schema-for-relational-database-design">Creating
+        <li><a class="btn" href="#creating-a-schema-for-relational-database-design">Creating
             A Schema For Relational Database Design</a>
           <ul>
-            <li><a href="#what-is-relational-database-design">What is Relational
+            <li><a class="btn" href="#what-is-relational-database-design">What is Relational
                 Database Design?</a></li>
-            <li><a href="#stages-of-relational-database-design">Stages of
+            <li><a class="btn" href="#stages-of-relational-database-design">Stages of
                 Relational Database Design</a>
               <ul>
-                <li><a href="#1-define-database-purpose-and-entities">1. Define
+                <li><a class="btn" href="#1-define-database-purpose-and-entities">1. Define
                     database purpose and entities</a></li>
-                <li><a href="#2-identify-primary-keys">2. Identify primary
+                <li><a class="btn" href="#2-identify-primary-keys">2. Identify primary
                     keys</a></li>
-                <li><a href="#3-establish-table-relationships">3. Establish
+                <li><a class="btn" href="#3-establish-table-relationships">3. Establish
                     table relationships</a></li>
-                <li><a href="#4-apply-normalization-rules">4. Apply
+                <li><a class="btn" href="#4-apply-normalization-rules">4. Apply
                     normalization rules</a></li>
               </ul>
             </li>
-            <li><a href="#schema-design-tools">Schema design tools</a></li>
-            <li><a href="#what-we-learned-6">What we learned:</a></li>
+            <li><a class="btn" href="#schema-design-tools">Schema design tools</a></li>
+            <li><a class="btn" href="#what-we-learned-6">What we learned:</a></li>
           </ul>
         </li>
-        <li><a href="#using-sql-transactions">Using SQL Transactions</a>
+        <li><a class="btn" href="#using-sql-transactions">Using SQL Transactions</a>
           <ul>
-            <li><a href="#what-is-a-transaction">What is a transaction?</a></li>
-            <li><a href="#implicit-vs-explicit-transactions">Implicit vs.
+            <li><a class="btn" href="#what-is-a-transaction">What is a transaction?</a></li>
+            <li><a class="btn" href="#implicit-vs-explicit-transactions">Implicit vs.
                 explicit transactions</a>
               <ul>
-                <li><a href="#postgresql-transactional-commands">PostgreSQL
+                <li><a class="btn" href="#postgresql-transactional-commands">PostgreSQL
                     transactional commands</a></li>
               </ul>
             </li>
-            <li><a href="#when-to-use-transactions-and-why">When to use
+            <li><a class="btn" href="#when-to-use-transactions-and-why">When to use
                 transactions and why</a></li>
-            <li><a href="#transaction-properties-acid">Transaction properties:
+            <li><a class="btn" href="#transaction-properties-acid">Transaction properties:
                 ACID</a>
               <ul>
-                <li><a href="#banking-transaction-example">Banking transaction
+                <li><a class="btn" href="#banking-transaction-example">Banking transaction
                     example</a></li>
               </ul>
             </li>
-            <li><a href="#helpful-links-1">Helpful links:</a></li>
+            <li><a class="btn" href="#helpful-links-1">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#joins-vs-subqueries">Joins vs. Subqueries</a>
+        <li><a class="btn" href="#joins-vs-subqueries">Joins vs. Subqueries</a>
           <ul>
-            <li><a href="#what-is-a-join">What is a JOIN?</a></li>
-            <li><a href="#what-is-a-subquery">What is a subquery?</a>
+            <li><a class="btn" href="#what-is-a-join">What is a JOIN?</a></li>
+            <li><a class="btn" href="#what-is-a-subquery">What is a subquery?</a>
               <ul>
-                <li><a href="#single-value-subquery">Single-value subquery</a>
+                <li><a class="btn" href="#single-value-subquery">Single-value subquery</a>
                 </li>
-                <li><a href="#multiple-row-subquery">Multiple-row subquery</a>
+                <li><a class="btn" href="#multiple-row-subquery">Multiple-row subquery</a>
                 </li>
               </ul>
             </li>
-            <li><a href="#using-joins-vs-subqueries">Using joins vs.
+            <li><a class="btn" href="#using-joins-vs-subqueries">Using joins vs.
                 subqueries</a>
               <ul>
-                <li><a href="#should-i-use-a-join-or-a-subquery">Should I use a
+                <li><a class="btn" href="#should-i-use-a-join-or-a-subquery">Should I use a
                     JOIN or a subquery?</a></li>
               </ul>
             </li>
-            <li><a href="#helpful-links-2">Helpful links:</a></li>
+            <li><a class="btn" href="#helpful-links-2">Helpful links:</a></li>
           </ul>
         </li>
-        <li><a href="#postgresql-indexes">PostgreSQL Indexes</a>
+        <li><a class="btn" href="#postgresql-indexes">PostgreSQL Indexes</a>
           <ul>
-            <li><a href="#what-is-a-postgresql-index">What is a PostgreSQL
+            <li><a class="btn" href="#what-is-a-postgresql-index">What is a PostgreSQL
                 index?</a></li>
-            <li><a href="#how-to-create-an-index">How to create an index</a>
+            <li><a class="btn" href="#how-to-create-an-index">How to create an index</a>
               <ul>
-                <li><a href="#types-of-indexes">Types of indexes</a></li>
+                <li><a class="btn" href="#types-of-indexes">Types of indexes</a></li>
               </ul>
             </li>
-            <li><a href="#when-to-use-an-index">When to use an index</a></li>
-            <li><a href="#helpful-links-3">Helpful links:</a></li>
-            <li><a href="#what-we-learned-7">What we learned:</a></li>
+            <li><a class="btn" href="#when-to-use-an-index">When to use an index</a></li>
+            <li><a class="btn" href="#helpful-links-3">Helpful links:</a></li>
+            <li><a class="btn" href="#what-we-learned-7">What we learned:</a></li>
           </ul>
         </li>
-        <li><a href="#node-postgres-and-prepared-statements">Node-Postgres And
+        <li><a class="btn" href="#node-postgres-and-prepared-statements">Node-Postgres And
             Prepared Statements</a>
           <ul>
-            <li><a href="#connecting">Connecting</a></li>
-            <li><a href="#prepared-statement">Prepared Statement</a></li>
-            <li><a href="#try-it-out-for-yourself">Try it out for yourself</a>
+            <li><a class="btn" href="#connecting">Connecting</a></li>
+            <li><a class="btn" href="#prepared-statement">Prepared Statement</a></li>
+            <li><a class="btn" href="#try-it-out-for-yourself">Try it out for yourself</a>
             </li>
-            <li><a href="#what-youve-learned">What you&apos;ve learned</a></li>
+            <li><a class="btn" href="#what-youve-learned">What you&apos;ve learned</a></li>
           </ul>
         </li>
-        <li><a href="#recipe-box-project">Recipe Box Project</a>
+        <li><a class="btn" href="#recipe-box-project">Recipe Box Project</a>
           <ul>
-            <li><a href="#the-data-model-analysis">The data model analysis</a>
+            <li><a class="btn" href="#the-data-model-analysis">The data model analysis</a>
             </li>
-            <li><a href="#getting-started-1">Getting started</a></li>
-            <li><a href="#your-sql">Your SQL</a></li>
-            <li><a href="#the-application">The application</a></li>
-            <li><a href="#directions">Directions</a>
+            <li><a class="btn" href="#getting-started-1">Getting started</a></li>
+            <li><a class="btn" href="#your-sql">Your SQL</a></li>
+            <li><a class="btn" href="#the-application">The application</a></li>
+            <li><a class="btn" href="#directions">Directions</a>
               <ul>
-                <li><a href="#home-page">Home Page</a></li>
-                <li><a href="#recipesid"><code>/recipes/:id</code></a></li>
-                <li><a href="#recipesnew"><code>/recipes/new</code></a></li>
-                <li><a href="#recipesidedit"><code>/recipes/:id/edit</code></a>
+                <li><a class="btn" href="#home-page">Home Page</a></li>
+                <li><a class="btn" href="#recipesid"><code>/recipes/:id</code></a></li>
+                <li><a class="btn" href="#recipesnew"><code>/recipes/new</code></a></li>
+                <li><a class="btn" href="#recipesidedit"><code>/recipes/:id/edit</code></a>
                 </li>
                 <li><a
                     href="#recipestermsearchterm"><code>/recipes?term={searchTerm}</code></a>
@@ -13094,21 +13078,21 @@ module<span class="token punctuation">.</span><span class="token function-variab
             </li>
           </ul>
         </li>
-        <li><a href="#orm-learning-objectives">ORM Learning Objectives</a></li>
-        <li><a href="#installing-and-using-sequelize">Installing And Using
+        <li><a class="btn" href="#orm-learning-objectives">ORM Learning Objectives</a></li>
+        <li><a class="btn" href="#installing-and-using-sequelize">Installing And Using
             Sequelize</a>
           <ul>
-            <li><a href="#what-is-an-orm">What Is An ORM?</a></li>
-            <li><a href="#how-to-install-sequelize">How To Install Sequelize</a>
+            <li><a class="btn" href="#what-is-an-orm">What Is An ORM?</a></li>
+            <li><a class="btn" href="#how-to-install-sequelize">How To Install Sequelize</a>
             </li>
-            <li><a href="#how-to-initialize-sequelize">How To Initialize
+            <li><a class="btn" href="#how-to-initialize-sequelize">How To Initialize
                 Sequelize</a></li>
             <li><a
                 href="#verifying-that-sequelize-can-connect-to-the-database">Verifying
                 That Sequelize Can Connect To The Database</a></li>
-            <li><a href="#our-preexisting-database-schema">Our Preexisting
+            <li><a class="btn" href="#our-preexisting-database-schema">Our Preexisting
                 Database Schema</a></li>
-            <li><a href="#using-sequelize-to-generate-the-model-file">Using
+            <li><a class="btn" href="#using-sequelize-to-generate-the-model-file">Using
                 Sequelize To Generate The Model File</a></li>
             <li><a
                 href="#examining-and-modifying-a-sequelize-model-file">Examining
@@ -13116,43 +13100,43 @@ module<span class="token punctuation">.</span><span class="token function-variab
             <li><a
                 href="#using-the-cat-model-to-fetch-and-update-sql-data">Using
                 The <code>Cat</code> Model To Fetch And Update SQL Data</a></li>
-            <li><a href="#reading-and-changing-record-attributes">Reading And
+            <li><a class="btn" href="#reading-and-changing-record-attributes">Reading And
                 Changing Record Attributes</a></li>
-            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#using-database-migrations">Using Database Migrations</a>
+        <li><a class="btn" href="#using-database-migrations">Using Database Migrations</a>
           <ul>
-            <li><a href="#sequelize-migration-files">Sequelize Migration
+            <li><a class="btn" href="#sequelize-migration-files">Sequelize Migration
                 Files</a></li>
-            <li><a href="#running-a-migration">Running A Migration</a></li>
-            <li><a href="#rolling-back-a-migration">Rolling Back A Migration</a>
+            <li><a class="btn" href="#running-a-migration">Running A Migration</a></li>
+            <li><a class="btn" href="#rolling-back-a-migration">Rolling Back A Migration</a>
             </li>
-            <li><a href="#editing-a-migration-file">Editing A Migration File</a>
+            <li><a class="btn" href="#editing-a-migration-file">Editing A Migration File</a>
             </li>
-            <li><a href="#up-and-down-are-asynchronous"><code>up</code> And
+            <li><a class="btn" href="#up-and-down-are-asynchronous"><code>up</code> And
                 <code>down</code> are Asynchronous</a></li>
-            <li><a href="#writing-a-down-method">Writing A <code>down</code>
+            <li><a class="btn" href="#writing-a-down-method">Writing A <code>down</code>
                 Method</a></li>
-            <li><a href="#advantages-of-migrations">Advantages Of Migrations</a>
+            <li><a class="btn" href="#advantages-of-migrations">Advantages Of Migrations</a>
             </li>
-            <li><a href="#conclusion-1">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion-1">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#crud-operations-using-sequelize">CRUD Operations Using
+        <li><a class="btn" href="#crud-operations-using-sequelize">CRUD Operations Using
             Sequelize</a>
           <ul>
-            <li><a href="#creating-a-new-record">Creating A New Record</a></li>
-            <li><a href="#reading-a-record-by-primary-key">Reading A Record By
+            <li><a class="btn" href="#creating-a-new-record">Creating A New Record</a></li>
+            <li><a class="btn" href="#reading-a-record-by-primary-key">Reading A Record By
                 Primary Key</a></li>
-            <li><a href="#updating-a-record">Updating A Record</a></li>
-            <li><a href="#destroying-a-record">Destroying A Record</a></li>
-            <li><a href="#class-methods-for-crud">Class Methods For CRUD</a>
+            <li><a class="btn" href="#updating-a-record">Updating A Record</a></li>
+            <li><a class="btn" href="#destroying-a-record">Destroying A Record</a></li>
+            <li><a class="btn" href="#class-methods-for-crud">Class Methods For CRUD</a>
             </li>
-            <li><a href="#conclusion-2">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion-2">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#querying-using-sequelize">Querying Using Sequelize</a>
+        <li><a class="btn" href="#querying-using-sequelize">Querying Using Sequelize</a>
           <ul>
             <li><a
                 href="#basic-usage-of-findall-to-retrieve-multiple-records">Basic
@@ -13162,26 +13146,26 @@ module<span class="token punctuation">.</span><span class="token function-variab
                 href="#using-findall-to-find-objects-not-matching-a-criterion">Using
                 <code>findAll</code> To Find Objects Not Matching A
                 Criterion</a></li>
-            <li><a href="#combining-criteria-with-opand">Combining Criteria with
+            <li><a class="btn" href="#combining-criteria-with-opand">Combining Criteria with
                 <code>Op.and</code></a></li>
-            <li><a href="#combining-criteria-with-opor">Combining Criteria with
+            <li><a class="btn" href="#combining-criteria-with-opor">Combining Criteria with
                 <code>Op.or</code></a></li>
-            <li><a href="#querying-with-comparisons">Querying With
+            <li><a class="btn" href="#querying-with-comparisons">Querying With
                 Comparisons</a></li>
-            <li><a href="#ordering-results">Ordering Results</a></li>
-            <li><a href="#limiting-results-and-findone">Limiting Results and
+            <li><a class="btn" href="#ordering-results">Ordering Results</a></li>
+            <li><a class="btn" href="#limiting-results-and-findone">Limiting Results and
                 <code>findOne</code></a></li>
-            <li><a href="#conclusion-3">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion-3">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#model-validations-with-sequelize">Model Validations With
+        <li><a class="btn" href="#model-validations-with-sequelize">Model Validations With
             Sequelize</a>
           <ul>
-            <li><a href="#validating-that-an-attribute-is-not-null">Validating
+            <li><a class="btn" href="#validating-that-an-attribute-is-not-null">Validating
                 That An Attribute Is Not <code>NULL</code></a></li>
-            <li><a href="#the-notempty-validation">The <code>notEmpty</code>
+            <li><a class="btn" href="#the-notempty-validation">The <code>notEmpty</code>
                 Validation</a></li>
-            <li><a href="#forbidding-long-string-values">Forbidding Long String
+            <li><a class="btn" href="#forbidding-long-string-values">Forbidding Long String
                 Values</a></li>
             <li><a
                 href="#validating-that-a-numeric-value-is-within-a-specified-range">Validating
@@ -13189,70 +13173,70 @@ module<span class="token punctuation">.</span><span class="token function-variab
             <li><a
                 href="#validating-that-an-attribute-is-among-a-finite-set-of-values">Validating
                 That An Attribute Is Among A Finite Set Of Values</a></li>
-            <li><a href="#conclusion-4">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion-4">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#transactions-with-sequelize">Transactions With
+        <li><a class="btn" href="#transactions-with-sequelize">Transactions With
             Sequelize</a>
           <ul>
-            <li><a href="#the-problem-database-updates-can-fail">The Problem:
+            <li><a class="btn" href="#the-problem-database-updates-can-fail">The Problem:
                 Database Updates Can Fail</a></li>
-            <li><a href="#the-solution-database-transactions">The Solution:
+            <li><a class="btn" href="#the-solution-database-transactions">The Solution:
                 Database Transactions</a></li>
-            <li><a href="#the-bankaccounts-schema">The <code>BankAccounts</code>
+            <li><a class="btn" href="#the-bankaccounts-schema">The <code>BankAccounts</code>
                 Schema</a></li>
             <li><a
                 href="#example-an-update-fails-because-of-validation-failure">Example:
                 An Update Fails Because Of Validation Failure</a></li>
-            <li><a href="#incorrect-solutions">Incorrect Solutions</a></li>
-            <li><a href="#using-a-database-transaction-with-sequelize">Using A
+            <li><a class="btn" href="#incorrect-solutions">Incorrect Solutions</a></li>
+            <li><a class="btn" href="#using-a-database-transaction-with-sequelize">Using A
                 Database Transaction With Sequelize</a></li>
-            <li><a href="#aside-what-is-the-transaction-object">Aside: What Is
+            <li><a class="btn" href="#aside-what-is-the-transaction-object">Aside: What Is
                 The <code>Transaction</code> Object?</a></li>
-            <li><a href="#transactions-prevent-_race-conditions_">Transactions
+            <li><a class="btn" href="#transactions-prevent-_race-conditions_">Transactions
                 Prevent <em>Race Conditions</em></a></li>
-            <li><a href="#conclusion-5">Conclusion</a></li>
+            <li><a class="btn" href="#conclusion-5">Conclusion</a></li>
           </ul>
         </li>
-        <li><a href="#recipe-box-with-sequelize-project">Recipe Box With
+        <li><a class="btn" href="#recipe-box-with-sequelize-project">Recipe Box With
             Sequelize Project</a>
           <ul>
-            <li><a href="#the-data-model-analysis-1">The data model analysis</a>
+            <li><a class="btn" href="#the-data-model-analysis-1">The data model analysis</a>
             </li>
-            <li><a href="#the-application-1">The application</a></li>
-            <li><a href="#getting-started-2">Getting started</a></li>
-            <li><a href="#your-code">Your code</a></li>
-            <li><a href="#phase-1-initialize-the-sequelize-project">Phase 1:
+            <li><a class="btn" href="#the-application-1">The application</a></li>
+            <li><a class="btn" href="#getting-started-2">Getting started</a></li>
+            <li><a class="btn" href="#your-code">Your code</a></li>
+            <li><a class="btn" href="#phase-1-initialize-the-sequelize-project">Phase 1:
                 Initialize the Sequelize project</a></li>
-            <li><a href="#phase-2-create-a-database-user-for-the-project">Phase
+            <li><a class="btn" href="#phase-2-create-a-database-user-for-the-project">Phase
                 2: Create a database user for the project</a></li>
-            <li><a href="#phase-2-change-the-connection-configuration">Phase 2:
+            <li><a class="btn" href="#phase-2-change-the-connection-configuration">Phase 2:
                 Change the connection configuration</a></li>
-            <li><a href="#phase-3-create-your-database">Phase 3: Create your
+            <li><a class="btn" href="#phase-3-create-your-database">Phase 3: Create your
                 database</a></li>
-            <li><a href="#phase-4-the-units-of-measurement-data">Phase 4: The
+            <li><a class="btn" href="#phase-4-the-units-of-measurement-data">Phase 4: The
                 units of measurement data</a>
               <ul>
-                <li><a href="#create-a-migration">Create a migration</a></li>
+                <li><a class="btn" href="#create-a-migration">Create a migration</a></li>
               </ul>
             </li>
-            <li><a href="#run-your-migration">Run your migration</a></li>
-            <li><a href="#create-the-seed-data">Create the seed data</a></li>
-            <li><a href="#phase-5-the-recipe-table-model">Phase 5: The recipe
+            <li><a class="btn" href="#run-your-migration">Run your migration</a></li>
+            <li><a class="btn" href="#create-the-seed-data">Create the seed data</a></li>
+            <li><a class="btn" href="#phase-5-the-recipe-table-model">Phase 5: The recipe
                 table model</a></li>
-            <li><a href="#phase-6-the-instruction-table-model">Phase 6: The
+            <li><a class="btn" href="#phase-6-the-instruction-table-model">Phase 6: The
                 instruction table model</a></li>
-            <li><a href="#phase-7-the-ingredients-model">Phase 7: The
+            <li><a class="btn" href="#phase-7-the-ingredients-model">Phase 7: The
                 ingredients model</a></li>
-            <li><a href="#phase-8-seed-data-for-all-of-the-tables">Phase 8: Seed
+            <li><a class="btn" href="#phase-8-seed-data-for-all-of-the-tables">Phase 8: Seed
                 data for all of the tables</a></li>
-            <li><a href="#phase-9-updating-models-with-references">Phase 9:
+            <li><a class="btn" href="#phase-9-updating-models-with-references">Phase 9:
                 Updating models with references</a></li>
-            <li><a href="#phase-10-updating-models-with-validations">Phase 10:
+            <li><a class="btn" href="#phase-10-updating-models-with-validations">Phase 10:
                 Updating models with validations</a></li>
-            <li><a href="#phase-11-cascade-delete-for-recipes">Phase 11: Cascade
+            <li><a class="btn" href="#phase-11-cascade-delete-for-recipes">Phase 11: Cascade
                 delete for recipes</a></li>
-            <li><a href="#phase-12-building-the-repositories">Phase 12: Building
+            <li><a class="btn" href="#phase-12-building-the-repositories">Phase 12: Building
                 the repositories</a></li>
           </ul>
         </li>
@@ -13273,7 +13257,7 @@ module<span class="token punctuation">.</span><span class="token function-variab
 
 
 
-    <div id="home-link2"> <a href="./../../index.html">HOME</a>
+    <div id="home-link2"> <a class="btn" href="./../../index.html">HOME</a>
     </div>
   </body>
 

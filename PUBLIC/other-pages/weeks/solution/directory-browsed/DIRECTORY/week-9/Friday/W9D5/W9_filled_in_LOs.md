@@ -35,7 +35,7 @@ How to link a stylesheet into an HTML page
         html:
 
         ```html
-            <a href="https://google.com">Link</a>
+            <a class="btn" href="https://google.com">Link</a>
         ```
         css:
 

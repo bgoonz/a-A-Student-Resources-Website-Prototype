@@ -12,7 +12,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   justify-content: flex-start;
 }
 

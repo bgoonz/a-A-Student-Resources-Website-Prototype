@@ -1,33 +1,4 @@
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: italic;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
-}
+
 
 body{
     background-color: #f6f6f6;
@@ -35,6 +6,35 @@ body{
   font-size: 16px;
 
 }
+.btn{
+  background-color: rgba(0, 102, 255, 0.248);
+  color: white;
+  padding:0.3em 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn:hover{
+    background-color: blue;
+}
+.btn:active {
+  background-color: blue;
+}
+.btn:visited {
+  background-color: green;
+}
+#home-link2{
+  margin:auto;
+    background-color: rgba(0, 102, 255, 0.248);
+  color: white;
+  padding:0.3em 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
 img{
     display: block;
   margin-left: auto;
@@ -197,6 +197,25 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 50%;
+}
+a {
+  background-color: red;
+  color: white;
+  padding: 0.3em 0.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+a:active {
+  background-color: black;
+}
+
+a:visited {
+  background-color: #ccc;
 }
 td,
 th {
@@ -643,4 +662,36 @@ div.code-toolbar > .toolbar span:focus {
   border-radius: 15px 15px 15px 15px;
  display:inline;
   justify-content: space-around;
+}
+
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlpogwHKFkZgtmSR3NB0oRJfajhRK_M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNV.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD-w.ttf) format('truetype');
 }
