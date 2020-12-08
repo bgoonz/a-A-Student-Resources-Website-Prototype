@@ -37,58 +37,58 @@
       <h1 class="mume-header" id="sequelize">Sequelize</h1>
 
 <ul>
-<li>Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the <code>sequelize-cli</code> command.</li>
+<li>Sequelize provides utilities for generating migrations, models, and seed files. They are exposed through the  <code class="language-javascript">sequelize-cli</code> command.</li>
 </ul>
 <h2 class="mume-header" id="command-line">Command Line</h2>
 
 <h4 class="mume-header" id="initialize-project">Initialize Project</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npm install sequelize sequelize-cli pg
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npm install sequelize sequelize-cli pg
 npx sequelize-cli init
 </code></pre><ul>
-<li>You must create a database user, update the <code>config/config.json</code> file to match your database settings to complete the initialization process.</li>
+<li>You must create a database user, update the  <code class="language-javascript">config/config.json</code> file to match your database settings to complete the initialization process.</li>
 </ul>
 <h4 class="mume-header" id="create-database">Create Database</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:create
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:create
 </code></pre><h3 class="mume-header" id="seeds">Seeds</h3>
 
 <h4 class="mume-header" id="generate-a-new-seed-file">Generate a new seed file</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli seed:generate --name &lt;descriptiveName&gt;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli seed:generate --name &lt;descriptiveName&gt;
 </code></pre><h4 class="mume-header" id="run-all-pending-seeds">Run all pending seeds</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:seed:all
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:seed:all
 </code></pre><h4 class="mume-header" id="rollback-seeds">Rollback Seeds</h4>
 
 <ul>
 <li>
 <h5>One seed</h5>
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:seed:undo
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:seed:undo
 </code></pre></li>
 <li>
 <h5>All seeds</h5>
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:seed:undo:all
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:seed:undo:all
 </code></pre></li>
 </ul>
 <h3 class="mume-header" id="migrations">Migrations</h3>
 
 <h4 class="mume-header" id="generate-a-model-and-its-migration">Generate a model and its migration</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli model:generate --name &lt;ModelName&gt; --attributes&lt;column1&gt;:&lt;type&gt;,&lt;column2&gt;:&lt;type&gt;,...
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli model:generate --name &lt;ModelName&gt; --attributes&lt;column1&gt;:&lt;type&gt;,&lt;column2&gt;:&lt;type&gt;,...
 </code></pre><h4 class="mume-header" id="run-all-pending-migrations">Run all pending migrations</h4>
 
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:migrate
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:migrate
 </code></pre><h4 class="mume-header" id="rollback-migrations">Rollback Migrations</h4>
 
 <ul>
 <li>
 <h5>One migration</h5>
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:migrate:undo
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:migrate:undo
 </code></pre></li>
 <li>
 <h5>All migrations</h5>
-<pre data-role="codeBlock" data-info class="language-"><code>npx sequelize-cli db:migrate:undo:all
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">npx sequelize-cli db:migrate:undo:all
 </code></pre></li>
 </ul>
 <h2 class="mume-header" id="javascript-sql-functions">Javascript SQL Functions</h2>
@@ -128,7 +128,7 @@ npx sequelize-cli init
 <h4 class="mume-header" id="create-a-table">Create a Table</h4>
 
 <ul>
-<li>Usually used in the <code>up()</code> method</li>
+<li>Usually used in the  <code class="language-javascript">up()</code> method</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">return</span> queryInterface<span class="token punctuation">.</span><span class="token function">createTable</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>TableName<span class="token operator">&gt;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
   <span class="token operator">&lt;</span>columnName<span class="token operator">&gt;</span><span class="token punctuation">:</span> <span class="token punctuation">{</span>
@@ -145,7 +145,7 @@ npx sequelize-cli init
 </pre><h4 class="mume-header" id="delete-table">Delete Table</h4>
 
 <ul>
-<li>Usually used in the <code>down()</code> method</li>
+<li>Usually used in the  <code class="language-javascript">down()</code> method</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">return</span> queryInterface<span class="token punctuation">.</span><span class="token function">dropTable</span><span class="token punctuation">(</span><span class="token operator">&lt;</span>TableName<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre><ul>
@@ -183,8 +183,8 @@ instance<span class="token punctuation">.</span><span class="token keyword">get<
 <span class="token comment">// is the same as</span>
 instance<span class="token punctuation">.</span><span class="token function">getDataValue</span><span class="token punctuation">(</span><span class="token string">&apos;field&apos;</span><span class="token punctuation">)</span>
 </pre></li>
-<li>However, if getters and/or setters are defined for field they will be invoked, instead of returning the value from <code>dataValues</code>.</li>
-<li>Accessing properties directly or using get is preferred for regular use, <code>getDataValue</code> should only be used for custom getters.</li>
+<li>However, if getters and/or setters are defined for field they will be invoked, instead of returning the value from  <code class="language-javascript">dataValues</code>.</li>
+<li>Accessing properties directly or using get is preferred for regular use,  <code class="language-javascript">getDataValue</code> should only be used for custom getters.</li>
 <li>See <a class="btn" href="https://sequelize.org/master/class/lib/model.js~Model.html">Public Methods</a></li>
 </ul>
 </li>
@@ -211,7 +211,7 @@ instance<span class="token punctuation">.</span><span class="token function">get
 <li>A model in Sequelize has a name.
 <ul>
 <li>This name does not have to be the same name of the table it represents in the database.</li>
-<li>Usually, models have singular names (such as <code>User</code>) while tables have pluralized names (such as <code>Users</code>), although this is fully configurable.</li>
+<li>Usually, models have singular names (such as  <code class="language-javascript">User</code>) while tables have pluralized names (such as  <code class="language-javascript">Users</code>), although this is fully configurable.</li>
 </ul>
 </li>
 </ul>
@@ -220,13 +220,13 @@ instance<span class="token punctuation">.</span><span class="token function">get
 <ul>
 <li>Models can be defined in two equivalent ways in Sequelize:
 <ul>
-<li>Calling <code>sequelize.define(modelName, attributes, options)</code></li>
-<li>Extending Model and calling <code>init(attributes, options)</code></li>
+<li>Calling  <code class="language-javascript">sequelize.define(modelName, attributes, options)</code></li>
+<li>Extending Model and calling  <code class="language-javascript">init(attributes, options)</code></li>
 </ul>
 </li>
 <li>After a model is defined, it is available within sequelize.models by its model name.</li>
 </ul>
-<h5 class="mume-header" id="using-sequelizedefine">Using <code>sequelize.define</code></h5>
+<h5 class="mume-header" id="using-sequelizedefine">Using  <code class="language-javascript">sequelize.define</code></h5>
 
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">const</span> <span class="token punctuation">{</span> Sequelize<span class="token punctuation">,</span> DataTypes <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;sequelize&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token keyword">const</span> sequelize <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sequelize</span><span class="token punctuation">(</span><span class="token string">&apos;sqlite::memory:&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -250,7 +250,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </pre><h4 class="mume-header" id="synchronizing-a-model">Synchronizing a Model</h4>
 
 <ul>
-<li>In the case where the table doesn&apos;t even exist in the database or if it exists, but it has different columns, less columns, or any other difference, models can be synchronized by calling <code>model.sync(options)</code>, an asynchronous function (that returns a Promise)</li>
+<li>In the case where the table doesn&apos;t even exist in the database or if it exists, but it has different columns, less columns, or any other difference, models can be synchronized by calling  <code class="language-javascript">model.sync(options)</code>, an asynchronous function (that returns a Promise)</li>
 <li>With this call, Sequelize will automatically perform an SQL query to the database.</li>
 </ul>
 <table>
@@ -262,20 +262,20 @@ console<span class="token punctuation">.</span><span class="token function">log<
 </thead>
 <tbody>
 <tr>
-<td><code>User.sync()</code></td>
+<td> <code class="language-javascript">User.sync()</code></td>
 <td>This creates the table if it doesn&apos;t exist (and does nothing if it already exists)</td>
 </tr>
 <tr>
-<td><code>User.sync({ force: true })</code></td>
+<td> <code class="language-javascript">User.sync({ force: true })</code></td>
 <td>This creates the table, dropping it first if it already existed</td>
 </tr>
 <tr>
-<td><code>User.sync({ alter: true })</code></td>
+<td> <code class="language-javascript">User.sync({ alter: true })</code></td>
 <td>This checks what is the current state of the table in the database (which columns it has, what are their data types, etc), and then performs the necessary changes in the table to make it match the model.</td>
 </tr>
 </tbody>
 </table>
-<h5 class="mume-header" id="promises-and-asyncawait">Promises and <code>async</code>/<code>await</code></h5>
+<h5 class="mume-header" id="promises-and-asyncawait">Promises and  <code class="language-javascript">async</code>/ <code class="language-javascript">await</code></h5>
 
 <ul>
 <li>Most of the methods provided by Sequelize are asynchronous and therefore return Promises.</li>
@@ -289,7 +289,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h4 class="mume-header" id="insert-queries">INSERT queries</h4>
 
 <ul>
-<li>The <code>Model.create()</code> method is a shorthand for building an unsaved instance with <code>Model.build()</code> and saving the instance with <code>instance.save()</code>.</li>
+<li>The  <code class="language-javascript">Model.create()</code> method is a shorthand for building an unsaved instance with  <code class="language-javascript">Model.build()</code> and saving the instance with  <code class="language-javascript">instance.save()</code>.</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token comment">// Create a new user</span>
 <span class="token keyword">const</span> jane <span class="token operator">=</span> <span class="token keyword">await</span> User<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">{</span> firstName<span class="token punctuation">:</span> <span class="token string">&quot;Jane&quot;</span><span class="token punctuation">,</span> lastName<span class="token punctuation">:</span> <span class="token string">&quot;Doe&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -298,14 +298,14 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li>
 <h5>Creating in bulk</h5>
 <ul>
-<li>Sequelize provides the <code>Model.bulkCreate</code> method to allow creating multiple records at once, with only one query.</li>
-<li>The usage of <code>Model.bulkCreate</code> is very similar to <code>Model.create</code>, by receiving an array of objects instead of a single object.</li>
+<li>Sequelize provides the  <code class="language-javascript">Model.bulkCreate</code> method to allow creating multiple records at once, with only one query.</li>
+<li>The usage of  <code class="language-javascript">Model.bulkCreate</code> is very similar to  <code class="language-javascript">Model.create</code>, by receiving an array of objects instead of a single object.</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token keyword">const</span> create <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">bulkCreate</span><span class="token punctuation">(</span>records<span class="token punctuation">:</span> Array<span class="token punctuation">,</span> options<span class="token punctuation">:</span> object<span class="token punctuation">)</span><span class="token punctuation">:</span> Promise<span class="token operator">&lt;</span>Array<span class="token operator">&lt;</span>Model<span class="token operator">&gt;&gt;</span>
 </pre><ul>
-<li>by default, <code>bulkCreate</code> does not run validations on each object that is going to be created (which create does).
+<li>by default,  <code class="language-javascript">bulkCreate</code> does not run validations on each object that is going to be created (which create does).
 <ul>
-<li>To make <code>bulkCreate</code> run these validations as well, you must pass the <code>validate: true</code> option. This will decrease performance.</li>
+<li>To make  <code class="language-javascript">bulkCreate</code> run these validations as well, you must pass the  <code class="language-javascript">validate: true</code> option. This will decrease performance.</li>
 </ul>
 </li>
 </ul>
@@ -320,21 +320,21 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <span class="token keyword">const</span> users <span class="token operator">=</span> <span class="token keyword">await</span> User<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>users<span class="token punctuation">.</span><span class="token function">every</span><span class="token punctuation">(</span><span class="token parameter">user</span> <span class="token operator">=&gt;</span> user <span class="token keyword">instanceof</span> <span class="token class-name">User</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// true</span>
 console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;All users:&quot;</span><span class="token punctuation">,</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>users<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><pre data-role="codeBlock" data-info class="language-"><code>SELECT * FROM ...
+</pre><pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT * FROM ...
 </code></pre><ul>
 <li>
 <h6>Specifying attributes for SELECT queries:</h6>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">Model<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   attributes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><pre data-role="codeBlock" data-info class="language-"><code>SELECT foo, bar FROM ...
+</pre><pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT foo, bar FROM ...
 </code></pre></li>
 <li>
 <h6>Attributes can be renamed using a nested array:</h6>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">Model<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   attributes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;bar&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;baz&apos;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token string">&apos;qux&apos;</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><pre data-role="codeBlock" data-info class="language-"><code>SELECT foo, bar AS baz, qux FROM ...
+</pre><pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT foo, bar AS baz, qux FROM ...
 </code></pre></li>
 <li>
 <h6>Applying WHERE clause</h6>
@@ -374,10 +374,10 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <h3 class="mume-header" id="ordering-results">Ordering Results</h3>
 
 <ul>
-<li>The <code>order</code> option takes an array of items to order the query by or a sequelize method.
+<li>The  <code class="language-javascript">order</code> option takes an array of items to order the query by or a sequelize method.
 <ul>
-<li>These items are themselves arrays in the form <code>[column, direction]</code>.</li>
-<li>The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as <code>ASC</code>, <code>DESC</code>, <code>NULLS FIRST</code>, etc).</li>
+<li>These items are themselves arrays in the form  <code class="language-javascript">[column, direction]</code>.</li>
+<li>The column will be escaped correctly and the direction will be checked in a whitelist of valid directions (such as  <code class="language-javascript">ASC</code>,  <code class="language-javascript">DESC</code>,  <code class="language-javascript">NULLS FIRST</code>, etc).</li>
 </ul>
 </li>
 </ul>
@@ -401,19 +401,19 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <ul>
 <li>A string (which will be automatically quoted)</li>
 <li>An array, whose first element will be quoted, second will be appended verbatim</li>
-<li>An object with a <code>raw</code> field:
+<li>An object with a  <code class="language-javascript">raw</code> field:
 <ul>
-<li>The content of <code>raw</code> will be added verbatim without quoting</li>
-<li>Everything else is ignored, and if <code>raw</code> is not set, the query will fail</li>
+<li>The content of  <code class="language-javascript">raw</code> will be added verbatim without quoting</li>
+<li>Everything else is ignored, and if  <code class="language-javascript">raw</code> is not set, the query will fail</li>
 </ul>
 </li>
-<li>A call to <code>Sequelize.fn</code> (which will generate a function call in SQL)</li>
-<li>A call to <code>Sequelize.col</code> (which will quote the column name)</li>
+<li>A call to  <code class="language-javascript">Sequelize.fn</code> (which will generate a function call in SQL)</li>
+<li>A call to  <code class="language-javascript">Sequelize.col</code> (which will quote the column name)</li>
 </ul>
 <h4 class="mume-header" id="limits-and-offset">Limits and Offset</h4>
 
 <ul>
-<li>The <code>limit</code> and <code>offset</code> options allow you to work with limiting / pagination:</li>
+<li>The  <code class="language-javascript">limit</code> and  <code class="language-javascript">offset</code> options allow you to work with limiting / pagination:</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript"><span class="token comment">// Fetch 10 instances/rows</span>
 Project<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">{</span> limit<span class="token punctuation">:</span> <span class="token number">10</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -426,7 +426,7 @@ Project<span class="token punctuation">.</span><span class="token function">find
 </pre><h4 class="mume-header" id="grouping-results">Grouping Results</h4>
 
 <ul>
-<li>The syntax for grouping and ordering are equal, except that grouping does not accept a direction as last argument of the array (there is no <code>ASC</code>, <code>DESC</code>, <code>NULLS FIRST</code>, etc).</li>
+<li>The syntax for grouping and ordering are equal, except that grouping does not accept a direction as last argument of the array (there is no  <code class="language-javascript">ASC</code>,  <code class="language-javascript">DESC</code>,  <code class="language-javascript">NULLS FIRST</code>, etc).</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">Model<span class="token punctuation">.</span><span class="token function">findAll</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
   group<span class="token punctuation">:</span> <span class="token string">&apos;name&apos;</span>
@@ -444,115 +444,115 @@ Project<span class="token punctuation">.</span><span class="token function">find
 <tbody>
 <tr>
 <td>Add a new column to a table</td>
-<td><code>async addColumn(table: string, key: string, attribute: object, options: object): Promise</code></td>
+<td> <code class="language-javascript">async addColumn(table: string, key: string, attribute: object, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Add a constraint to a table</td>
-<td><code>async addConstraint(tableName: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async addConstraint(tableName: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Add an index to a column</td>
-<td><code>async addIndex(tableName: string \| object, attributes: Array, options: object, rawTablename: string): Promise</code></td>
+<td> <code class="language-javascript">async addIndex(tableName: string \| object, attributes: Array, options: object, rawTablename: string): Promise</code></td>
 </tr>
 <tr>
 <td>Delete multiple records from a table</td>
-<td><code>async bulkDelete(tableName: string, where: object, options: object, model: Model): Promise</code></td>
+<td> <code class="language-javascript">async bulkDelete(tableName: string, where: object, options: object, model: Model): Promise</code></td>
 </tr>
 <tr>
 <td>Insert multiple records into a table</td>
-<td><code>async bulkInsert(tableName: string, records: Array, options: object, attributes: object): Promise</code></td>
+<td> <code class="language-javascript">async bulkInsert(tableName: string, records: Array, options: object, attributes: object): Promise</code></td>
 </tr>
 <tr>
 <td>Update multiple records of a table</td>
-<td><code>async bulkUpdate(tableName: string, values: object, identifier: object, options: object, attributes: object): Promise</code></td>
+<td> <code class="language-javascript">async bulkUpdate(tableName: string, values: object, identifier: object, options: object, attributes: object): Promise</code></td>
 </tr>
 <tr>
 <td>Change a column definition</td>
-<td><code>async changeColumn(tableName: string, attributeName: string, dataTypeOrOptions: object, options: object): *</code></td>
+<td> <code class="language-javascript">async changeColumn(tableName: string, attributeName: string, dataTypeOrOptions: object, options: object): *</code></td>
 </tr>
 <tr>
 <td>Create a database</td>
-<td><code>async createDatabase(database: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async createDatabase(database: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Create an SQL function</td>
-<td><code>async createFunction(functionName: string, params: Array, returnType: string, language: string, body: string, optionsArray: Array, options: object): Promise</code></td>
+<td> <code class="language-javascript">async createFunction(functionName: string, params: Array, returnType: string, language: string, body: string, optionsArray: Array, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Create a schema</td>
-<td><code>async createSchema(schema: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async createSchema(schema: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Create a table with given set of attributes</td>
-<td><code>async createTable(tableName: string, attributes: object, options: object, model: Model): Promise</code></td>
+<td> <code class="language-javascript">async createTable(tableName: string, attributes: object, options: object, model: Model): Promise</code></td>
 </tr>
 <tr>
 <td>Describe a table structure</td>
-<td><code>async describeTable(tableName: string, options: object): Promise&lt;object&gt;</code></td>
+<td> <code class="language-javascript">async describeTable(tableName: string, options: object): Promise&lt;object&gt;</code></td>
 </tr>
 <tr>
 <td>Drop all schemas</td>
-<td><code>async dropAllSchemas(options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropAllSchemas(options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Drop all tables from database</td>
-<td><code>async dropAllTables(options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropAllTables(options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Drop a database</td>
-<td><code>async dropDatabase(database: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropDatabase(database: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Drop an SQL function</td>
-<td><code>async dropFunction(functionName: string, params: Array, options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropFunction(functionName: string, params: Array, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Drop a schema</td>
-<td><code>async dropSchema(schema: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropSchema(schema: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Drop a table from database</td>
-<td><code>async dropTable(tableName: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async dropTable(tableName: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Get foreign key references details for the table</td>
-<td><code>async getForeignKeyReferencesForTable(tableName: string, options: object): *</code></td>
+<td> <code class="language-javascript">async getForeignKeyReferencesForTable(tableName: string, options: object): *</code></td>
 </tr>
 <tr>
 <td>Returns all foreign key constraints of requested tables</td>
-<td><code>async getForeignKeysForTables(tableNames: string[], options: object): Promise</code></td>
+<td> <code class="language-javascript">async getForeignKeysForTables(tableNames: string[], options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Remove a column from a table</td>
-<td><code>async removeColumn(tableName: string, attributeName: string, options: object): *</code></td>
+<td> <code class="language-javascript">async removeColumn(tableName: string, attributeName: string, options: object): *</code></td>
 </tr>
 <tr>
 <td>Remove a constraint from a table</td>
-<td><code>async removeConstraint(tableName: string, constraintName: string, options: object): *</code></td>
+<td> <code class="language-javascript">async removeConstraint(tableName: string, constraintName: string, options: object): *</code></td>
 </tr>
 <tr>
 <td>Remove an already existing index from a table</td>
-<td><code>async removeIndex(tableName: string, indexNameOrAttributes: string \| string[], options: object): Promise</code></td>
+<td> <code class="language-javascript">async removeIndex(tableName: string, indexNameOrAttributes: string \| string[], options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Rename a column</td>
-<td><code>async renameColumn(tableName: string, attrNameBefore: string, attrNameAfter: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async renameColumn(tableName: string, attrNameBefore: string, attrNameAfter: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Rename an SQL function</td>
-<td><code>async renameFunction(oldFunctionName: string, params: Array, newFunctionName: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async renameFunction(oldFunctionName: string, params: Array, newFunctionName: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Rename a table</td>
-<td><code>async renameTable(before: string, after: string, options: object): Promise</code></td>
+<td> <code class="language-javascript">async renameTable(before: string, after: string, options: object): Promise</code></td>
 </tr>
 <tr>
 <td>Show all schemas</td>
-<td><code>async showAllSchemas(options: object): Promise&lt;Array&gt;</code></td>
+<td> <code class="language-javascript">async showAllSchemas(options: object): Promise&lt;Array&gt;</code></td>
 </tr>
 <tr>
 <td>Upsert</td>
-<td><code>async upsert(tableName: string, insertValues: object, updateValues: object, where: object, options: object): Promise&lt;boolean, ?number&gt;</code></td>
+<td> <code class="language-javascript">async upsert(tableName: string, insertValues: object, updateValues: object, where: object, options: object): Promise&lt;boolean, ?number&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -561,7 +561,7 @@ Project<span class="token punctuation">.</span><span class="token function">find
 <h4 class="mume-header" id="count">Count</h4>
 
 <ul>
-<li>The <code>count</code> method simply counts the occurrences of elements in the database.</li>
+<li>The  <code class="language-javascript">count</code> method simply counts the occurrences of elements in the database.</li>
 </ul>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`There are </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token keyword">await</span> Project<span class="token punctuation">.</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> projects`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
@@ -627,12 +627,12 @@ console<span class="token punctuation">.</span><span class="token function">log<
 <li><a class="btn" href="#naming-models">Naming Models</a></li>
 <li><a class="btn" href="#defining-a-model">Defining a Model</a>
 <ul>
-<li><a class="btn" href="#using-sequelizedefine">Using <code>sequelize.define</code></a></li>
+<li><a class="btn" href="#using-sequelizedefine">Using  <code class="language-javascript">sequelize.define</code></a></li>
 </ul>
 </li>
 <li><a class="btn" href="#synchronizing-a-model">Synchronizing a Model</a>
 <ul>
-<li><a class="btn" href="#promises-and-asyncawait">Promises and <code>async</code>/<code>await</code></a></li>
+<li><a class="btn" href="#promises-and-asyncawait">Promises and  <code class="language-javascript">async</code>/ <code class="language-javascript">await</code></a></li>
 </ul>
 </li>
 <li><a class="btn" href="#model-instances">Model Instances</a></li>
@@ -681,7 +681,7 @@ console<span class="token punctuation">.</span><span class="token function">log<
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

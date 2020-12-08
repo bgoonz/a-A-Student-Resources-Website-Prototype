@@ -38,7 +38,7 @@
 
 <h2 class="mume-header" id="command-line">Command Line</h2>
 
-<p>Sequelize provides utilities for generating migrations, models, and seed files.  They are exposed through the <code>sequelize-cli</code> command.</p>
+<p>Sequelize provides utilities for generating migrations, models, and seed files.  They are exposed through the  <code class="language-javascript">sequelize-cli</code> command.</p>
 <h3 class="mume-header" id="init-project">Init Project</h3>
 
 <pre data-role="codeBlock" data-info="bash" class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> sequelize@^5.0.0
@@ -46,7 +46,7 @@
 <span class="token function">npm</span> <span class="token function">install</span> pg@^8.0.0
 
 </pre><pre data-role="codeBlock" data-info="bash" class="language-bash">$ npx sequelize-cli init
-</pre><p>You must create a database user, and update the <code>config/config.json</code> file to match your database settings to complete the initialization process.</p>
+</pre><p>You must create a database user, and update the  <code class="language-javascript">config/config.json</code> file to match your database settings to complete the initialization process.</p>
 <h3 class="mume-header" id="create-database">Create Database</h3>
 
 <pre data-role="codeBlock" data-info="bash" class="language-bash">$ npx sequelize-cli db:create
@@ -89,19 +89,19 @@ $ npx sequelize-cli db:create --env<span class="token operator">=</span><span cl
 
 <h3 class="mume-header" id="one-to-one-between-student-and-scholarship">One to One between Student and Scholarship</h3>
 
-<p><code>student.js</code></p>
+<p> <code class="language-javascript">student.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    Student<span class="token punctuation">.</span><span class="token function">hasOne</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Scholarship<span class="token punctuation">,</span> <span class="token punctuation">{</span> foreignKey<span class="token punctuation">:</span> <span class="token string">&apos;studentId&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><p><code>scholarship.js</code></p>
+</pre><p> <code class="language-javascript">scholarship.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    Scholarship<span class="token punctuation">.</span><span class="token function">belongsTo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Student<span class="token punctuation">,</span> <span class="token punctuation">{</span> foreignKey<span class="token punctuation">:</span> <span class="token string">&apos;studentId&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre><h3 class="mume-header" id="one-to-many-between-student-and-class">One to Many between Student and Class</h3>
 
-<p><code>student.js</code></p>
+<p> <code class="language-javascript">student.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    Student<span class="token punctuation">.</span><span class="token function">belongsTo</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Class<span class="token punctuation">,</span> <span class="token punctuation">{</span> foreignKey<span class="token punctuation">:</span> <span class="token string">&apos;classId&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><p><code>class.js</code></p>
+</pre><p> <code class="language-javascript">class.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    Class<span class="token punctuation">.</span><span class="token function">hasMany</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Student<span class="token punctuation">,</span> <span class="token punctuation">{</span> foreignKey<span class="token punctuation">:</span> <span class="token string">&apos;classId&apos;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre><h3 class="mume-header" id="many-to-many-between-student-and-lesson-through-studentlessons-table">Many to Many between Student and Lesson through StudentLessons table</h3>
 
-<p><code>student.js</code></p>
+<p> <code class="language-javascript">student.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    <span class="token keyword">const</span> columnMapping <span class="token operator">=</span> <span class="token punctuation">{</span>
         through<span class="token punctuation">:</span> <span class="token string">&apos;StudentLesson&apos;</span><span class="token punctuation">,</span> <span class="token comment">// This is the model name referencing the join table.</span>
         otherKey<span class="token punctuation">:</span> <span class="token string">&apos;lessonId&apos;</span><span class="token punctuation">,</span>
@@ -109,7 +109,7 @@ $ npx sequelize-cli db:create --env<span class="token operator">=</span><span cl
     <span class="token punctuation">}</span>
 
     Student<span class="token punctuation">.</span><span class="token function">belongsToMany</span><span class="token punctuation">(</span>models<span class="token punctuation">.</span>Lesson<span class="token punctuation">,</span> columnMapping<span class="token punctuation">)</span><span class="token punctuation">;</span>
-</pre><p><code>lesson.js</code></p>
+</pre><p> <code class="language-javascript">lesson.js</code></p>
 <pre data-role="codeBlock" data-info="js" class="language-javascript">    <span class="token keyword">const</span> columnMapping <span class="token operator">=</span> <span class="token punctuation">{</span>
         through<span class="token punctuation">:</span> <span class="token string">&apos;StudentLesson&apos;</span><span class="token punctuation">,</span> <span class="token comment">// This is the model name referencing the join table.</span>
         otherKey<span class="token punctuation">:</span> <span class="token string">&apos;studentId&apos;</span><span class="token punctuation">,</span>
@@ -227,7 +227,7 @@ $ npx sequelize-cli db:create --env<span class="token operator">=</span><span cl
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

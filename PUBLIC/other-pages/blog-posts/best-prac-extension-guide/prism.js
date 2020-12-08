@@ -37,7 +37,7 @@ var Prism = (function (_self) {
      * ```js
      * window.Prism = window.Prism || {};
      * Prism.manual = true;
-     * // add a new <script> to load Prism's script
+     * // add a new <script async> to load Prism's script
      * ```
      *
      * @default false
@@ -2212,9 +2212,9 @@ Prism.languages.py = Prism.languages.python;
     /*
      * Cleanup for other plugins (e.g. autoloader).
      *
-     * Sometimes <code> blocks are highlighted multiple times. It is necessary
+     * Sometimes  <code class="language-javascript"> blocks are highlighted multiple times. It is necessary
      * to cleanup any left-over tags, because the whitespace inside of the <div>
-     * tags change the content of the <code> tag.
+     * tags change the content of the  <code class="language-javascript"> tag.
      */
     var num = 0;
     $$(".line-highlight", pre).forEach(function (line) {

@@ -37,7 +37,7 @@ var Prism = (function (_self) {
      * ```js
      * window.Prism = window.Prism || {};
      * Prism.manual = true;
-     * // add a new <script> to load Prism's script
+     * // add a new <script async> to load Prism's script
      * ```
      *
      * @default false

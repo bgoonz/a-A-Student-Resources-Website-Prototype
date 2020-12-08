@@ -99,14 +99,14 @@
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </pre><h5>Arguments:</h5>
 <ul>
-<li><code>fetch</code>&apos;s first argument is the URL that you want to make a request to (the path to the resource you want to fetch)</li>
-<li>The second argument is an optional <code>options</code> object</li>
+<li> <code class="language-javascript">fetch</code>&apos;s first argument is the URL that you want to make a request to (the path to the resource you want to fetch)</li>
+<li>The second argument is an optional  <code class="language-javascript">options</code> object</li>
 </ul>
-<h5>Invoking <code>fetch</code>:</h5>
+<h5>Invoking  <code class="language-javascript">fetch</code>:</h5>
 <ul>
-<li>Invoking <code>fetch</code> returns a Promise that resolves with a Fetch Response object.
+<li>Invoking  <code class="language-javascript">fetch</code> returns a Promise that resolves with a Fetch Response object.
 <ul>
-<li>This Response object represents the entire HTTP response, and it holds crucial information like <code>status</code> and <code>url</code>.</li>
+<li>This Response object represents the entire HTTP response, and it holds crucial information like  <code class="language-javascript">status</code> and  <code class="language-javascript">url</code>.</li>
 </ul>
 </li>
 </ul>
@@ -114,8 +114,8 @@
 <ul>
 <li>In the first callback, the body of the response is a <strong>ReadableStream</strong> (represents a readable stream of byte data).
 <ul>
-<li>the <code>.json()</code> method takes that stream and returns a promise that resolves with the result of parsing the body text as JSON</li>
-<li>The <code>.json()</code> method is the equivalent of using <code>JSON.parse()</code> except that it works on a ReadableStream instead of just a string.</li>
+<li>the  <code class="language-javascript">.json()</code> method takes that stream and returns a promise that resolves with the result of parsing the body text as JSON</li>
+<li>The  <code class="language-javascript">.json()</code> method is the equivalent of using  <code class="language-javascript">JSON.parse()</code> except that it works on a ReadableStream instead of just a string.</li>
 </ul>
 </li>
 <li>In the second callback, you can now access the data found in the body of the response</li>
@@ -190,7 +190,7 @@
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

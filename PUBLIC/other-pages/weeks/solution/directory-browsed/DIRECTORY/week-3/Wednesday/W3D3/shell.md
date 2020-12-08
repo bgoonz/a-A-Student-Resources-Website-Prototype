@@ -166,7 +166,7 @@ Alex mentioned `aliases`, which are short-cuts used to shorten commands and to p
 
 In the last video, Alex introduced shell scripts proper.  He mentions that each generally starts with a "shebang" (`#! /<path_to_interpreter>`), which tells the shell which interpreter to use to run the script.
 
-He noted that files by default are not executable, and so to make them runnable one must use the `chmod` command, as in `chmod +x <script>`.  He also demonstrated the `echo` command, which writes strings to the stdout stream, the `$USER` environmental variable, which is the current user's name, and the `whoami` command, which accesses this variable.
+He noted that files by default are not executable, and so to make them runnable one must use the `chmod` command, as in `chmod +x <script async>`.  He also demonstrated the `echo` command, which writes strings to the stdout stream, the `$USER` environmental variable, which is the current user's name, and the `whoami` command, which accesses this variable.
 
 ## Deep Resources for Further Study
 

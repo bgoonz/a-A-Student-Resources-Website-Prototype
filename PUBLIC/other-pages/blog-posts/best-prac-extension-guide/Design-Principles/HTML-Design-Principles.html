@@ -120,10 +120,10 @@
       <li><em><strong>Examples</strong></em></li>
     </ul>
     <p>Many sites use broken markup, such as badly nested elements
-      (<strong><code>\&lt;b&gt;a\&lt;i&gt;b\&lt;/b&gt;c\&lt;/i&gt;</code></strong>), and both authors and users have
+      (<strong> <code class="language-javascript">\&lt;b&gt;a\&lt;i&gt;b\&lt;/b&gt;c\&lt;/i&gt;</code></strong>), and both authors and users have
       expectations based on the error handling used by legacy user agents. We need to define processing requirements
       that remain compatible with the expected handling of such content.</p>
-    <p>Some sites rely on the <strong><code>\&lt;u&gt;</code></strong> element giving the presentational effect of an
+    <p>Some sites rely on the <strong> <code class="language-javascript">\&lt;u&gt;</code></strong> element giving the presentational effect of an
       underline.</p>
     <hr>
     <h3 class="mume-header" id="degrade-gracefully">Degrade Gracefully</h3>
@@ -226,15 +226,15 @@
     <p>If there is already a widely used and implemented technology covering particular use cases, consider specifying
       that technology in preference to inventing something new for the same purpose. Sometimes, though, new use cases
       may call for a new approach instead of more extensions on an old approach.</p>
-    <p><strong><code>contenteditable=&quot;&quot;</code></strong> was already used and implemented by user agents. No
+    <p><strong> <code class="language-javascript">contenteditable=&quot;&quot;</code></strong> was already used and implemented by user agents. No
       need to invent a new feature.</p>
     <hr>
     <h3 class="mume-header" id="pave-the-cowpaths">Pave the Cowpaths</h3>
 
     <p>When a practice is already widespread among authors, consider adopting it rather than forbidding it or inventing
       something new.</p>
-    <p>Authors already use the <strong><code>\&lt;br/&gt;</code></strong> syntax as opposed to
-      <strong><code>\&lt;br&gt;</code></strong> in HTML and there is no harm done by allowing that to be used.</p>
+    <p>Authors already use the <strong> <code class="language-javascript">\&lt;br/&gt;</code></strong> syntax as opposed to
+      <strong> <code class="language-javascript">\&lt;br&gt;</code></strong> in HTML and there is no harm done by allowing that to be used.</p>
     <hr>
     <h3 class="mume-header" id="evolution-not-revolution">Evolution Not Revolution</h3>
 
@@ -278,10 +278,10 @@
       Defining reasonable default presentation for different media may be sufficient. HTML strikes a balance between
       semantic expressiveness and practical usefulness. Names of elements and attributes in the markup may be pragmatic
       (for brevity, history, simplicity) rather than completely accurate.</p>
-    <p>The <strong><code>article</code></strong> element defines an individual article, but not the details of how it is
+    <p>The <strong> <code class="language-javascript">article</code></strong> element defines an individual article, but not the details of how it is
       displayed. A journal article may be the only article on a page, formatted in multiple columns, while a blog post
       may share a page with multiple other articles and be presented in a box with a border.</p>
-    <p>The <strong><code>b</code></strong> and <strong><code>i</code></strong> elements are widely used &#x2014; it is
+    <p>The <strong> <code class="language-javascript">b</code></strong> and <strong> <code class="language-javascript">i</code></strong> elements are widely used &#x2014; it is
       better to give them good default rendering for various media including aural than to try to ban them.</p>
     <hr>
     <h3 class="mume-header" id="dom-consistency">DOM Consistency</h3>
@@ -292,8 +292,8 @@
       minimized.</p>
     <p>Also, unless required for compatibility with legacy implementations and deployed content, gratuitous difference
       in syntactic appearance should be avoided as well.</p>
-    <p>The HTML (<strong><code>text/html</code></strong>) parser puts elements in the
-      <strong><code>http://www.w3.org/1999/xhtml</code></strong> namespace in the DOM for compatibility with the XML
+    <p>The HTML (<strong> <code class="language-javascript">text/html</code></strong>) parser puts elements in the
+      <strong> <code class="language-javascript">http://www.w3.org/1999/xhtml</code></strong> namespace in the DOM for compatibility with the XML
       syntax of HTML&#xA0;5.</p>
     <h2 class="mume-header" id="3-interoperability">3. Interoperability</h2>
 
@@ -328,7 +328,7 @@
     <p>The general reflowability of HTML text makes it more suitable to variable screen dimensions than a representation
       of exact glyph positions.</p>
     <p>A hyperlink can not be actuated in a printed document, but that is no reason to omit the
-      <strong><code>a</code></strong> element.</p>
+      <strong> <code class="language-javascript">a</code></strong> element.</p>
     <hr>
     <h3 class="mume-header" id="support-world-languages">Support World Languages</h3>
 
@@ -340,8 +340,8 @@
     <p>Italic text is useful because it applies to many bicameral scripts, even though some scripts have no such
       concept. Similarly, ruby is useful for many scripts, even though it has a CJK focus.</p>
     <p>Text in element content has better language support than text in attribute content; in element content ruby
-      annotations can be inserted, as well as <strong><code>dir</code></strong> attributes and
-      <strong><code>bdo</code></strong> elements in case the Unicode bidirectional algorithm is insufficient to
+      annotations can be inserted, as well as <strong> <code class="language-javascript">dir</code></strong> attributes and
+      <strong> <code class="language-javascript">bdo</code></strong> elements in case the Unicode bidirectional algorithm is insufficient to
       correctly order adjacent runs of mixed direction text.</p>
     <hr>
     <h3 class="mume-header" id="accessibility">Accessibility</h3>
@@ -349,9 +349,9 @@
     <p>Design features to be accessible to users with disabilities. Access by everyone regardless of ability is
       essential. This does not mean that features should be omitted entirely if not all users can make full use of them,
       but alternate mechanisms should be provided.</p>
-    <p>The image in an <strong><code>img</code></strong> may not be visible to blind users, but that is a reason to
+    <p>The image in an <strong> <code class="language-javascript">img</code></strong> may not be visible to blind users, but that is a reason to
       provide alternate text, not to leave out images.</p>
-    <p>The <strong><code>progress</code></strong> element is intrinsically accessible as it has unambiguous progress bar
+    <p>The <strong> <code class="language-javascript">progress</code></strong> element is intrinsically accessible as it has unambiguous progress bar
       semantics which permits mapping to accessibility APIs that can represent progress indicators.</p>
     <hr>
     <h3 class="mume-header" id="sourcehttpswwww3orgtr2007wd-html-design-principles-20071126compatibility"><a
@@ -414,7 +414,7 @@
 
 
 
-  <script>
+  <script async>
     var sidebarTOCBtn = document.getElementById( 'sidebar-toc-btn' )
     sidebarTOCBtn.addEventListener( 'click', function ( event ) {
       event.stopPropagation()

@@ -60,26 +60,26 @@
 <li>Use Chai to structure your tests using behavior-driven development principles.<br>
 to set up chai and chai spies:</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>// first npm install chai and chai-spies
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">// first npm install chai and chai-spies
 const chai = require(&quot;chai&quot;);
 const expect = chai.expect;
 const spies = require(&quot;chai-spies&quot;);
 chai.use(spies);
 </code></pre><p>Importing assert module:<br>
-<code>const assert = require(&#x201C;assert&quot;)</code></p>
-<h4 class="mume-header" id="describe"><code>describe()</code></h4>
+ <code class="language-javascript">const assert = require(&#x201C;assert&quot;)</code></p>
+<h4 class="mume-header" id="describe"> <code class="language-javascript">describe()</code></h4>
 
 <ul>
-<li><code>describe()</code> is an organizational function. takes two parameters: descriptive string and a callback<br>
+<li> <code class="language-javascript">describe()</code> is an organizational function. takes two parameters: descriptive string and a callback<br>
 the callback passed to describe is where we insert the actual tests</li>
 </ul>
-<h4 class="mume-header" id="it"><code>it()</code></h4>
+<h4 class="mume-header" id="it"> <code class="language-javascript">it()</code></h4>
 
 <ul>
-<li><code>it</code> goes inside the callback passed to describe</li>
+<li> <code class="language-javascript">it</code> goes inside the callback passed to describe</li>
 <li>accepts a descriptive string and a callback to set up our test</li>
 </ul>
-<h4 class="mume-header" id="context"><code>context</code></h4>
+<h4 class="mume-header" id="context"> <code class="language-javascript">context</code></h4>
 
 <ul>
 <li>
@@ -94,10 +94,10 @@ the callback passed to describe is where we insert the actual tests</li>
 <li>
 <p><strong>Mocha Hooks</strong> are a way to set up before running the individual tests</p>
 <ul>
-<li><code>before</code> happens once before all tests</li>
-<li><code>beforeEach</code> happens before each test</li>
-<li><code>after</code> happens once at the end</li>
-<li><code>afterEach</code> happens after each test</li>
+<li> <code class="language-javascript">before</code> happens once before all tests</li>
+<li> <code class="language-javascript">beforeEach</code> happens before each test</li>
+<li> <code class="language-javascript">after</code> happens once at the end</li>
+<li> <code class="language-javascript">afterEach</code> happens after each test</li>
 </ul>
 </li>
 </ul>
@@ -156,9 +156,9 @@ the callback passed to describe is where we insert the actual tests</li>
 <li><a class="btn" href="#testing-frameworks">Testing Frameworks</a>
 <ul>
 <li><a class="btn" href="#mocha">Mocha</a></li>
-<li><a class="btn" href="#describe"><code>describe()</code></a></li>
-<li><a class="btn" href="#it"><code>it()</code></a></li>
-<li><a class="btn" href="#context"><code>context</code></a></li>
+<li><a class="btn" href="#describe"> <code class="language-javascript">describe()</code></a></li>
+<li><a class="btn" href="#it"> <code class="language-javascript">it()</code></a></li>
+<li><a class="btn" href="#context"> <code class="language-javascript">context</code></a></li>
 <li><a class="btn" href="#the-testing-pyramid">The Testing Pyramid</a></li>
 <li><a class="btn" href="#test-driven-development-tdd">Test-Driven Development (TDD)</a></li>
 <li><a class="btn" href="#tdd-workflow">TDD Workflow</a></li>
@@ -177,7 +177,7 @@ the callback passed to describe is where we insert the actual tests</li>
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

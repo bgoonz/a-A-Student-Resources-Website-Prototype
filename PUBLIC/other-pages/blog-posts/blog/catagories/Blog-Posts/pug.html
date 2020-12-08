@@ -55,7 +55,7 @@
 
 <ul>
 <li>Pug is available via npm:<br>
-<code>npm install - g pug-cli</code></li>
+ <code class="language-javascript">npm install - g pug-cli</code></li>
 </ul>
 <h4 class="mume-header" id="pug-syntax-a-idsyntaxa">Pug Syntax <a id="syntax" href></a></h4>
 
@@ -71,15 +71,15 @@
 </li>
 <li><strong>Pug doesn&apos;t have any closing tags</strong>
 <ul>
-<li>If no tag is specified, Pug will assume a <code>&lt;div&gt;</code> element.</li>
+<li>If no tag is specified, Pug will assume a  <code class="language-javascript">&lt;div&gt;</code> element.</li>
 </ul>
 </li>
 </ul>
 <h4 class="mume-header" id="classes-ids-and-attributes">Classes, IDs and Attributes</h4>
 
 <ul>
-<li><strong>Classes</strong> are expressed as <code>.className</code></li>
-<li><strong>IDs</strong> are expressed as <code>#IDname</code></li>
+<li><strong>Classes</strong> are expressed as  <code class="language-javascript">.className</code></li>
+<li><strong>IDs</strong> are expressed as  <code class="language-javascript">#IDname</code></li>
 <li><strong>Attributes</strong> are added using brackets</li>
 </ul>
 <h4 class="mume-header" id="plain-text-and-text-blocks">Plain Text and Text Blocks</h4>
@@ -88,12 +88,12 @@
 <li>Pug provides various methods for adding plain text directly into the rendered HTML.
 <ul>
 <li>Add plain text inline:<br>
-<code>h1.navbar-header We can write anything we want here &#x2026;</code></li>
-<li>Prefix a line with a pipe <code>|</code> character:<pre data-role="codeBlock" data-info class="language-"><code>p
+ <code class="language-javascript">h1.navbar-header We can write anything we want here &#x2026;</code></li>
+<li>Prefix a line with a pipe  <code class="language-javascript">|</code> character:<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">p
   | You are logged in as
   | user@example.com
 </code></pre></li>
-<li>When dealing with large blocks of text, you can just add a dot right after the tag name, or after the closing parenthesis, if the tag has attributes:<pre data-role="codeBlock" data-info class="language-"><code>p.
+<li>When dealing with large blocks of text, you can just add a dot right after the tag name, or after the closing parenthesis, if the tag has attributes:<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">p.
   HTML TEXT.....
 </code></pre></li>
 </ul>
@@ -102,30 +102,30 @@
 <h4 class="mume-header" id="comments">Comments</h4>
 
 <ul>
-<li>Comments in Pug can be escaped similar to Javascript with <code>//</code><pre data-role="codeBlock" data-info class="language-"><code>//- Invisible comment.
+<li>Comments in Pug can be escaped similar to Javascript with  <code class="language-javascript">//</code><pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">//- Invisible comment.
 //Visible comment.
 </code></pre></li>
 </ul>
 <h4 class="mume-header" id="rendering-proccess-of-pug-a-idrendera">Rendering Proccess of Pug <a id="render" href></a></h4>
 
-<h4 class="mume-header" id="pugcompilesource-options"><code>pug.compile(source, options)</code></h4>
+<h4 class="mume-header" id="pugcompilesource-options"> <code class="language-javascript">pug.compile(source, options)</code></h4>
 
 <ul>
 <li>will compile the Pug source code into a JavaScript function that takes a data object (called &#x201C;locals&#x201D;) as an argument.</li>
 <li>Call that resultant function with your data, and voil&#xE0;!, it will return a string of HTML rendered with your data.</li>
 <li>The compiled function can be re-used, and called with different sets of data.
 <ul>
-<li><strong>source</strong>: <code>string</code>
+<li><strong>source</strong>:  <code class="language-javascript">string</code>
 <ul>
 <li>The source Pug template to compile</li>
 </ul>
 </li>
-<li><strong>options</strong>: <code>?options</code>
+<li><strong>options</strong>:  <code class="language-javascript">?options</code>
 <ul>
 <li>An options object</li>
 </ul>
 </li>
-<li><strong>returns</strong>: <code>function</code>
+<li><strong>returns</strong>:  <code class="language-javascript">function</code>
 <ul>
 <li>A function generate the HTML form an object containing locals</li>
 </ul>
@@ -141,28 +141,28 @@
 </ul>
 </li>
 </ul>
-<h4 class="mume-header" id="pugrendersource-options-callback"><code>pug.render(source, options, callback)</code></h4>
+<h4 class="mume-header" id="pugrendersource-options-callback"> <code class="language-javascript">pug.render(source, options, callback)</code></h4>
 
 <ul>
 <li>combines compiling and rendering into one step</li>
-<li>the template function will be re-compiled every time <code>render</code> is called, which may impact performance.
+<li>the template function will be re-compiled every time  <code class="language-javascript">render</code> is called, which may impact performance.
 <ul>
-<li><strong>source</strong>: <code>string</code>
+<li><strong>source</strong>:  <code class="language-javascript">string</code>
 <ul>
 <li>The source Pug template to render</li>
 </ul>
 </li>
-<li><strong>options</strong>: <code>?options</code>
+<li><strong>options</strong>:  <code class="language-javascript">?options</code>
 <ul>
 <li>An options object, also used as the locals object</li>
 </ul>
 </li>
-<li><strong>callback</strong>: <code>function</code>
+<li><strong>callback</strong>:  <code class="language-javascript">function</code>
 <ul>
 <li>Node.js-style callback receiving the rendered results. This callback is called synchronously.</li>
 </ul>
 </li>
-<li><strong>returns</strong>: <code>string</code>
+<li><strong>returns</strong>:  <code class="language-javascript">string</code>
 <ul>
 <li>The resulting HTML string</li>
 </ul>
@@ -189,59 +189,59 @@
 </thead>
 <tbody>
 <tr>
-<td><code>filename</code></td>
-<td><code>string</code></td>
-<td>The name of the file being compiled. Used in exceptions, and required for relative <code>include</code> \s and <code>extend</code>\s. Defaults to <code>Pug</code>.</td>
+<td> <code class="language-javascript">filename</code></td>
+<td> <code class="language-javascript">string</code></td>
+<td>The name of the file being compiled. Used in exceptions, and required for relative  <code class="language-javascript">include</code> \s and  <code class="language-javascript">extend</code>\s. Defaults to  <code class="language-javascript">Pug</code>.</td>
 </tr>
 <tr>
-<td><code>basedir</code></td>
-<td><code>string</code></td>
+<td> <code class="language-javascript">basedir</code></td>
+<td> <code class="language-javascript">string</code></td>
 <td>The root directory of all absolute inclusion.</td>
 </tr>
 <tr>
-<td><code>doctype</code></td>
-<td><code>string</code></td>
-<td>If the <code>doctype</code> is not specified as part of the template, you can specify it here. It is sometimes useful to get self-closing tags and remove mirroring of boolean attributes.</td>
+<td> <code class="language-javascript">doctype</code></td>
+<td> <code class="language-javascript">string</code></td>
+<td>If the  <code class="language-javascript">doctype</code> is not specified as part of the template, you can specify it here. It is sometimes useful to get self-closing tags and remove mirroring of boolean attributes.</td>
 </tr>
 <tr>
-<td><code>filters</code></td>
-<td><code>object</code></td>
-<td>Hash table of custom filters. Defaults to <code>undefined</code>.</td>
+<td> <code class="language-javascript">filters</code></td>
+<td> <code class="language-javascript">object</code></td>
+<td>Hash table of custom filters. Defaults to  <code class="language-javascript">undefined</code>.</td>
 </tr>
 <tr>
-<td><code>self</code></td>
-<td><code>boolean</code></td>
-<td>Use a <code>self</code> namespace to hold the locals. It will speed up the compilation, but instead of writing <code>variable</code> you will have to write <code>self.variable</code> to access a property of the locals object. Defaults to <code>false</code>.</td>
+<td> <code class="language-javascript">self</code></td>
+<td> <code class="language-javascript">boolean</code></td>
+<td>Use a  <code class="language-javascript">self</code> namespace to hold the locals. It will speed up the compilation, but instead of writing  <code class="language-javascript">variable</code> you will have to write  <code class="language-javascript">self.variable</code> to access a property of the locals object. Defaults to  <code class="language-javascript">false</code>.</td>
 </tr>
 <tr>
-<td><code>debug</code></td>
-<td><code>boolean</code></td>
-<td>If set to <code>true</code>, the tokens and function body are logged to stdout.</td>
+<td> <code class="language-javascript">debug</code></td>
+<td> <code class="language-javascript">boolean</code></td>
+<td>If set to  <code class="language-javascript">true</code>, the tokens and function body are logged to stdout.</td>
 </tr>
 <tr>
-<td><code>compileDebug</code></td>
-<td><code>boolean</code></td>
-<td>If set to <code>true</code>, the function source will be included in the compiled template for better error messages (sometimes useful in development). It is enabled by default, unless used with Express in production mode.</td>
+<td> <code class="language-javascript">compileDebug</code></td>
+<td> <code class="language-javascript">boolean</code></td>
+<td>If set to  <code class="language-javascript">true</code>, the function source will be included in the compiled template for better error messages (sometimes useful in development). It is enabled by default, unless used with Express in production mode.</td>
 </tr>
 <tr>
-<td><code>globals</code></td>
-<td><code>Array&lt;string&gt;</code></td>
+<td> <code class="language-javascript">globals</code></td>
+<td> <code class="language-javascript">Array&lt;string&gt;</code></td>
 <td>Add a list of global names to make accessible in templates.</td>
 </tr>
 <tr>
-<td><code>cache</code></td>
-<td><code>boolean</code></td>
-<td>If set to <code>true</code>, compiled functions are cached. <code>filename</code> must be set as the cache key. Only applies to <code>render</code> functions. Defaults to <code>false</code>.</td>
+<td> <code class="language-javascript">cache</code></td>
+<td> <code class="language-javascript">boolean</code></td>
+<td>If set to  <code class="language-javascript">true</code>, compiled functions are cached.  <code class="language-javascript">filename</code> must be set as the cache key. Only applies to  <code class="language-javascript">render</code> functions. Defaults to  <code class="language-javascript">false</code>.</td>
 </tr>
 <tr>
-<td><code>inlineRuntimeFunctions</code></td>
-<td><code>boolean</code></td>
-<td>Inline runtime functions instead of <code>require</code>-ing them from a shared version. For <code>compileClient</code> functions, the default is <code>true</code> (so that one does not have to include the runtime). For all other compilation or rendering types, the default is <code>false</code>.</td>
+<td> <code class="language-javascript">inlineRuntimeFunctions</code></td>
+<td> <code class="language-javascript">boolean</code></td>
+<td>Inline runtime functions instead of  <code class="language-javascript">require</code>-ing them from a shared version. For  <code class="language-javascript">compileClient</code> functions, the default is  <code class="language-javascript">true</code> (so that one does not have to include the runtime). For all other compilation or rendering types, the default is  <code class="language-javascript">false</code>.</td>
 </tr>
 <tr>
-<td><code>name</code></td>
-<td><code>string</code></td>
-<td>The name of the template function. Only applies to <code>compileClient</code> functions. Defaults to <code>&apos;template&apos;</code>.</td>
+<td> <code class="language-javascript">name</code></td>
+<td> <code class="language-javascript">string</code></td>
+<td>The name of the template function. Only applies to  <code class="language-javascript">compileClient</code> functions. Defaults to  <code class="language-javascript">&apos;template&apos;</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -249,10 +249,10 @@
 
 <ul>
 <li>
-<p>Pug supports template inheritance. Template inheritance works via the <code>block</code> and <code>extends</code> keywords.</p>
-<h4><code>block</code></h4>
+<p>Pug supports template inheritance. Template inheritance works via the  <code class="language-javascript">block</code> and  <code class="language-javascript">extends</code> keywords.</p>
+<h4> <code class="language-javascript">block</code></h4>
 <ul>
-<li>in a template, a <code>block</code> is simply a &quot;block&quot; of Pug that a child template may replace.
+<li>in a template, a  <code class="language-javascript">block</code> is simply a &quot;block&quot; of Pug that a child template may replace.
 <ul>
 <li>This process is recursive</li>
 </ul>
@@ -271,9 +271,9 @@
       <span class="token tag">#footer</span>
         <span class="token tag">p</span> <span class="token plain-text">some footer content</span>
 </pre><ul>
-<li>Pug allows you to <code>replace</code> (default), <code>prepend</code>, or <code>append</code> blocks.
+<li>Pug allows you to  <code class="language-javascript">replace</code> (default),  <code class="language-javascript">prepend</code>, or  <code class="language-javascript">append</code> blocks.
 <ul>
-<li>When using<code>block append</code> or <code>block prepend</code>, the word &#x201C;<code>block</code>&#x201D; is optional:</li>
+<li>When using <code class="language-javascript">block append</code> or  <code class="language-javascript">block prepend</code>, the word &#x201C; <code class="language-javascript">block</code>&#x201D; is optional:</li>
 </ul>
 <pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token comment">//- page.pug</span>
 <span class="token keyword">extends layout</span>
@@ -283,7 +283,7 @@
   <span class="token tag">script<span class="token attributes"><span class="token punctuation">(</span><span class="token attr-name">src</span><span class="token punctuation">=</span><span class="token attr-value"><span class="token string">&apos;/game.js&apos;</span></span><span class="token punctuation">)</span></span></span>
 </pre></li>
 </ul>
-<h4><code>extends</code></h4>
+<h4> <code class="language-javascript">extends</code></h4>
 <ul>
 <li>extend block layout with a path to the parent template</li>
 <li>define one of more blocks to override the parent block content</li>
@@ -306,8 +306,8 @@
 <h4 class="mume-header" id="buffered-vs-unbuffered-code">Buffered vs Unbuffered Code</h4>
 
 <ul>
-<li><strong>Unbuffered code</strong> starts with a minus (<code>-</code>). It doesn&#x2019;t directly add anything to the output, but its values may be used from within Pug.</li>
-<li><strong>Buffered code</strong>, on the other hand, starts with an equals (<code>=</code>). It evaluates a JavaScript expression and outputs the result.</li>
+<li><strong>Unbuffered code</strong> starts with a minus ( <code class="language-javascript">-</code>). It doesn&#x2019;t directly add anything to the output, but its values may be used from within Pug.</li>
+<li><strong>Buffered code</strong>, on the other hand, starts with an equals ( <code class="language-javascript">=</code>). It evaluates a JavaScript expression and outputs the result.</li>
 </ul>
 <h4 class="mume-header" id="interpolation-a-idinterpolationa">Interpolation <a id="interpolation" href></a></h4>
 
@@ -319,7 +319,7 @@
 </ul>
 </li>
 <li>
-<p>Another is using <code>#{}</code>. Here, Pug will evaluate any code between the curly brackets, escape it, and render it into the template</p>
+<p>Another is using  <code class="language-javascript">#{}</code>. Here, Pug will evaluate any code between the curly brackets, escape it, and render it into the template</p>
 <table>
 <thead>
 <tr>
@@ -329,19 +329,19 @@
 </thead>
 <tbody>
 <tr>
-<td><code>res.render(path, variables)</code></td>
+<td> <code class="language-javascript">res.render(path, variables)</code></td>
 <td>Searches for a pug file to render at path &quot;path&quot;, and passes &quot;variables&quot; to it</td>
 </tr>
 <tr>
-<td><code>#{variable}</code></td>
+<td> <code class="language-javascript">#{variable}</code></td>
 <td>Interpolates &quot;variable&quot; inline with the surrounding Jade code, after evaluating &quot;variable&quot;</td>
 </tr>
 <tr>
-<td><code>!{variable}</code></td>
+<td> <code class="language-javascript">!{variable}</code></td>
 <td>Interpolates &quot;variable&quot; inline with the surrounding Jade code, without evaluating &quot;variable&quot;.</td>
 </tr>
 <tr>
-<td><code>#[element]</code></td>
+<td> <code class="language-javascript">#[element]</code></td>
 <td>Interpolates &quot;element&quot; inside of an existing Pug HTML element. Syntax of interpolated HTML elements is identical to that of normal HTML elements.</td>
 </tr>
 </tbody>
@@ -356,19 +356,19 @@
 <tbody>
 <tr>
 <td>path</td>
-<td>Used in <code>res.render</code>. This is the path of the Pug file that we are going to render. The path is taken from the root of the folder set on your Express app:<code>app.set(&quot;views&quot;, &quot;templates/views&quot;)</code>. For example, <code>res.render(&quot;index&quot;)</code> will search for a Pug file at <code>templates/views/index.pug</code>. Subdirectories can be specified too; <code>res.render(&quot;admin/index&quot;)</code> looks for a Pug file at <code>templates/views/admin/index.pug</code>.</td>
+<td>Used in  <code class="language-javascript">res.render</code>. This is the path of the Pug file that we are going to render. The path is taken from the root of the folder set on your Express app: <code class="language-javascript">app.set(&quot;views&quot;, &quot;templates/views&quot;)</code>. For example,  <code class="language-javascript">res.render(&quot;index&quot;)</code> will search for a Pug file at  <code class="language-javascript">templates/views/index.pug</code>. Subdirectories can be specified too;  <code class="language-javascript">res.render(&quot;admin/index&quot;)</code> looks for a Pug file at  <code class="language-javascript">templates/views/admin/index.pug</code>.</td>
 </tr>
 <tr>
 <td>variables</td>
-<td>Used in <code>res.render</code>. A JavaScript object of variables to be made accessible to the Pug file defined by <code>path</code> (above). Within the Pug file, the keys of the above JavaScript object become available as variables. If <code>variables = {title: &quot;Hello&quot;, color: &quot;red&quot;}</code>, we could use the <code>title</code> and <code>color</code> variable. Subproperties of nested objects are also available.</td>
+<td>Used in  <code class="language-javascript">res.render</code>. A JavaScript object of variables to be made accessible to the Pug file defined by  <code class="language-javascript">path</code> (above). Within the Pug file, the keys of the above JavaScript object become available as variables. If  <code class="language-javascript">variables = {title: &quot;Hello&quot;, color: &quot;red&quot;}</code>, we could use the  <code class="language-javascript">title</code> and  <code class="language-javascript">color</code> variable. Subproperties of nested objects are also available.</td>
 </tr>
 <tr>
 <td>variable</td>
-<td>Used in bracket syntax <code>#{}</code> or <code>!{}</code>. The value of <code>variable</code> will be output in the context of its surrounding Pug code. If a pound symbol is prepended to the opening curly bracket, <code>variable</code> will be evaluated before being output. If an exclamation point is prepended to the opening curly brace, <code>variable</code> <strong>will not</strong> be evaluated.</td>
+<td>Used in bracket syntax  <code class="language-javascript">#{}</code> or  <code class="language-javascript">!{}</code>. The value of  <code class="language-javascript">variable</code> will be output in the context of its surrounding Pug code. If a pound symbol is prepended to the opening curly bracket,  <code class="language-javascript">variable</code> will be evaluated before being output. If an exclamation point is prepended to the opening curly brace,  <code class="language-javascript">variable</code> <strong>will not</strong> be evaluated.</td>
 </tr>
 <tr>
 <td>element</td>
-<td>Used in square bracket syntax <code>#[]</code>. The HTML element (in Pug syntax, not normal HTML syntax) will be evaluated and output inline with the surrounding Pug code.</td>
+<td>Used in square bracket syntax  <code class="language-javascript">#[]</code>. The HTML element (in Pug syntax, not normal HTML syntax) will be evaluated and output inline with the surrounding Pug code.</td>
 </tr>
 </tbody>
 </table>
@@ -377,8 +377,8 @@
 <h4 class="mume-header" id="iteration-a-iditerationa">Iteration <a id="iteration" href></a></h4>
 
 <ul>
-<li>Pug supports two primary methods of iteration: <code>each</code> and <code>while</code>.
-<h4><code>each</code></h4>
+<li>Pug supports two primary methods of iteration:  <code class="language-javascript">each</code> and  <code class="language-javascript">while</code>.
+<h4> <code class="language-javascript">each</code></h4>
 Iterate over arrays and objects in a template:<pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token tag">ul</span>
   <span class="token flow-control"><span class="token each"><span class="token keyword">each</span> val <span class="token keyword">in</span></span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span></span>
     <span class="token tag">li</span><span class="token punctuation">=</span><span class="token code"> val</span>
@@ -388,15 +388,15 @@ Iterate over arrays and objects in a template:<pre data-role="codeBlock" data-in
 </pre>Iterate over the keys in an object:<pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token tag">ul</span>
   <span class="token flow-control"><span class="token each"><span class="token keyword">each</span> val<span class="token punctuation">,</span> key <span class="token keyword">in</span></span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">:</span> <span class="token string">&apos;one&apos;</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span> <span class="token string">&apos;two&apos;</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">:</span> <span class="token string">&apos;three&apos;</span><span class="token punctuation">}</span></span>
     <span class="token tag">li</span><span class="token punctuation">=</span><span class="token code"> key <span class="token operator">+</span> <span class="token string">&apos;: &apos;</span> <span class="token operator">+</span> val</span>
-</pre>Add an <code>else</code> block in the case that the array or object are empty<pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token punctuation">-</span><span class="token code"> <span class="token keyword">var</span> values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span></span>
+</pre>Add an  <code class="language-javascript">else</code> block in the case that the array or object are empty<pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token punctuation">-</span><span class="token code"> <span class="token keyword">var</span> values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span></span>
 <span class="token tag">ul</span>
   <span class="token flow-control"><span class="token each"><span class="token keyword">each</span> val <span class="token keyword">in</span></span> values</span>
     <span class="token tag">li</span><span class="token punctuation">=</span><span class="token code"> val</span>
   <span class="token flow-control"><span class="token branch keyword">else</span></span>
     <span class="token tag">li</span> <span class="token plain-text">There are no values</span>
-</pre><h4><code>while</code></h4>
+</pre><h4> <code class="language-javascript">while</code></h4>
 <ul>
-<li>Create a loop with <code>while</code> keyword:</li>
+<li>Create a loop with  <code class="language-javascript">while</code> keyword:</li>
 </ul>
 <pre data-role="codeBlock" data-info="pug" class="language-pug"><span class="token punctuation">-</span><span class="token code"> <span class="token keyword">var</span> n <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span></span>
 <span class="token tag">ul</span>
@@ -408,7 +408,7 @@ Iterate over arrays and objects in a template:<pre data-role="codeBlock" data-in
 <hr>
 
       </div>
-      <div class="md-sidebar-toc"><pre><code>  - [Jump to...](#jump-to)
+      <div class="md-sidebar-toc"><pre> <code class="language-javascript">  - [Jump to...](#jump-to)
 </code></pre>
 <ul>
 <li><a class="btn" href="#pug">Pug</a><br>
@@ -418,8 +418,8 @@ Iterate over arrays and objects in a template:<pre data-role="codeBlock" data-in
 - <a class="btn" href="#plain-text-and-text-blocks">Plain Text and Text Blocks</a><br>
 - <a class="btn" href="#comments">Comments</a><br>
 - <a class="btn" href="#rendering-proccess-of-pug-a-idrendera">Rendering Proccess of Pug </a><br>
-- <a class="btn" href="#pugcompilesource-options"><code>pug.compile(source, options)</code></a><br>
-- <a class="btn" href="#pugrendersource-options-callback"><code>pug.render(source, options, callback)</code></a><br>
+- <a class="btn" href="#pugcompilesource-options"> <code class="language-javascript">pug.compile(source, options)</code></a><br>
+- <a class="btn" href="#pugrendersource-options-callback"> <code class="language-javascript">pug.render(source, options, callback)</code></a><br>
 - <a class="btn" href="#options-a-idoptionsa">Options </a><br>
 - <a class="btn" href="#template-inheritance-a-idinheritancea">Template Inheritance </a><br>
 - <a class="btn" href="#buffered-vs-unbuffered-code">Buffered vs Unbuffered Code</a><br>
@@ -436,7 +436,7 @@ Iterate over arrays and objects in a template:<pre data-role="codeBlock" data-in
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

@@ -120,7 +120,7 @@ directory.
 Let's say you added the following HTML block to **your-browser.html**.
 
 ```html
-<script>
+<script async>
   fetch('/api/path/javascript-allonge-six/')
     .then(response => response.json())
     .then(filelist => console.log(filelist);

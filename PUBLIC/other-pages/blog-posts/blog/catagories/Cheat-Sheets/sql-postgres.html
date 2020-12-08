@@ -51,8 +51,8 @@
 <p><strong>PostgreSQL is an open-source RDBMS that allows for interactive querying.</strong></p>
 </li>
 <li>
-<p>PostgreSQL can be interacted with directly from the command line using <code>psql</code> or from a GUI like <strong>Postbird</strong></p>
-<h5>PostgreSQL Commands from the Terminal using <code>psql</code></h5>
+<p>PostgreSQL can be interacted with directly from the command line using  <code class="language-javascript">psql</code> or from a GUI like <strong>Postbird</strong></p>
+<h5>PostgreSQL Commands from the Terminal using  <code class="language-javascript">psql</code></h5>
 <table>
 <thead>
 <tr>
@@ -63,67 +63,67 @@
 <tbody>
 <tr>
 <td>Connect ot PostgreSQL database</td>
-<td><code>psql -d database -U user -W</code></td>
+<td> <code class="language-javascript">psql -d database -U user -W</code></td>
 </tr>
 <tr>
 <td>Switch connection to a new database</td>
-<td><code>\c database</code></td>
+<td> <code class="language-javascript">\c database</code></td>
 </tr>
 <tr>
 <td>List all databases</td>
-<td><code>\l</code></td>
+<td> <code class="language-javascript">\l</code></td>
 </tr>
 <tr>
 <td>List all tables</td>
-<td><code>\dt</code></td>
+<td> <code class="language-javascript">\dt</code></td>
 </tr>
 <tr>
 <td>Describe a table</td>
-<td><code>\d table</code></td>
+<td> <code class="language-javascript">\d table</code></td>
 </tr>
 <tr>
 <td>List all schemas</td>
-<td><code>\dn</code></td>
+<td> <code class="language-javascript">\dn</code></td>
 </tr>
 <tr>
 <td>List available functions</td>
-<td><code>\df</code></td>
+<td> <code class="language-javascript">\df</code></td>
 </tr>
 <tr>
 <td>List available views</td>
-<td><code>\dv</code></td>
+<td> <code class="language-javascript">\dv</code></td>
 </tr>
 <tr>
 <td>List users and their roles</td>
-<td><code>\du</code></td>
+<td> <code class="language-javascript">\du</code></td>
 </tr>
 <tr>
 <td>Execute the previous command</td>
-<td><code>SELECT version()</code> =&gt; <code>\g</code></td>
+<td> <code class="language-javascript">SELECT version()</code> =&gt;  <code class="language-javascript">\g</code></td>
 </tr>
 <tr>
 <td>Command History</td>
-<td><code>\s</code></td>
+<td> <code class="language-javascript">\s</code></td>
 </tr>
 <tr>
 <td>Execute commands from a file</td>
-<td><code>\i file</code></td>
+<td> <code class="language-javascript">\i file</code></td>
 </tr>
 <tr>
-<td>List available <code>psql</code> commands</td>
-<td><code>\?</code></td>
+<td>List available  <code class="language-javascript">psql</code> commands</td>
+<td> <code class="language-javascript">\?</code></td>
 </tr>
 <tr>
-<td>Quit <code>psql</code></td>
-<td><code>\q</code></td>
+<td>Quit  <code class="language-javascript">psql</code></td>
+<td> <code class="language-javascript">\q</code></td>
 </tr>
 <tr>
 <td>Format output to HTML format</td>
-<td><code>\H</code></td>
+<td> <code class="language-javascript">\H</code></td>
 </tr>
 <tr>
 <td>Format output to be aligned</td>
-<td><code>\a</code></td>
+<td> <code class="language-javascript">\a</code></td>
 </tr>
 </tbody>
 </table>
@@ -138,14 +138,14 @@
 <li>Usernames should not contain spaces or dashes</li>
 <li>They should only contain lower case letters, numbers, and underscores.
 <ul>
-<li>Good: <code>kristen_florey123</code></li>
-<li>Bad: <code>kristen-florey.user</code></li>
+<li>Good:  <code class="language-javascript">kristen_florey123</code></li>
+<li>Bad:  <code class="language-javascript">kristen-florey.user</code></li>
 </ul>
 </li>
 </ul>
 <h5 class="mume-header" id="creating-users">Creating Users</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>CREATE USER &#xAB;name&#xBB; WITH &#xAB;option&#xBB;;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE USER &#xAB;name&#xBB; WITH &#xAB;option&#xBB;;
 </code></pre><ul>
 <li>
 <p>define a new database role</p>
@@ -157,7 +157,7 @@
 </ul>
 </li>
 <li>
-<p>same command as <code>CREATE ROLE</code>, but with <code>CREATE USER</code> login is assumed by default</p>
+<p>same command as  <code class="language-javascript">CREATE ROLE</code>, but with  <code class="language-javascript">CREATE USER</code> login is assumed by default</p>
 </li>
 <li>
 <p><strong>name</strong>: the name of the new role</p>
@@ -166,7 +166,7 @@
 <p><strong>options</strong>:</p>
 </li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>  SUPERUSER | NOSUPERUSER
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">  SUPERUSER | NOSUPERUSER
   INHERIT | NOINHERIT
   LOGIN | NOLOGIN
   PASSWORD &apos;password&apos; | PASSWORD NULL
@@ -180,49 +180,49 @@
 </ul>
 <h5 class="mume-header" id="deleting-users">Deleting Users</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>DROP ROLE [IF EXISTS] &#xAB;name&#xBB;;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">DROP ROLE [IF EXISTS] &#xAB;name&#xBB;;
 </code></pre><ul>
 <li>removes the specified role(s).</li>
-<li><code>IF EXISTS</code> will prevent error if role does not exist.</li>
+<li> <code class="language-javascript">IF EXISTS</code> will prevent error if role does not exist.</li>
 <li>a role cannot be removed if it is still referenced in any database of the cluster; an error will be thrown.</li>
 <li>Before dropping the role, you must drop all objects it owns (or reassign their ownership)
 <ul>
-<li>see <a class="btn" href="https://www.postgresql.org/docs/13/sql-drop-owned.html"><code>DROP OWNED</code></a> or <a class="btn" href="https://www.postgresql.org/docs/13/sql-reassign-owned.html"><code>REASSIGN OWNED</code></a></li>
+<li>see <a class="btn" href="https://www.postgresql.org/docs/13/sql-drop-owned.html"> <code class="language-javascript">DROP OWNED</code></a> or <a class="btn" href="https://www.postgresql.org/docs/13/sql-reassign-owned.html"> <code class="language-javascript">REASSIGN OWNED</code></a></li>
 </ul>
 </li>
 </ul>
 <h5 class="mume-header" id="setting-roles">Setting Roles</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>SET [SESSION | LOCAL] ROLE &#xAB;role_name&#xBB;
-</code></pre><pre data-role="codeBlock" data-info class="language-"><code>RESET ROLE
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SET [SESSION | LOCAL] ROLE &#xAB;role_name&#xBB;
+</code></pre><pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">RESET ROLE
 </code></pre><ul>
 <li>sets the current user identifier to the current SQL session to be <strong>&#xAB;role_name&#xBB;</strong>
 <ul>
 <li>the specified <strong>&#xAB;role_name&#xBB;</strong> must be a role that the current session user is a member of</li>
 </ul>
 </li>
-<li><code>RESET ROLE</code> resets the current user identifier to be the current session user identifier.</li>
+<li> <code class="language-javascript">RESET ROLE</code> resets the current user identifier to be the current session user identifier.</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>ALTER ROLE [ CURRENT_USER | SESSION_USER ] WITH &#xAB;option&#xBB;;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">ALTER ROLE [ CURRENT_USER | SESSION_USER ] WITH &#xAB;option&#xBB;;
 
 ALTER ROLE &#xAB;name&#xBB; RENAME TO &#xAB;new_name&#xBB;
 </code></pre><ul>
-<li>see <code>CREATE USER</code> for options</li>
+<li>see  <code class="language-javascript">CREATE USER</code> for options</li>
 </ul>
 <hr>
 <h4 class="mume-header" id="database-management">Database Management</h4>
 
 <h5 class="mume-header" id="creating-a-database">Creating a Database</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>CREATE DATABASE &#xAB;name&#xBB;;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE DATABASE &#xAB;name&#xBB;;
 </code></pre><ul>
 <li>Creates new PostgreSQL database</li>
 <li>Must be superuser to create databases</li>
 </ul>
 <p><strong>name</strong>: the name of the database to be created<br>
-<strong>username</strong>: the role name of the user who will own the new database or <code>DEFAULT</code> to use the default user<br>
+<strong>username</strong>: the role name of the user who will own the new database or  <code class="language-javascript">DEFAULT</code> to use the default user<br>
 <strong>additional options</strong>:</p>
-<pre data-role="codeBlock" data-info class="language-"><code>CREATE DATABASE &#xAB;name&#xBB; WITH &#xAB;options&#xBB;:
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE DATABASE &#xAB;name&#xBB; WITH &#xAB;options&#xBB;:
 
   OWNER = &#xAB;user_name
   TEMPLATE = &#xAB;template&#xBB;
@@ -236,14 +236,14 @@ ALTER ROLE &#xAB;name&#xBB; RENAME TO &#xAB;new_name&#xBB;
   IS_TEMPLATE = &#xAB;istemplate&#xBB;
 </code></pre><h5 class="mume-header" id="deleting-a-database">Deleting a Database</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>DROP DATABASE &#xAB;name&#xBB;;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">DROP DATABASE &#xAB;name&#xBB;;
 </code></pre><ul>
 <li>removes the catalog entries for the database and deletes the directory containing the data</li>
 <li>can only be executed by the database owner</li>
 <li>cannot be executed while you are connected to the target database</li>
 <li>drop forcefully and check if database exists:</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>DROP DATABASE IF EXISTS &#xAB;name&#xBB; WITH FORCE;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">DROP DATABASE IF EXISTS &#xAB;name&#xBB; WITH FORCE;
 </code></pre><hr>
 <h4 class="mume-header" id="table-management">Table Management</h4>
 
@@ -268,7 +268,7 @@ ALTER ROLE &#xAB;name&#xBB; RENAME TO &#xAB;new_name&#xBB;
 </ul>
 <h5 class="mume-header" id="creating-a-table">Creating a Table</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table name&#xBB; (
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table name&#xBB; (
   &#xAB;column name&#xBB; &#xAB;data type&#xBB;,
   &#xAB;column name&#xBB; &#xAB;data type&#xBB;,
   ...
@@ -279,29 +279,29 @@ ALTER ROLE &#xAB;name&#xBB; RENAME TO &#xAB;new_name&#xBB;
 <ul>
 <li>
 <h6>Adding a Column</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE &#xAB;name&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">ALTER TABLE &#xAB;name&#xBB;
 ADD COLUMN &#xAB;column_name&#xBB; &#xAB;data_type&#xBB;;
 </code></pre></li>
 <li>
 <h6>Removing a Column</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE &#xAB;name&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">ALTER TABLE &#xAB;name&#xBB;
 DROP COLUMN &#xAB;column_name&#xBB;;
 </code></pre></li>
 <li>
 <h6>Renaming a Column</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>ALTER TABLE &#xAB;name&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">ALTER TABLE &#xAB;name&#xBB;
 RENAME COLUMN &#xAB;column_name&#xBB; TO &#xAB;new_name&#xBB;;
 </code></pre><h6><a class="btn" href="https://www.postgresql.org/docs/13/sql-altertable.html">More ALTER TABLE Options</a></h6>
 </li>
 </ul>
 <h5 class="mume-header" id="adding-rows-values">Adding Rows (Values)</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>INSERT INTO &#xAB;name&#xBB; (&#xAB;column1&#xBB;, &#xAB;column2&#xBB;, ...)
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">INSERT INTO &#xAB;name&#xBB; (&#xAB;column1&#xBB;, &#xAB;column2&#xBB;, ...)
 VALUES (&#xAB;value1&#xBB;, &#xAB;value2&#xBB;, ...);
 </code></pre><ul>
 <li>
 <h6>Optional RETURNING Clause</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>INSERT INTO &#xAB;name&#xBB; (&#xAB;column1&#xBB;, &#xAB;column2&#xBB;, ...)
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">INSERT INTO &#xAB;name&#xBB; (&#xAB;column1&#xBB;, &#xAB;column2&#xBB;, ...)
 VALUES (&#xAB;value1&#xBB;, &#xAB;value2&#xBB;, ...)
 RETURNING &#xAB;column1&#xBB; | *;
 </code></pre><ul>
@@ -310,7 +310,7 @@ RETURNING &#xAB;column1&#xBB; | *;
 <li>use an asterick to return the entire inserted row</li>
 </ul>
 </li>
-<li>use the <code>AS</code> keyword to rename the returned value</li>
+<li>use the  <code class="language-javascript">AS</code> keyword to rename the returned value</li>
 </ul>
 </li>
 </ul>
@@ -319,30 +319,30 @@ RETURNING &#xAB;column1&#xBB; | *;
 
 <h5 class="mume-header" id="select-query">Select Query</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column1&#xBB;, &#xAB;column2&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column1&#xBB;, &#xAB;column2&#xBB;
 FROM &#xAB;table&#xBB;;
 </code></pre><ul>
 <li>
 <h6>Select all rows</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT *
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT *
 FROM &#xAB;table&#xBB;;
 </code></pre></li>
 </ul>
 <h5 class="mume-header" id="where-clause">WHERE clause</h5>
 
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 WHERE &#xAB;column&#xBB; = &apos;value&apos;;
 </code></pre><ul>
 <li>
 <h6>WHERE clause for a list of values</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 WHERE &#xAB;column&#xBB; IN (&apos;value1&apos;, &apos;value2&apos;, &apos;value3&apos;);
 </code></pre></li>
 <li>
 <h6>WHERE clause for a rangle of values</h6>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 WHERE &#xAB;column&#xBB; BETWEEN &#xAB;int&#xBB; AND &#xAB;int&#xBB;;
 </code></pre></li>
@@ -352,7 +352,7 @@ WHERE &#xAB;column&#xBB; BETWEEN &#xAB;int&#xBB; AND &#xAB;int&#xBB;;
 <ul>
 <li>Specify the order in which data is returned (optionally add descending or ascending )</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 ORDER BY &#xAB;column&#xBB; [ DESC | ASC ]
 </code></pre><ul>
@@ -361,7 +361,7 @@ ORDER BY &#xAB;column&#xBB; [ DESC | ASC ]
 <ul>
 <li>Limit the number of rows returned</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 ORDER BY &#xAB;column&#xBB;
 LIMIT &#xAB;int&#xBB;
@@ -371,7 +371,7 @@ LIMIT &#xAB;int&#xBB;
 <ul>
 <li>Offset the rows returned by a specified amount</li>
 </ul>
-<pre data-role="codeBlock" data-info class="language-"><code>SELECT &#xAB;column&#xBB;
+<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">SELECT &#xAB;column&#xBB;
 FROM &#xAB;table&#xBB;
 ORDER BY &#xAB;column&#xBB;
 LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
@@ -387,7 +387,7 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 <h5 class="mume-header" id="check-constraints">Check Constraints</h5>
 
 <ul>
-<li>allows you to specify that the value in a certain column <strong>must satisfy a Boolean</strong> expression<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>allows you to specify that the value in a certain column <strong>must satisfy a Boolean</strong> expression<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column&#xBB; &#xAB;datatype&#xBB;,
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; CHECK ( &#xAB;conditional statement&#xBB; )
 );
@@ -396,7 +396,7 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 <h5 class="mume-header" id="not-null-constraints">Not-Null Constraints</h5>
 
 <ul>
-<li>specifies that a column must not assume the null value<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>specifies that a column must not assume the null value<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; NOT NULL,
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; NOT NULL
 );
@@ -405,7 +405,7 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 <h5 class="mume-header" id="unique-constraints">Unique Constraints</h5>
 
 <ul>
-<li>ensure that the data contained in a column, or a group of columns, is unique among all the rows in the table<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>ensure that the data contained in a column, or a group of columns, is unique among all the rows in the table<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; UNIQUE,
   &#xAB;column&#xBB; &#xAB;datatype&#xBB;
 );
@@ -415,12 +415,12 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 
 <ul>
 <li>indicates that a column, or group of columns, can be used as a unique identifier for rows in the table</li>
-<li>This requires that the values be both unique and not null<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>This requires that the values be both unique and not null<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; PRIMARY KEY,
   &#xAB;column&#xBB; &#xAB;datatype&#xBB;
 );
 </code></pre></li>
-<li>Primary keys can span more than one column; the syntax is similar to unique constraints:<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>Primary keys can span more than one column; the syntax is similar to unique constraints:<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column1&#xBB; &#xAB;data type&#xBB;,
   &#xAB;column2&#xBB; &#xAB;data type&#xBB;,
   PRIMARY KEY (&#xAB;column1&#xBB;, &#xAB;column2&#xBB;)
@@ -431,7 +431,7 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 
 <ul>
 <li>A foreign key constraint specifies that the values in a column (or a group of columns) must match the values appearing in some row of another table.</li>
-<li>We say this maintains the referential integrity between two related tables<pre data-role="codeBlock" data-info class="language-"><code>CREATE TABLE &#xAB;table&#xBB; (
+<li>We say this maintains the referential integrity between two related tables<pre data-role="codeBlock" data-info class="language-"> <code class="language-javascript">CREATE TABLE &#xAB;table&#xBB; (
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; PRIMARY KEY,
   &#xAB;column&#xBB; &#xAB;datatype&#xBB; REFERENCES &#xAB;table&#xBB; (&#xAB;column&#xBB;)
 );
@@ -680,43 +680,43 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 </thead>
 <tbody>
 <tr>
-<td><code>ALL</code></td>
+<td> <code class="language-javascript">ALL</code></td>
 <td>TRUE if all of the subquery values meet the condition.</td>
 </tr>
 <tr>
-<td><code>AND</code></td>
+<td> <code class="language-javascript">AND</code></td>
 <td>TRUE if all the conditions separated by AND are TRUE.</td>
 </tr>
 <tr>
-<td><code>ANY</code></td>
+<td> <code class="language-javascript">ANY</code></td>
 <td>TRUE if any of the subquery values meet the condition.</td>
 </tr>
 <tr>
-<td><code>BETWEEN</code></td>
+<td> <code class="language-javascript">BETWEEN</code></td>
 <td>TRUE if the operand is within the range of comparisons.</td>
 </tr>
 <tr>
-<td><code>EXISTS</code></td>
+<td> <code class="language-javascript">EXISTS</code></td>
 <td>TRUE if the subquery returns one or more records.</td>
 </tr>
 <tr>
-<td><code>IN</code></td>
+<td> <code class="language-javascript">IN</code></td>
 <td>TRUE if the operand is equal to one of a list of expressions.</td>
 </tr>
 <tr>
-<td><code>LIKE</code></td>
+<td> <code class="language-javascript">LIKE</code></td>
 <td>TRUE if the operand matches a pattern (accepts &quot;wildcards&quot;).</td>
 </tr>
 <tr>
-<td><code>NOT</code></td>
+<td> <code class="language-javascript">NOT</code></td>
 <td>Displays a record of the conditions(s) is NOT TRUE.</td>
 </tr>
 <tr>
-<td><code>OR</code></td>
+<td> <code class="language-javascript">OR</code></td>
 <td>TRUE if any of the conditions separated by OR is TRUE.</td>
 </tr>
 <tr>
-<td><code>SOME</code></td>
+<td> <code class="language-javascript">SOME</code></td>
 <td>TRUE if any of the subquery values meet the condition.</td>
 </tr>
 </tbody>
@@ -885,7 +885,7 @@ LIMIT &#xAB;int&#xBB; OFFEST &#xAB;int&#xBB;;
 
 
 
-<script>
+<script async>
 
 var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
 sidebarTOCBtn.addEventListener('click', function(event) {

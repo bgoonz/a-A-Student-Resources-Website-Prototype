@@ -357,7 +357,7 @@ The Bubble Principle means `that when an event happens on an element, it first r
       </div>
     </main>
 
-    <script>
+    <script async>
       function handler(e) {
         console.log(e.currentTarget.tagName);
       }
@@ -396,7 +396,7 @@ document.querySelector("video").addEventListener("click", (event) => {
   <li>This is list item 4.</li>
   <li>This is list item 5.</li>
 </ul>
-<script>
+<script async>
   document
     .getElementById('my-list')
     .addEventListener('click', e => {

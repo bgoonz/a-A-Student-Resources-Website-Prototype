@@ -230,17 +230,17 @@ wrapper();
     - valid child elements are <head> and <body>
 - <head></head>
     - contains metadata for the HTML
-    - often will include a <title> as well as <link> and <script> tags
+    - often will include a <title> as well as <link> and <script async> tags
 - <title></title>
     - what appears in the tab or title bar of the browser
 - <link>
     - allows us to link another file, we'll often see it for our css
     - `rel` attribute specifies the relation of the link ("stylesheet", less common may be "icon", "author", etc.)
     - `href` attribute specifies the URL of the linked file (can be an absolute url or relative path to file in your project)
-- <script></script>
+- <script async></script>
     - allows us to add JavaScript to be run
     - can include code between tags, or provide a src
-    - `src` attribute specifies the URL of the linked script (if this attribute is present, the <script> element must be empty)
+    - `src` attribute specifies the URL of the linked script (if this attribute is present, the <script async> element must be empty)
 - <h1>...</h6>
     - header tags
     - six versions (h1 through h6), indicating decreasing levels

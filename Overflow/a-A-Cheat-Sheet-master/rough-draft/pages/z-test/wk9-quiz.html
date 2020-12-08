@@ -24,7 +24,7 @@
 
             <p style="display: inline-block">How do you import other CSS files into your CSS file?</p>
             <div class="answer">
-                <p><code>@import 'custom.css';</code></p>
+                <p> <code class="language-javascript">@import 'custom.css';</code></p>
             </div>
         </div>
 
@@ -34,7 +34,7 @@
 
             <p style="display: inline-block">What two attributes must a link element have to link a stylesheet in your HTML page?</p>
             <div class="answer">
-                <p><code>&lt;link rel="stylesheet" href="file.css" /&gt;</code></p>
+                <p> <code class="language-javascript">&lt;link rel="stylesheet" href="file.css" /&gt;</code></p>
             </div>
         </div>
 
@@ -110,7 +110,7 @@
 
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         ul li {
             color: red;
         }
@@ -128,7 +128,7 @@
                     <p>The multiple items selection: comma
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         body, div, p, span, ul, li {
             color: red;
         }
@@ -163,7 +163,7 @@
                     <p>The direct child selector:</p>
 
                     <!-- ↓---------------this is a code sample---------------↓-->
-                    <code><pre>
+                     <code class="language-javascript"><pre>
         ul &gt; li {
             color: red;
         }
@@ -454,7 +454,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         document.querySelector('#downvote').addEventListener('click', () => {
             fetch('http://localhost:3000/kitten/downvote', {method: 'PATCH' } )
                 .then(handleResponse)
@@ -477,7 +477,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         document.querySelector('#downvote').addEventListener('click, async () =>
         {
             try {
@@ -503,7 +503,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         const handleResponse = (response) => {
             stopLoader();
             clearError();
@@ -528,7 +528,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         const handleError = (error) => {
             if (error.json) {
                 document.querySelector('.error').innerHTML = `Error occured: ${errorJSON.message}`;
@@ -553,7 +553,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         const updateImageScore = (data) => {
             const { score } = data;
             document.querySelector('.score').innerHTML = score;
@@ -588,7 +588,7 @@
 
                 <p style="display: inline-block">Given the following CSS rule, write a media query that would change the product-index container so the items appear in a vertical fashion for a viewport width less than or equal to 300px:
 
-                    <code>
+                     <code class="language-javascript">
                         <pre>
     <!-- ↓---------------this is a code sample---------------↓-->
         .product-index {
@@ -604,7 +604,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         @media screen and (max-width: 300px) {
             .product-index {
                 flex-direction: column;
@@ -641,10 +641,10 @@
             <div class="question" id="question-37">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">What is the different between <code>box-sizing: border-box;</code> and <code>box-sizing: content-box</code></p>
+                <p style="display: inline-block">What is the different between  <code class="language-javascript">box-sizing: border-box;</code> and  <code class="language-javascript">box-sizing: content-box</code></p>
                 <div class="answer">
                     <p>border-box includes the border and padding in the width and height; content-box does not;</p>
-                    <code>
+                     <code class="language-javascript">
                         <pre>
     <!-- ↓---------------this is a code sample---------------↓-->
         div {
@@ -681,7 +681,7 @@
             <div class="question" id="question-39">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">Describe <code>position: fixed</code></p>
+                <p style="display: inline-block">Describe  <code class="language-javascript">position: fixed</code></p>
                 <div class="answer">
                     <p>Always relative to the document, not any particular parent, and are unaffected by scrolling.</p>
                 </div>
@@ -691,7 +691,7 @@
             <div class="question" id="question-40">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">Describe <code>position: relative</code></p>
+                <p style="display: inline-block">Describe  <code class="language-javascript">position: relative</code></p>
                 <div class="answer">
                     <p>Positioned relative to itself; i.e. the element is still in the flow of the document, but now left/right/top/bottom/z-index will work.</p>
                 </div>
@@ -701,7 +701,7 @@
             <div class="question" id="question-41">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">Describe <code>position: absolute</code></p>
+                <p style="display: inline-block">Describe  <code class="language-javascript">position: absolute</code></p>
                 <div class="answer">
                     <p>Element is removed from the flow of the document and other elements will behave as if it's not even there whilst all the other positional properties will work on it.</p>
                 </div>
@@ -711,7 +711,7 @@
             <div class="question" id="question-42">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">Describe <code>position: static</code></p>
+                <p style="display: inline-block">Describe  <code class="language-javascript">position: static</code></p>
                 <div class="answer">
                     <p>The default positioning of all elements</p>
                 </div>
@@ -1158,7 +1158,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
     div {
         width: 100px;
         height: 100px;
@@ -1185,7 +1185,7 @@
                 <div class="answer">
                     <p>Use the transition-property and transition-duration</p>
 
-                    <code>
+                     <code class="language-javascript">
                         <pre>
     <!-- ↓---------------this is a code sample---------------↓-->
         .button {
@@ -1278,7 +1278,7 @@
             <div class="question" id="question-88">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
 
-                <p style="display: inline-block">What effect does <code>position: fixed</code> have on an element?</p>
+                <p style="display: inline-block">What effect does  <code class="language-javascript">position: fixed</code> have on an element?</p>
                 <div class="answer">
                     <p>The element is removed from the page flow and is typically positioned relative to the document itself and not to an ancestor element. It is positioned using the top, right, bottom and left properties. The element remains in the same spot on the page, regardless of viewport size or scrolling.</p>
                 </div>
@@ -1290,7 +1290,7 @@
 
                 <p style="display: inline-block">Which of the following diagrams shows the correct layout of the elements given their margin and padding settings shown in the CSS below:
 
-                    <code>
+                     <code class="language-javascript">
                         <pre>
     <!-- ↓---------------this is a code sample---------------↓-->
     &lt;body&gt;
@@ -1325,7 +1325,7 @@
 
                 <p style="display: inline-block">Given the following HTML and CSS, which of the following diagrams shows the correct layout of the absolutely positioned element?
 
-                    <code>
+                     <code class="language-javascript">
                         <pre>
     <!-- ↓---------------this is a code sample---------------↓---->
         &lt;body&gt;
@@ -1367,7 +1367,7 @@
             <!---NEXT-PROBLEM-DIV-------------------------->
             <div class="question" id="question-91">
                 <button class="buttonClass" style="display: inline-block">SHOW</button>
-                <code><pre>
+                 <code class="language-javascript"><pre>
                 <pre style="display: inline-block">Given the following HTML and CSS, which of the following diagrams shows the
                     correct layout of the absolutely positioned element contained in a relatively
                     positioned element?</pre>
@@ -1524,7 +1524,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         .grid__container {
             display: grid;
             grid-column-gap: 50px;
@@ -1580,7 +1580,7 @@
                     <p>
 
                         <!-- ↓---------------this is a code sample---------------↓-->
-                        <code><pre>
+                         <code class="language-javascript"><pre>
         .class__container {
             display: flex;
             flex-direction: row | row-reverse | column | column-reverse

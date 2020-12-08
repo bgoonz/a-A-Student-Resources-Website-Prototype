@@ -81,7 +81,7 @@ fetch("https://jservice.xyz/api/categories", {
 ```js
 <button class="want-to-read">Want to Read</button>
 
-<script>
+<script async>
   document.querySelector(".want-to-read").addEventListener("click", function() {
     fetch(`https://api.goodreads.com/books/${BOOK_ID}/update-status`, {
       method: "PATCH", // using PATCH since we'll just be modifying the book's status

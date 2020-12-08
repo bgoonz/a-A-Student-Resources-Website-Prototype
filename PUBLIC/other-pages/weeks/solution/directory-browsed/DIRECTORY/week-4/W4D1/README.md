@@ -117,7 +117,7 @@ window.addEventListener('DOMContentLoaded', () => {
   </head>
   <body>
   </body>
-  <script>
+  <script async>
     console.log('this is printed only after all the HTML elements are displayed');
   </script>
 </html>
