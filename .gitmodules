@@ -1,0 +1,3 @@
+[submodule "PUBLIC/assets/xinha/examples/drawio"]
+	path = PUBLIC/assets/xinha/examples/drawio
+	url = https://github.com/jgraph/drawio.git
