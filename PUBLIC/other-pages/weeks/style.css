@@ -54,8 +54,8 @@ img{
     display: block;
   margin-left: auto;
   margin-right: auto;
-height:600px;
-width:400px;
+height:1em;
+width:1em;
 }
 .section {
   background-color: black;
