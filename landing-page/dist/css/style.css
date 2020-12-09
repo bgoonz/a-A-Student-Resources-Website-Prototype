@@ -36,6 +36,7 @@ pre {
 	font-size: 1em;
 }
 a {
+  color:#4234f8;
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 }
@@ -292,8 +293,26 @@ textarea {
 	font-family: "Heebo", sans-serif;
 }
 a {
-	color: #4234f8;
-	text-decoration: none;
+	display: grid;
+border:1px solid black !important;
+	font-size: 14px;
+	letter-spacing: 0px;
+	font-weight: 700;
+	line-height: 16px;
+	text-decoration: none !important;
+	text-transform: uppercase;
+  background-color: #4234f8;
+  color:white;
+	background: #4234f8 !important;
+	color: black !important;
+	border: none;
+	border-radius: 2px;
+	cursor: pointer;
+	justify-content: center;
+	padding: 16px 40px;
+	height: 48px;
+	text-align: center;
+	white-space: normal;
 }
 a:hover,
 a:active {
@@ -923,19 +942,20 @@ label {
 	padding-left: 64px;
 }
 .sr .has-animations .is-revealing {
-	visibility: hidden;
+	visibility: visible;
 }
 .button {
 	display: grid;
-border:1px solid black;
+border:1px solid black !important;
 	font-size: 14px;
 	letter-spacing: 0px;
 	font-weight: 700;
 	line-height: 16px;
 	text-decoration: none !important;
 	text-transform: uppercase;
-	background-color: #fff;
-	background: #4234f8;
+  background-color: #4234f8;
+  color:white;
+	background: #4234f8 !important;
 	color: black !important;
 	border: none;
 	border-radius: 2px;
@@ -981,6 +1001,7 @@ border:1px solid black;
 }
 .button-primary,
 .button-secondary {
+  background-color: #4234f8;
 	color: #fff !important;
 	transition: background 0.15s ease;
 	-webkit-transition: background 0.15s ease;
@@ -989,10 +1010,12 @@ border:1px solid black;
 	-o-transition: background 0.15s ease;
 }
 .button-primary {
-	background: #4234f8;
+  background: #4234f8;
+    background-color: #4234f8;
 }
 .button-primary:hover {
-	background: #4b3ef8;
+  background: #4b3ef8;
+    background-color: #4234f8;
 }
 .button-primary.button-shadow::before {
 	box-shadow: 0 8px 16px rgba(66, 52, 248, 0.24);
