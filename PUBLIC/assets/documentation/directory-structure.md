@@ -1,30 +1,46 @@
 ```
-\___________________________________________________
-bryan_dir:public_exitstatus:0 ====>
-
-tree -d
+tree -L 7 -d
 .
 ├── Overflow
-│   └── Take
-│       └── assets
-│           ├── css
-│           ├── fonts
-│           ├── img
-│           │   ├── banner
-│           │   ├── blog
-│           │   ├── cart
-│           │   ├── category
-│           │   ├── client
-│           │   ├── course
-│           │   ├── icon
-│           │   ├── other
-│           │   └── team
-│           └── js
+│   ├── Take
+│   │   └── assets
+│   │       ├── css
+│   │       ├── fonts
+│   │       ├── img
+│   │       │   ├── banner
+│   │       │   ├── blog
+│   │       │   ├── cart
+│   │       │   ├── category
+│   │       │   ├── client
+│   │       │   ├── course
+│   │       │   ├── icon
+│   │       │   ├── other
+│   │       │   └── team
+│   │       └── js
+│   ├── a-A-Cheat-Sheet-master
+│   │   ├── concepts
+│   │   └── rough-draft
+│   │       ├── css
+│   │       ├── documentation
+│   │       ├── java-script
+│   │       └── pages
+│   │           ├── days
+│   │           │   ├── module-1
+│   │           │   │   ├── week-1
+│   │           │   │   ├── week-2
+│   │           │   │   └── week-3
+│   │           │   └── module-3
+│   │           │       └── week-8
+│   │           ├── weeks
+│   │           └── z-test
+│   │               └── wk8-images
+│   └── articles-to-base-topics-off-of
+│       ├── git-flow-master
+│       └── very-general
 ├── PUBLIC
 │   ├── assets
-│   │   ├── __MACOSX
-│   │   │   └── oriental-tiles
 │   │   ├── credentials-log
+│   │   ├── documentation
 │   │   ├── double-bubble-outline
 │   │   └── oriental-tiles
 │   ├── css
@@ -49,86 +65,66 @@ tree -d
 │   │   │   ├── Web-Dev-Setup
 │   │   │   ├── best-prac-extension-guide
 │   │   │   │   └── Design-Principles
+│   │   │   ├── blog
+│   │   │   │   ├── PROFILES
+│   │   │   │   ├── PROJECTS
+│   │   │   │   ├── STUDENT PROFILES
+│   │   │   │   ├── catagories
+│   │   │   │   │   ├── Blog-Posts
+│   │   │   │   │   ├── Cheat-Sheets
+│   │   │   │   │   │   ├── ExpressJS v 4x Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   ├── Git Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   ├── HTML Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   ├── HTML-DOM Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   ├── Javascript Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   ├── NodeJS Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   │   └── Regex Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   ├── Css
+│   │   │   │   │   │   └── CSS Cheat Sheet _ OverAPI.com_files
+│   │   │   │   │   ├── Html
+│   │   │   │   │   ├── Javascript
+│   │   │   │   │   ├── Logic
+│   │   │   │   │   └── Tutorials
+│   │   │   │   ├── css
+│   │   │   │   ├── startbootstrap-blog-home-master
+│   │   │   │   │   └── startbootstrap-blog-home-master
+│   │   │   │   └── vendor
+│   │   │   │       ├── bootstrap
+│   │   │   │       │   ├── css
+│   │   │   │       │   └── js
+│   │   │   │       └── jquery
 │   │   │   ├── git-workflow
 │   │   │   │   └── git-workflow_files
 │   │   │   └── tools-of-the-trade
 │   │   └── weeks
+│   │       ├── 0-quiz
+│   │       │   ├── css
+│   │       │   ├── oriental-tiles
+│   │       │   ├── wk10-images
+│   │       │   ├── wk12-images
+│   │       │   └── wk6-images
 │   │       ├── Images
-│   │       ├── html-temp
 │   │       ├── solution
 │   │       │   ├── directory-browsed
 │   │       │   │   └── DIRECTORY
 │   │       │   │       ├── week-1
-│   │       │   │       │   ├── Friday
-│   │       │   │       │   ├── Misc
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   ├── W01-LOs
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-10
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-11
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-12
 │   │       │   │       ├── week-2
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-3
-│   │       │   │       │   ├── Friday
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-4
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-5
-│   │       │   │       │   ├── Friday
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-6
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-7
-│   │       │   │       │   ├── Misc
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursday
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       ├── week-8
-│   │       │   │       │   ├── Monday
-│   │       │   │       │   ├── Thursdays
-│   │       │   │       │   ├── Tuesday
-│   │       │   │       │   └── Wednesday
 │   │       │   │       └── week-9
-│   │       │   │           ├── Friday
-│   │       │   │           ├── Thursday
-│   │       │   │           ├── Tuesday
-│   │       │   │           └── Wednesday
-│   │       │   ├── server
-│   │       │   │   └── views
-│   │       │   └── your-code
-│   │       │       ├── icons
-│   │       │       ├── js
-│   │       │       └── style
+│   │       │   └── server
+│   │       │       └── views
 │   │       ├── week-1
 │   │       ├── week-10
 │   │       │   ├── Database+Primer_files
+│   │       │   ├── cheat-sheet
 │   │       │   └── double-bubble-outline
 │   │       │       └── double-bubble-outline
 │   │       ├── week-11
@@ -139,6 +135,8 @@ tree -d
 │   │       ├── week-3
 │   │       ├── week-4
 │   │       ├── week-5
+│   │       │   └── connect-4
+│   │       │       └── images
 │   │       ├── week-6
 │   │       ├── week-7
 │   │       ├── week-8
@@ -157,11 +155,9 @@ tree -d
 │   │       │       │   ├── images
 │   │       │       │   ├── scripts
 │   │       │       │   ├── specifications
-│   │       │       │   │   ├── screenshots
-│   │       │       │   │   └── text
 │   │       │       │   └── stylesheets
-│   │       │       │       └── components
 │   │       │       ├── catstagram
+│   │       │       │   ├── node_modules
 │   │       │       │   └── public
 │   │       │       ├── css-modernize-craigslist-starter
 │   │       │       └── trello
@@ -182,8 +178,10 @@ tree -d
             ├── components
             └── layout
 
-177 directories
+176 directories
 
 \___________________________________________________
 bryan_dir:public_exitstatus:0 ====>
+
+
 ```
