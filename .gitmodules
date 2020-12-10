@@ -4,3 +4,5 @@
 [submodule "sequelize-recipe-box"]
 	path = sequelize-recipe-box
 	url = https://github.com/bgoonz/sequelize-recipe-box.git
+
+
