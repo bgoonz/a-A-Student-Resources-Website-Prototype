@@ -60,5 +60,6 @@
     "yarn.lock": false,
     ".gitignore": false
   },
-  "explorerExclude.backup": null
+  "explorerExclude.backup": null,
+  "liveServer.settings.port": 5501
 }
