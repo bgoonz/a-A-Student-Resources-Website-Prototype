@@ -1,0 +1,45 @@
+---
+layout: default
+comments: true
+---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+{{ content }}
+</div>
+
+<div class="share">
+  Share this on <a href='https://twitter.com/share?url=http://blog.revathskumar.com{{page.url }}&text="{{ page.title }}"+by+@revathskumar' target="_blank" rel="nofollow">Twitter</a> |
+  <a href='https://www.facebook.com/sharer/sharer.php?u=http://blog.revathskumar.com{{page.url }}&t="{{ page.title }}"' target="_blank" rel="nofollow">Facebook</a> |
+  <a href="https://t.me/share/url?url=https%3A%2F%2Ft.me%2Fiv%3Furl%3Dhttps%253A%252F%252Fblog.revathskumar.com%252F{{page.url}}%26rhash%3Dd039852156f80a" target="_blank" rel="nofollow">Telegram</a>
+</div>
+
+<div class="donation">
+  If you particularly enjoy my work, I appreciate <a target="_blank" rel="nofollow" href="https://paypal.me/revathskumar/2">donations via PayPal</a>.
+</div>
+
+
+<div id="related">
+  <h2>Related Posts</h2>
+  <ul class="posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><span>{{ post.date | date_to_string }}</span>&raquo;<a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'revathskumar'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>

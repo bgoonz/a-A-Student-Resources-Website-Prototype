@@ -1,0 +1,11 @@
+name: Revath S Kumar
+description: "Alone I can't make this world better, so I do open source."
+markdown: kramdown
+highlighter: rouge
+url: http://blog.revathskumar.com
+
+permalink: '/:year/:month/:title.html'
+excerpt_separator: "\n\n"
+exclude: [vendor, node_modules]
+include: [.well-known]
+timezone: Asia/Kolkata
