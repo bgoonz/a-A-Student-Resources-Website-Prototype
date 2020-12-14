@@ -1,4 +1,4 @@
-/* xdoor-frontend: v0.2.1 (Tue, 27 Oct 2020 06:21:41 GMT) */
+/* xdoor-frontend: v0.2.1 (Mon, 19 Oct 2020 18:21:51 GMT) */
 (function() {
 
 var PAYLOAD = null;
