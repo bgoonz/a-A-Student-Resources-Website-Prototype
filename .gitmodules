@@ -6,3 +6,6 @@
 	url = https://github.com/bgoonz/sequelize-recipe-box.git
 
 
+[submodule "resourceNavigation"]
+	path = resourceNavigation
+	url = https://github.com/RyanGC93/resourceNavigation.git
