@@ -5,7 +5,6 @@
 	path = sequelize-recipe-box
 	url = https://github.com/bgoonz/sequelize-recipe-box.git
 
-
-[submodule "resourceNavigation"]
-	path = resourceNavigation
-	url = https://github.com/RyanGC93/resourceNavigation.git
+[submodule "PUBLIC/assets/Content/general-reference/resourceNavigation"] 
+  path = PUBLIC/assets/Content/general-reference/resourceNavigation
+  url = git://https://github.com/RyanGC93/resourceNavigation.git
