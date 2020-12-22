@@ -1,9 +1,21 @@
 {
   "workbench.colorCustomizations": {
     "titleBar.activeBackground": "#282b3c",
-    "titleBar.activeForeground": "#eeefff",
+    "titleBar.activeForeground": "#e7e7e7",
     "workbench.fontAliasing": "antialiased",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "activityBar.activeBackground": "#3c415b",
+    "activityBar.activeBorder": "#000000",
+    "activityBar.background": "#3c415b",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#000000",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#282b3c",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#3c415b",
+    "titleBar.inactiveBackground": "#282b3c99",
+    "titleBar.inactiveForeground": "#e7e7e799"
   },
   "files.exclude": {
     "**/.git": true,
@@ -61,5 +73,11 @@
     ".gitignore": false
   },
   "explorerExclude.backup": null,
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "workspace.isHidden": false,
+  "peacock.color": "#282b3c",
+  "python.pythonPath": "C:\\Users\\bryan\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "git.ignoreLimitWarning": true
 }

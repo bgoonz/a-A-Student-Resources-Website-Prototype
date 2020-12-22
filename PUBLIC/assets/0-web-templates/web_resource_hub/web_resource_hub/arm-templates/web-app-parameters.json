@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "web-resource-hub-20201222123105"
+    },
+    "appServicePlanName": {
+      "value": "web-resource-hub-20201222123120"
+    },
+    "tier": {
+      "value": "Basic"
+    },
+    "sku": {
+      "value": "B1"
+    },
+    "linuxFxVersion": {
+      "value": "node|12-lts"
+    },
+    "subscriptionId": {
+      "value": "ac53e145-17fa-4748-904e-2bbad91a6e13"
+    },
+    "location": {
+      "value": "Central US"
+    }
+  }
+}

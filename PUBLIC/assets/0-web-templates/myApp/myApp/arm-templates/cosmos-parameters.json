@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "name": {
+      "value": "myapp-20201222123551"
+    },
+    "location": {
+      "value": "centralus"
+    },
+    "locationName": {
+      "value": "Central US"
+    },
+    "defaultExperience": {
+      "value": "Core (SQL)"
+    },
+    "capabilities": {
+      "value": []
+    },
+    "kind": {
+      "value": "GlobalDocumentDB"
+    }
+  }
+}
